@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emite señal: membrana y potencial de acción · Neurociencias UBB</title>
+<meta name="description" content="Emite señal: membrana y potencial de acción. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3f63'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' fill='%23dbeafe' text-anchor='middle'%3ENe%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Emite señal: membrana y potencial de acción · Neurociencias UBB">
+<meta property="og:description" content="Emite señal: membrana y potencial de acción. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#0f2437 0%,#1a3d5c 55%,#2f6b9a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#b9d3e8;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#b9d3e8;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(1.9rem,4.2vw,3.2rem);
+    line-height:1.08;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:26ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d9e8f4;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1120px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a9cbe4;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#10324c;border-color:#fff}
+  .btn.primary:hover{background:#eaf4fb}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0 .45rem;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#1d3f63;background:#e3eef7;border:1px solid #a9cbe4;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Neurociencias: azul profundo y ámbar sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f3f6fa;
+  --surface:#fffefb;
+  --surface-2:#e9eff6;
+  --surface-3:#dae4ef;
+  --ink:#14202b;
+  --muted:#54677a;
+  --line:#cbd8e6;
+  --brand:#1d3f63;
+  --brand-2:#2f6b9a;
+  --brand-3:#e3eef7;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(16,36,56,.09);
+}
+[data-theme="dark"]{
+  --bg:#0e141a;
+  --surface:#151e26;
+  --surface-2:#1c2833;
+  --surface-3:#26333f;
+  --ink:#e9f1f7;
+  --muted:#a4b6c6;
+  --line:#2b3a47;
+  --brand:#7dd3fc;
+  --brand-2:#38bdf8;
+  --brand-3:#0d2a3c;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.42);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(10,18,26,.84)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Neurociencias Aplicadas a la Medicina</p>
+    <h1>04. Emite señal: membrana y potencial de acción</h1>
+    <p class="lede">Guía 04 de 08. 6.085 palabras. 113 citas y 32 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>04 de 08</strong></div><div><span>Fuentes</span><strong>Zeise cap. 2 · Purves · apuntes III · Kandel 9-10</strong></div><div><span>Citas</span><strong>113</strong></div><div><span>Tablas</span><strong>32</strong></div><div><span>Palabras</span><strong>6.085</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-de-la-fisica-al-gradiente-electroquimico">De la física al gradiente electroquímico</a></li>
+        <li><a href="#sec-02-nernst-y-goldman-la-aritmetica-del-voltaje">Nernst y Goldman: la aritmética del voltaje</a></li>
+        <li><a href="#sec-03-canales-ionicos-poros-con-compuerta">Canales iónicos: poros con compuerta</a></li>
+        <li><a href="#sec-04-el-potencial-de-accion-todo-o-nada">El potencial de acción: todo o nada</a></li>
+        <li><a href="#sec-05-propagacion-del-cable-con-fugas-a-la-conduccion-saltatoria">Propagación: del cable con fugas a la conducción saltatoria</a></li>
+        <li><a href="#sec-06-la-membrana-y-la-temperatura">La membrana y la temperatura</a></li>
+        <li><a href="#sec-07-el-costo-energetico-de-la-senal">El costo energético de la señal</a></li>
+        <li><a href="#sec-08-cuando-falla-el-canal-o-la-vaina">Cuando falla el canal o la vaina</a></li>
+        <li><a href="#sec-09-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#sec-10-limites-del-material">Límites del material</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice del certamen">Índice</a>
+        <a href="03_Se_Construye_Corteza.html" title="Se construye: proliferación, migración y corteza">03</a>
+        <a href="05_Se_Comunica_Sinapsis.html" title="Se comunica y aprende: sinapsis y neurotransmisores">05</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>La física de la señal nerviosa: difusión, gradiente electroquímico, ecuación de Nernst, ecuación de Goldman, canales iónicos, potencial de acción, período refractario, propagación saltatoria, costo energético y efecto de la temperatura. Cierra con las canalopatías y la desmielinización.</div><p class="small">Las citas remiten a la fuente y a su página o sección, por ejemplo <em>Zeise p. 108</em>, <em>Purves p. 78</em> o <em>apuntes, bloque III</em>.</p><p class="small"><strong>Fuera de alcance:</strong> la sinapsis y la integración postsináptica, que abren la guía 05.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul>
+<li>La célula nerviosa mantiene entre 40 y 85 mV de diferencia entre el interior y el exterior <span class="cite">Zeise §2.2.1</span>.</li>
+<li>La difusión empuja los iones y el campo eléctrico los frena; el equilibrio de un ion es su potencial de Nernst <span class="cite">Zeise §2.2.6</span>.</li>
+<li>A 37 °C, Nernst se reduce a 61 dividido por la valencia y multiplicado por el logaritmo del gradiente <span class="cite">apuntes, bloque III</span>.</li>
+<li>El potencial real depende de las permeabilidades relativas y se calcula con Goldman-Hodgkin-Katz <span class="cite">Zeise §2.2.6</span>.</li>
+<li>El potencial de acción nace cuando la despolarización abre suficientes canales de sodio y se regenera solo <span class="cite">Zeise §2.5.3</span>.</li>
+<li>La inactivación del sodio crea el período refractario y asegura que la señal avance en una dirección <span class="cite">Zeise §2.5.4</span>.</li>
+<li>La mielina aísla el internodo y obliga a regenerar la señal solo en los nodos de Ranvier <span class="cite">Purves p. 78</span>.</li>
+<li>La bomba de sodio y potasio repone los gradientes y consume gran parte de la energía del cerebro <span class="cite">Zeise §2.6</span>.</li>
+</ul></div></section><section id="sec-01-de-la-fisica-al-gradiente-electroquimico" class="card">
+<div class="section-kicker"><span class="n">01</span> Tema</div>
+<h2>De la física al gradiente electroquímico</h2>
+<p>Describir el universo inerte equivale a analizar cómo se distribuye la energía en el espacio y el tiempo, y esa distribución posee estructura. La materia viva participa de esa organización: la información y la función surgen de estructuras auto-organizadas, y las señales solo adquieren significado en un contexto que las interpreta. Por eso el sistema nervioso se describe como un procesador de información, no como una entidad que comprende lo que transmite <span class="cite">Zeise §2.1</span>.</p>
+<p>Entre las señales disponibles, la eléctrica se impuso por tres razones: es potencialmente veloz, es fácil de digitalizar y cada célula activa es una batería que ya posee la variable de la señal, el voltaje. En los organismos vivos las señales eléctricas son mucho más lentas que en los dispositivos tecnológicos, con la excepción de los acoplamientos por uniones gap, pero siguen siendo las más rápidas del cuerpo. Es probable que el sistema nervioso haya aparecido por la necesidad de velocidad: los pluricelulares sin sistema nervioso son las plantas, que no se desplazan y no necesitan reaccionar rápido <span class="cite">Zeise §2.1.6</span>.</p>
+<p>La carga eléctrica es una propiedad de protones y electrones, y la corriente es un movimiento de carga con dirección que se mide en carga por segundo. Un culombio reúne <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>,</mo><mn>242</mn><mo>×</mo><msup><mn>10</mn><mn>18</mn></msup></mrow><annotation encoding="application/x-tex">6,242 \times 10^{18}</annotation></semantics></math> cargas elementales, y un culombio por segundo es un amperio. El voltaje es la fuerza que genera el flujo de corriente y no se experimenta directamente, de modo que se enseña con la metáfora del agua en un campo gravitacional. En esa imagen, la diferencia de altitud entre la reserva y la turbina corresponde al voltaje, el caudal de agua a la corriente y el ancho de la tubería a la conductancia <span class="cite">Zeise §2.2.1</span>.</p>
+<p>La corriente es proporcional al voltaje e inversamente proporcional a la resistencia, lo que se resume en <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>V</mi><mi>/</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">I=V/R</annotation></semantics></math> o <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>R</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">V=RI</annotation></semantics></math>. La conductancia es la inversa de la resistencia, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mn>1</mn><mi>/</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">G=1/R</annotation></semantics></math>, y expresa la facilidad con que se desplaza una corriente. Cargas opuestas se atraen, cargas iguales se repelen, y la fuerza aumenta cuando disminuye la distancia <span class="cite">Zeise §2.2.1</span>. Esa interacción es la base del componente eléctrico del gradiente electroquímico <span class="cite">Zeise §2.2.6</span>.</p>
+<p>Todas las células vivas mantienen un pequeño voltaje entre el interior y el exterior, y en las neuronas el interior es entre 40 y 85 mV más negativo. Las neuronas se especializan en producir, procesar y transmitir señales eléctricas, que consisten en modificar ese voltaje. También hay diferencias de potencial entre el interior y el exterior de subestructuras celulares, como las mitocondrias <span class="cite">Zeise §2.2.1</span>. La célula nerviosa no inventa un voltaje nuevo en cada señal: modula uno que ya existe <span class="cite">Zeise §2.2.7</span>.</p>
+<p>La bioelectricidad necesita dos piezas: iones que se difundan y una membrana que los separe. La membrana es una bicapa lipídica muy delgada, barrera para el agua y para el flujo libre de los iones disueltos. Como los iones son los únicos transportadores de carga en la célula, la membrana crea compartimentos con distinta composición química y distinto potencial eléctrico. Los canales iónicos son ensamblajes proteicos que forman poros y que pueden estar abiertos o cerrados. La membrana no es solo un aislante: modula dinámicamente su resistencia, de modo que la separación eléctrica es variable <span class="cite">Zeise §2.2.3</span>.</p>
+<p>El flujo pasivo ocurre a favor del gradiente y no requiere energía; el transporte activo mueve la sustancia en contra y consume energía celular. A escala celular, mover una sustancia significa casi siempre cambiarla de un lado de la membrana al otro. La célula está compartimentada por membranas y la frontera más importante es la membrana celular <span class="cite">Zeise §2.2.5</span>. Esa distinción entre flujo pasivo y bombeo activo importa porque el potencial de acción gasta gradientes y la bomba los repone <span class="cite">Zeise §2.6</span>.</p>
+<p>La materia está en movimiento aleatorio constante y la velocidad promedio de ese movimiento depende de la temperatura. La difusión es el movimiento de partículas en gases o líquidos que produce una mezcla o un equilibrio de concentraciones en función del tiempo y de la temperatura. Es una consecuencia de la segunda ley de la termodinámica: en un sistema energéticamente cerrado todo proceso termina con menos orden que al principio, y revertirlo exige energía libre. Los sistemas biológicos construyen estructuras complejas gracias al flujo constante de energía solar. La difusión es rápida a escala molecular y extremadamente lenta a escala macroscópica, y se acelera cuando aumenta la temperatura <span class="cite">Zeise §2.2.2</span>.</p>
+<p>La analogía del museo permite ver el equilibrio: la gente entra al primer salón y, cuando se abre el segundo, fluye hasta que ambas salas tienen igual concentración. En el equilibrio hay personas yendo en ambas direcciones, pero el flujo neto es cero. Volver a la distribución inicial exige un esfuerzo, como instalar un buffet en el primer salón, y ese esfuerzo equivale a gastar energía. Concentrar una sustancia en contra de la difusión cuesta energía, y el costo depende de las concentraciones inicial y final, de los volúmenes y de la temperatura <span class="cite">Zeise §2.2.2</span>.</p>
+<p>Los iones son átomos o moléculas con número desigual de protones y electrones; el sodio, con un electrón menos, es Na⁺ <span class="cite">Zeise §2.2.6</span>. Sobre un ion a través de la membrana actúan dos fuerzas: la difusión, que lo lleva de mayor a menor concentración según la ley de Fick, y el campo eléctrico, que lo atrae o lo repele según su valencia. La suma vectorial de ambas fuerzas dicta la dirección del flujo. Ninguna de las dos actúa sola en una célula viva, y de ahí nace el concepto de gradiente electroquímico <span class="cite">apuntes, bloque III</span>.</p>
+<p>En reposo la membrana es mayoritariamente permeable al potasio, que está más concentrado adentro. El potasio se encuentra cerca de 140 mM dentro y 4 a 5 mM fuera <span class="cite">apuntes, bloque III</span>. El gradiente químico lo empuja a salir; al salir carga positiva, el interior se vuelve más negativo, y esa negatividad lo atrae de vuelta. Se llega así a un punto en que la fuerza química y la fuerza eléctrica tienen igual magnitud y dirección opuesta, y el flujo neto se anula. Ese voltaje es el potencial de equilibrio del ion. El potencial de equilibrio no es proporcional a la diferencia de concentración, sino al logaritmo de la razón entre las concentraciones <span class="cite">Zeise §2.2.6</span>.</p>
+<p>La fuerza impulsora electromotriz es la diferencia entre el potencial real de membrana y el potencial de equilibrio del ion, y mide cuánto quiere moverse ese ion. Si el potencial de membrana es más negativo que el equilibrio del sodio, la fuerza impulsora empuja al sodio hacia adentro. Si el potencial se acerca al equilibrio del potasio, la fuerza impulsora sobre el potasio se reduce <span class="cite">apuntes, bloque III</span>. La célula puede cambiar esa fuerza sin cambiar las concentraciones, porque le basta abrir o cerrar canales <span class="cite">Zeise §2.2.7</span>.</p>
+<p>Cada ion permeable aporta una batería, y el voltaje de la membrana es el resultado de la competencia entre esas baterías. El aporte de cada una depende del número de canales abiertos, es decir, de su conductancia <span class="cite">Zeise §2.2.6</span>. La metáfora del estanque lo resume: si solo están abiertos los canales de un ion positivo más concentrado fuera, el voltaje sube; si se abren los de potasio, prevalece la fuerza negativa <span class="cite">Zeise §2.2.7</span>.</p>
+
+</section><section id="sec-02-nernst-y-goldman-la-aritmetica-del-voltaje" class="card">
+<div class="section-kicker"><span class="n">02</span> Tema</div>
+<h2>Nernst y Goldman: la aritmética del voltaje</h2>
+<p>La ecuación de Nernst calcula el potencial de equilibrio de un solo ion en una membrana permeable solo a él <span class="cite">Zeise §2.2.6</span>. La fórmula es:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><mi>z</mi><mi>F</mi></mrow></mfrac><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mfrac><mrow><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>e</mi><mi>x</mi><mi>t</mi></mrow></msub></mrow><mrow><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">E_{ion}=\frac{RT}{zF}\ln\frac{[ion]_{ext}}{[ion]_{int}}</annotation></semantics></math></p>
+<p>R es la constante universal de los gases, T la temperatura absoluta en kelvin, z la carga del ion, F la constante de Faraday y el cociente entre corchetes la concentración externa sobre la interna. La temperatura se expresa como <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><msup><mrow></mrow><mo>∘</mo></msup><mi mathvariant="normal">C</mi><mo>+</mo><mn>273</mn></mrow><annotation encoding="application/x-tex">K = {}^\circ\mathrm{C} + 273</annotation></semantics></math>, de modo que 37 °C equivalen a 310 K. A esa temperatura, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>T</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">RT/F</annotation></semantics></math> vale aproximadamente 26,73 mV. El potencial es directamente proporcional a la temperatura y al logaritmo del gradiente <span class="cite">Zeise §2.2.6</span>.</p>
+<p>Al pasar a logaritmo decimal, la ecuación se escribe <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mn>61</mn><mi>z</mi></mfrac><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mfrac><mrow><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>e</mi><mi>x</mi><mi>t</mi></mrow></msub></mrow><mrow><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">E_{ion}=\frac{61}{z}\log\frac{[ion]_{ext}}{[ion]_{int}}</annotation></semantics></math> en milivoltios <span class="cite">apuntes, bloque III</span>. Para el sodio con 145 mM fuera y 12 mM dentro, la razón es 12,1 y el potencial resulta cercano a +67 mV. El signo depende de la carga y del sentido del gradiente: el potasio, con gradiente hacia afuera, da un potencial negativo; el calcio, con valencia dos, reduce a la mitad el prefactor del logaritmo <span class="cite">Zeise §2.2.6</span>.</p>
+<p>Los cuatro iones relevantes se comportan como baterías con voltajes distintos <span class="cite">Zeise §2.2.6</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Nernst y Goldman: la aritmética del voltaje" tabindex="0"><table>
+<thead>
+<tr>
+<th>Ion</th>
+<th>Gradiente ext:int</th>
+<th><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">E_{ion}</annotation></semantics></math></th>
+<th>Comportamiento en reposo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K⁺</td>
+<td>1:34</td>
+<td>−94,6 mV</td>
+<td>Sale por difusión y deja el interior negativo</td>
+</tr>
+<tr>
+<td>Na⁺</td>
+<td>12:1</td>
+<td>+66,6 mV</td>
+<td>Entra con gran fuerza impulsora si se abre su canal</td>
+</tr>
+<tr>
+<td>Cl⁻</td>
+<td>20:1</td>
+<td>−80,1 mV</td>
+<td>Su equilibrio se aproxima al potencial de reposo</td>
+</tr>
+<tr>
+<td>Ca²⁺</td>
+<td>15.000:1</td>
+<td>+129 mV</td>
+<td>Entra cuando se abre un canal de calcio</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Zeise §2.2.6</span>.</p>
+<p>La célula tiene cuatro baterías, una por cada ion relevante, y el voltaje real depende de cuánto aporta cada una. El aporte depende de la facilidad con que el ion se desplaza, es decir, del número de canales abiertos. Por eso la célula modula el voltaje abriendo y cerrando canales, y no cambiando las concentraciones en cada instante <span class="cite">Zeise §2.2.6</span>. Si tres de las cuatro baterías están desconectadas y sus resistores cerrados, el único voltaje registrado es el de la batería restante <span class="cite">Zeise §2.2.7</span>.</p>
+<p>Goldman, Hodgkin y Katz resolvieron el caso de una membrana permeable a varios iones a la vez e incorporaron las permeabilidades relativas <span class="cite">Zeise §2.2.6</span>. La ecuación es:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mi>F</mi></mfrac><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><msub><mi>P</mi><mi>K</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>K</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>e</mi><mi>x</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>N</mi><mi>a</mi></mrow></msub><mo stretchy="false" form="prefix">[</mo><mi>N</mi><mi>a</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>e</mi><mi>x</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>C</mi><mi>l</mi></mrow></msub><mo stretchy="false" form="prefix">[</mo><mi>C</mi><mi>l</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub></mrow><mrow><msub><mi>P</mi><mi>K</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>K</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>N</mi><mi>a</mi></mrow></msub><mo stretchy="false" form="prefix">[</mo><mi>N</mi><mi>a</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>C</mi><mi>l</mi></mrow></msub><mo stretchy="false" form="prefix">[</mo><mi>C</mi><mi>l</mi><msub><mo stretchy="false" form="postfix">]</mo><mrow><mi>e</mi><mi>x</mi><mi>t</mi></mrow></msub></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E=\frac{RT}{F}\ln\left(\frac{P_K[K]_{ext}+P_{Na}[Na]_{ext}+P_{Cl}[Cl]_{int}}{P_K[K]_{int}+P_{Na}[Na]_{int}+P_{Cl}[Cl]_{ext}}\right)</annotation></semantics></math></p>
+<p>En la fórmula, los cationes van con su concentración externa en el numerador y los aniones con su concentración interna, porque la permeabilidad del cloro invierte el sentido del gradiente. La ecuación no incluye el calcio, porque juega un papel menor en la generación de señales eléctricas, ni las bombas iónicas, porque no participan directamente en esa generación. Tampoco reemplaza a Nernst: la usa para ponderar varios iones, mientras Nernst sigue siendo la referencia de cada batería por separado <span class="cite">Zeise §2.2.6</span>.</p>
+<p>Con el sodio en +60 mV y la célula en −70 mV, la diferencia de 130 mV genera una fuerza impulsora enorme hacia adentro. Apenas se abre un canal de sodio dependiente de voltaje, el ion entra y lleva el voltaje hacia su equilibrio, lo que despolariza la membrana <span class="cite">apuntes, bloque III</span>. La misma lógica explica por qué el potasio, cuyo equilibrio está cerca de −90 mV, tiende a salir cuando la célula se despolariza <span class="cite">Zeise §2.2.6</span>.</p>
+<p>Los valores de la tabla son aproximados para neuronas de mamífero y varían según la célula y la especie. En la clase se manejan cifras redondeadas: potasio −90 mV, sodio +60 mV, cloro −70 mV y calcio +125 mV <span class="cite">apuntes, bloque III</span>. El cloro es el que más varía entre células <span class="cite">Zeise §2.2.6</span>.</p>
+
+</section><section id="sec-03-canales-ionicos-poros-con-compuerta" class="card">
+<div class="section-kicker"><span class="n">03</span> Tema</div>
+<h2>Canales iónicos: poros con compuerta</h2>
+<p>Los canales iónicos son proteínas que atraviesan la membrana y forman poros selectivos <span class="cite">Kandel cap. 8</span>. Todas las células vivas los tienen, y muy pocos son simples agujeros: la mayoría distingue entre iones y posee compuertas. Su función no se limita a generar señales: también permiten procesar información y ejecutar la salida, sea una señal neuronal, una contracción muscular o una secreción glandular <span class="cite">Zeise §2.2.4</span>.</p>
+<p>La mayoría tiene al menos un estado abierto y uno cerrado, y el vocabulario que describe esas transiciones se confunde con facilidad <span class="cite">Zeise §2.2.4</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Canales iónicos: poros con compuerta" tabindex="0"><table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Activación</td>
+<td>Apertura del canal</td>
+</tr>
+<tr>
+<td>Desactivación</td>
+<td>Cierre cuando cesa o se revierte el estímulo</td>
+</tr>
+<tr>
+<td>Inactivación</td>
+<td>Cierre espontáneo con el estímulo todavía presente</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Zeise §2.2.4</span>.</p>
+<p>La activación es la apertura; la desactivación es el cierre cuando cesa o se revierte el estímulo; la inactivación es el cierre espontáneo con el estímulo todavía presente. La inactivación es un mecanismo distinto de la desactivación. El tiempo de apertura y cierre y la conductancia, que mide cuántos iones pasan por unidad de tiempo, varían mucho entre canales. Los canales se abren o cierran en respuesta a un tipo de energía, mecánica, térmica o química, y ser específico no significa ser exclusivo. Un canal mecanosensible responde con mayor facilidad a lo mecánico, pero puede reaccionar a otros estímulos. En el sistema nervioso la mayoría se activa por voltaje, usualmente un cambio hacia valores más positivos, o por sustancias que se unen al canal por un breve período <span class="cite">Zeise §2.2.4</span>.</p>
+<p>En las neuronas se han descrito más de 20 tipos de canales permeables a potasio. Los canales de calcio se clasifican por el voltaje de apertura en bajo y alto umbral. La clasificación actual usa la similitud de secuencia entre proteínas y coincide en buena medida con los criterios convencionales. Los canales de sodio rápidos, los que dan velocidad al sistema nervioso, aparecen en animales similares a las medusas y luego en todos los grupos animales, hasta los humanos <span class="cite">Zeise §2.2.4</span>.</p>
+<p>El bloqueo farmacológico es específico y permite separar corrientes. El magnesio y otros cationes divalentes entran al canal de calcio pero no pueden pasar, y no afectan a los canales de iones monovalentes <span class="cite">Zeise §2.2.4</span>. La tetrodotoxina bloquea los canales de sodio con alta potencia, en el rango nanomolar, y unos pocos miligramos ingeridos con un pez globo mal preparado pueden ser fatales. El tetraetilamonio bloquea selectivamente algunos canales de potasio y, junto con la tetrodotoxina, permite separar las corrientes de sodio y potasio <span class="cite">Kandel cap. 10</span>.</p>
+<p>El curare es un antagonista competitivo del canal nicotínico de acetilcolina del músculo esquelético, con bloqueo débil y reversible. La α-bungarotoxina bloquea el mismo canal de forma fuerte y casi irreversible. El diazepam se une a un sitio regulatorio de los canales de cloro activados por GABA, aumenta la frecuencia de apertura y no compite con el transmisor. El tetraetilamonio es un catión orgánico pequeño que bloquea el canal de potasio desde el lado interno solo cuando la compuerta se abre por despolarización. El magnesio, el calcio, el sodio y las poliaminas como la espermina actúan como bloqueadores fisiológicos en la boca o dentro del poro. Los protones liberados en la inflamación activan canales sensibles a ácido y contribuyen al dolor, al calor y al frío <span class="cite">Kandel cap. 8</span>.</p>
+<p>Una mutación de un solo aminoácido basta para cambiar la función de un canal, y muchas enfermedades neurológicas se deben a mutaciones heredadas o espontáneas en esos genes. Los cambios funcionales se pueden examinar en sistemas de expresión artificial. La fibrosis quística, algunas enfermedades del músculo esquelético y ciertas arritmias cardíacas muestran que las canalopatías no se limitan al cerebro <span class="cite">Kandel cap. 8</span>.</p>
+
+</section><section id="sec-04-el-potencial-de-accion-todo-o-nada" class="card">
+<div class="section-kicker"><span class="n">04</span> Tema</div>
+<h2>El potencial de acción: todo o nada</h2>
+<p>La bioelectricidad fue descubierta a fines del siglo XVIII por Luigi Galvani, quien describió la excitabilidad de los músculos de rana y la contracción producida por estimulación eléctrica de los nervios. Las primeras mediciones se hicieron en nervios, conjuntos de axones, y mostraron velocidades altas: los axones más gruesos alcanzan unos 100 m/s, equivalentes a 360 km/h, mientras los delgados y amielínicos son mucho más lentos <span class="cite">Zeise §2.5</span>.</p>
+<p>El potencial de acción requiere superar un nivel crítico, pero a diferencia de un globo que revienta, el proceso es autosostenido. Lo que se retroalimenta es la despolarización: despolarizar abre canales de sodio dependientes de voltaje y eso despolariza más. Una despolarización pequeña no abre suficientes canales y el voltaje vuelve a su valor anterior cuando cesa el estímulo. Al aumentar la despolarización se llega al punto en que los canales abiertos bastan y el proceso se vuelve auto-generativo, de donde nace el carácter digital de todo o nada <span class="cite">Zeise §2.5.3</span>.</p>
+<p>La tabla del texto ilustra el umbral con valores ficticios: a −65 mV se abre el 15 % de los canales y el voltaje inducido es −69 mV, y a −60 mV se abre el 25 % y el voltaje es −67 mV. El umbral aparece en −47 mV en esa tabla, mientras la figura y la clase lo sitúan entre −50 y −55 mV <span class="cite">Zeise §2.5.3</span>.</p>
+<p>Hodgkin y Huxley demostraron en los años cincuenta que todo el potencial de acción se explica por las velocidades de apertura y cierre de los canales de sodio y potasio <span class="cite">Zeise §2.5.3</span>. La técnica de fijación de voltaje permitió fijar el potencial de membrana y medir directamente las corrientes. El sodio se activa rápido y se inactiva durante una despolarización sostenida; el potasio se activa con retraso y no se inactiva. El modelado matemático indica que esas conductancias, y solo ellas, explican los potenciales de acción todo o nada del axón de calamar <span class="cite">Purves §3</span>.</p>
+<p>La despolarización termina por dos procesos: la inactivación del sodio y la activación del potasio, que tarda un poco más. La conductancia del sodio sube y baja rápido, mientras la del potasio sube más tarde y baja más lento. Esa diferencia de velocidades produce la forma característica del potencial de acción y su fase de recuperación <span class="cite">Zeise §2.5.3</span>.</p>
+<p>Al inactivarse, los canales de sodio no reaccionan a cambios de voltaje y deben des-inactivarse, un proceso espontáneo pero más duradero. Ese lapso es el período refractario, durante el cual la membrana es insensible. La señal deja detrás un segmento no excitable, lo que asegura que la propagación avance en una sola dirección <span class="cite">Zeise §2.5.4</span>. Sin ese mecanismo, la onda podría retroceder hacia la zona que acaba de disparar <span class="cite">Zeise §2.5.5</span>.</p>
+<p>El axón no procesa ni altera la señal: el mensaje llega intacto a la sinapsis. La información no está en la forma de la señal individual, idéntica en todas, sino en su frecuencia, el número de repeticiones por segundo. La codificación digital resiste perturbaciones hasta un nivel relativamente alto, mientras una señal analógica conserva cualquier distorsión <span class="cite">Zeise §2.5.6</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: El potencial de acción: todo o nada" tabindex="0"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Cambio de voltaje</th>
+<th>Mecanismo</th>
+<th>Consecuencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Despolarización</td>
+<td>Hacia valores positivos</td>
+<td>Apertura de canales de Na⁺ y entrada del ion</td>
+<td>Retroalimentación positiva y umbral superado</td>
+</tr>
+<tr>
+<td>Repolarización</td>
+<td>Regreso hacia el reposo</td>
+<td>Inactivación del Na⁺ y activación tardía del K⁺</td>
+<td>Termina el pico y restablece el voltaje</td>
+</tr>
+<tr>
+<td>Período refractario</td>
+<td>Membrana insensible</td>
+<td>Na⁺ inactivado, aún no des-inactivado</td>
+<td>Impide la propagación retrógrada</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Zeise §2.5.3</span>.</p>
+
+</section><section id="sec-05-propagacion-del-cable-con-fugas-a-la-conduccion-saltatoria" class="card">
+<div class="section-kicker"><span class="n">05</span> Tema</div>
+<h2>Propagación: del cable con fugas a la conducción saltatoria</h2>
+<p>Un axón se parece a un cable con filtraciones: su resistencia interna es finita y la del entorno extracelular también, a diferencia de un cable industrial. Al inyectar corriente en un punto, la señal registrada disminuye exponencialmente con la distancia. La constante de longitud, o constante espacial, es la distancia a la que el voltaje cae a 1/e. Depende de la resistencia axial y de la resistencia de membrana <span class="cite">Zeise §2.5.2</span>.</p>
+<p>La evolución ensayó dos soluciones para mejorar la propagación. Engrosar el axón reduce la resistencia axial, pero es poco efectivo por los límites de área transversal y de espacio; el axón gigante de calamar, el más grueso conocido, permitió a los pioneros descifrar la señal de acción. Aumentar la resistencia de membrana con mielina es mucho más efectivo y además disminuye la capacitancia <span class="cite">Zeise §2.5.2</span>.</p>
+<p>El potencial de acción se propaga porque la corriente local despolariza la zona adyacente más allá del umbral y allí se genera una nueva señal. El resultado es una onda que se extiende, no una sustancia que viaja. En condiciones fisiológicas el origen está en el soma y el cono axónico, y la señal avanza hacia el axón. No viaja hacia las dendritas porque esas zonas no son excitables, por densidad insuficiente de canales de sodio y calcio dependientes de voltaje. La propagación retrógrada es imposible gracias al período refractario <span class="cite">Zeise §2.5.5</span>.</p>
+<p>Los vertebrados cubren el axón con glía, oligodendrocitos en el sistema nervioso central y células de Schwann en el periférico, y dejan al descubierto solo los nodos de Ranvier <span class="cite">Zeise §2.5.5</span>. Los canales de sodio dependientes de voltaje se concentran en los nodos. Un potencial de acción en un nodo hace fluir la corriente pasivamente por el internodo hasta el siguiente nodo, donde se regenera. Por eso la propagación se llama saltatoria: la señal salta de nodo en nodo. La mielina no genera el potencial de acción, lo hace eficiente <span class="cite">Purves p. 78</span>.</p>
+<p>La mielina aumenta la resistencia de membrana y disminuye la capacitancia. Con resistencia alta la corriente no se fuga por el internodo, y con capacitancia baja hace falta menos carga para cambiar el voltaje. La corriente local llega más lejos y más fuerte al nodo siguiente. La mielina no engrosa el conductor: el axoplasma mantiene su diámetro y la resistencia axial no cambia, porque las capas gliales se añaden por fuera <span class="cite">Zeise §2.5.5</span>.</p>
+<p>La corriente recorre todo el internodo; lo que se regenera en cada nodo es la señal de acción. No se acorta el camino geométrico, se reduce el número de puntos de regeneración, cerca del 1 % de la membrana. La longitud del internodo tiene un óptimo: si es demasiado largo, la corriente decae bajo el umbral y la conducción falla. Eso ocurre en la desmielinización, donde cae la constante de longitud y el nodo siguiente no alcanza el umbral <span class="cite">Zeise §2.5.5</span>.</p>
+<p>Al abrirse menos canales por unidad de longitud se mueven menos iones y la bomba de sodio y potasio trabaja menos. La velocidad resultante en mamíferos alcanza 100 m/s o más <span class="cite">Zeise §2.5.5</span>. Bajo la mielina, cerca de los extremos de cada segmento internodal, hay canales de potasio dependientes de voltaje que suprimen el potencial de acción. En la desmielinización quedan expuestos y pueden inhibir la conducción del axón desnudo <span class="cite">Kandel cap. 10</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Propagación: del cable con fugas a la conducción saltatoria" tabindex="0"><table>
+<thead>
+<tr>
+<th>Estado de la fibra</th>
+<th>Resistencia de membrana</th>
+<th>Capacitancia</th>
+<th>Constante de longitud</th>
+<th>Conducción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amielínica</td>
+<td>Baja</td>
+<td>Alta</td>
+<td>Corta</td>
+<td>Lenta y no saltatoria</td>
+</tr>
+<tr>
+<td>Mielinizada</td>
+<td>Alta</td>
+<td>Baja</td>
+<td>Larga</td>
+<td>Rápida y saltatoria</td>
+</tr>
+<tr>
+<td>Desmielinizada</td>
+<td>Baja</td>
+<td>Alta</td>
+<td>Corta</td>
+<td>Enlentecida o bloqueada</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Zeise §2.5.5</span>; <span class="cite">Kandel cap. 9</span>.</p>
+
+</section><section id="sec-06-la-membrana-y-la-temperatura" class="card">
+<div class="section-kicker"><span class="n">06</span> Tema</div>
+<h2>La membrana y la temperatura</h2>
+<p>La membrana no es una grasa inerte: su composición lipídica cambia la fluidez y con ella la función de las proteínas que aloja. El ácido docosahexaenoico es un ácido graso poliinsaturado de cadena larga, 22:6 n-3, que se esterifica en la posición sn-2 de los glicerofosfolípidos, con afinidad por fosfatidiletanolamina y fosfatidilserina, en la valva interna de la bicapa. Sus seis dobles enlaces cis generan plegamientos que impiden el empaquetamiento denso y aumentan la fluidez, la flexibilidad, la compresibilidad y la permeabilidad. Su baja afinidad por el colesterol lo segrega y altera las balsas lipídicas, con lo que cambia la localización de proteínas ancladas y las cascadas de señalización <span class="cite">apuntes, bloque III</span>.</p>
+<p>En el sistema nervioso central la fluidez permite la fusión rápida de las vesículas sinápticas. En la retina el entorno lipídico flexible permite el cambio conformacional de la rodopsina tras absorber un fotón. En el hipocampo optimiza el desplazamiento lateral y la estabilización de receptores NMDA y AMPA en la densidad postsináptica, favorece cascadas que aumentan BDNF y permite remodelar el citoesqueleto para nuevas espinas dendríticas <span class="cite">apuntes, bloque III</span>.</p>
+<p>La temperatura es la otra condición física que pesa sobre la señal. Aparece en el numerador de Nernst, de modo que el potencial de equilibrio es directamente proporcional a ella. A mayor temperatura hay más agitación térmica y se requiere más voltaje para frenar el flujo. En hipotermia, las compuertas de activación e inactivación del sodio y del potasio se mueven más lento, el potencial de acción se prolonga y la conducción se enlentece. La bomba de sodio y potasio también depende de la temperatura: el frío reduce la hidrólisis de ATP y el bombeo, y compromete los gradientes que sostienen el reposo <span class="cite">apuntes, bloque III</span>.</p>
+<p>En el paciente hipotérmico la depresión metabólica se ve en el electrocardiograma como bradicardia sinusal refractaria, prolongación del intervalo PR y del QT y la onda J de Osborn. Además hay depresión de conciencia por enlentecimiento sináptico y riesgo de fibrilación ventricular <span class="cite">apuntes, bloque III</span>.</p>
+
+</section><section id="sec-07-el-costo-energetico-de-la-senal" class="card">
+<div class="section-kicker"><span class="n">07</span> Tema</div>
+<h2>El costo energético de la señal</h2>
+<p>Los gradientes se gastan con cada señal y tienden a homogeneizarse por la segunda ley, así que deben reponerse con transporte activo. Toda señal implica un flujo de iones a favor del gradiente que disminuye un poco ese gradiente, y a mayor actividad mayor esfuerzo de la bomba. El voltaje se debe al desequilibrio de concentraciones iónicas, y ese desequilibrio no se mantiene solo <span class="cite">Zeise §2.6</span>.</p>
+<p>La bomba de sodio y potasio expulsa tres sodios e introduce dos potasios por cada ATP hidrolizado. Como el intercambio es asimétrico, es electrogénica y genera una fuerza eléctrica negativa constante al interior. El cerebro representa cerca del 2 % del peso corporal y consume cerca del 20 % de la energía metabólica <span class="cite">Zeise §2.6</span>. La bomba es una ATPasa de tipo P y, tras actividad intensa, genera un potencial post-hiperpolarizante que puede durar varios minutos <span class="cite">Kandel cap. 9</span>.</p>
+<p>En el cerebro no es la generación de potenciales de acción lo que más energía consume, sino la generación de señales sinápticas excitatorias. El gasto se acumula porque los canales postsinápticos duran más, mantienen una fuerza impulsora alta y sostenida, dejan entrar calcio y se distribuyen en miles de sinapsis. La neurona paga por entradas que no producen salida, porque integra cientos de señales y muchas veces no dispara. El potencial de acción no es gratis: su costo escala con la longitud del axón porque se regenera en cada nodo <span class="cite">Zeise §2.6</span>.</p>
+<p>Como el gasto dominante es postsináptico, la señal BOLD de la resonancia magnética funcional refleja sobre todo la entrada sináptica y el procesamiento local, más que los potenciales de acción de salida. El acoplamiento neurovascular es complejo, con astrocitos, interneuronas y vasos, así que no es una lectura limpia <span class="cite">Zeise §2.6</span>.</p>
+<p>También hay bombas para el calcio y el cloro: una sobrecarga de calcio es causa común de muerte neuronal y el transporte de cloro sostiene la inhibición GABAérgica y glicinérgica <span class="cite">Zeise §2.6</span>. La ouabaína y los alcaloides de la digital inhiben la bomba de sodio y potasio y se usan en la insuficiencia cardíaca. Mutaciones en ATP1A2 causan migraña hemipléjica familiar, y mutaciones en ATP1A3 causan distonía-parkinsonismo de inicio rápido y hemiplejía alternante de la infancia <span class="cite">Kandel cap. 9</span>.</p>
+
+</section><section id="sec-08-cuando-falla-el-canal-o-la-vaina" class="card">
+<div class="section-kicker"><span class="n">08</span> Tema</div>
+<h2>Cuando falla el canal o la vaina</h2>
+<p>Las canalopatías son enfermedades genéticas por mutaciones en genes de canales iónicos, y más de 20 enfermedades hereditarias se asocian a mutaciones en canales de sodio <span class="cite">Purves pp. 82-83</span>. Pueden ser por ganancia o por pérdida de función. La figura del texto lo resume con tres registros: una corriente de sodio mayor y sostenida, una descarga repetitiva de potenciales de acción y una corriente de calcio que se pierde. En el primer caso la compuerta se abre a potenciales más hiperpolarizados; en el tercero, sin calcio no hay liberación de transmisor y aparece sordera <span class="cite">Purves p. 83</span>.</p>
+<p>En la epilepsia se han implicado al menos cinco genes de canales de sodio, siete de potasio y dos de calcio. La epilepsia mioclónica grave de la infancia por SCN1A o SCN2A reduce la función del canal y deteriora de preferencia las interneuronas inhibitorias. La epilepsia generalizada con convulsiones febriles se debe a una desaceleración de la inactivación. Las convulsiones neonatales benignas familiares por KCNQ2 o KCNQ3 reducen el flujo de potasio y aparecen en la primera semana, para desaparecer en pocos meses <span class="cite">Purves pp. 82-83</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuando falla el canal o la vaina" tabindex="0"><table>
+<thead>
+<tr>
+<th>Trastorno</th>
+<th>Gen o canal</th>
+<th>Mecanismo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Epilepsia mioclónica grave de la infancia</td>
+<td>SCN1A o SCN2A</td>
+<td>Pérdida de función con interneuronas inhibitorias comprometidas</td>
+</tr>
+<tr>
+<td>Epilepsia generalizada con convulsiones febriles</td>
+<td>Canales de Na⁺</td>
+<td>Inactivación desacelerada</td>
+</tr>
+<tr>
+<td>Convulsión neonatal benigna familiar</td>
+<td>KCNQ2, KCNQ3</td>
+<td>Menor flujo de K⁺</td>
+</tr>
+<tr>
+<td>Ataxia episódica tipo 1</td>
+<td>KCNA1</td>
+<td>Repolarización deteriorada</td>
+</tr>
+<tr>
+<td>Ataxia episódica tipo 2</td>
+<td>CACNA1A</td>
+<td>Menor flujo de Ca²⁺</td>
+</tr>
+<tr>
+<td>Eritromelalgia hereditaria</td>
+<td>SCN9A</td>
+<td>Ganancia de función con compuerta más hiperpolarizada</td>
+</tr>
+<tr>
+<td>Insensibilidad congénita al dolor</td>
+<td>SCN9A</td>
+<td>Pérdida de función</td>
+</tr>
+<tr>
+<td>Sordera con disfunción sinoauricular</td>
+<td>CACNA1D</td>
+<td>Se elimina la entrada de Ca²⁺</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Purves pp. 82-83</span>.</p>
+<p>El síndrome de Dravet se debe a pérdida de función de Nav1.1, muy expresado en interneuronas GABAérgicas, y produce epilepsia quizá porque las neuronas inhibitorias pierden excitabilidad más que las excitatorias <span class="cite">Kandel cap. 10</span>. La ataxia espinocerebelosa tipo 6 por CACNA1A produce una expansión de poliglutamina con degeneración de las células de Purkinje. La migraña hemipléjica familiar tipo 1 por CACNA1A es de ganancia de función, y la tipo 3 por SCN1A <span class="cite">Purves pp. 82-83</span>.</p>
+<p>En el dolor, el trastorno de dolor extremo paroxístico afecta la inactivación y prolonga la corriente de sodio. En la sordera, CACNA1D interrumpe la permeación de calcio, KCNQ4 afecta las células ciliadas, la bartina causa el síndrome de Bartter tipo IV y la conexina-26 explica el 40 % de la sordera no sindrómica. La ceguera nocturna congénita ligada al X por CACNA1F se debe a canales de calcio truncados y a menor liberación de neurotransmisor en los fotorreceptores <span class="cite">Purves pp. 82-83</span>. Como cada tipo de canal se expresa de forma regionalmente diferenciada, una mutación puede tener efectos muy selectivos sobre la función neuronal o muscular <span class="cite">Kandel cap. 10</span>.</p>
+<p>La esclerosis múltiple es una enfermedad del sistema nervioso central por desmielinización e inflamación de las vías axónicas, con inicio entre los 20 y los 40 años. El curso suele ser abrupto, con déficits que persisten días o semanas y luego disminuyen, y varía desde pacientes sin déficit persistente hasta deterioro progresivo. El diagnóstico es difícil y se apoya en un problema neurológico que disminuye y reaparece en un sitio no relacionado, en la resonancia magnética o en evidencia funcional. En el líquido cefalorraquídeo hay número anormal de células asociadas a inflamación y anticuerpos aumentados. Los síntomas dependen de la ubicación de las lesiones <span class="cite">Purves §2</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Cuando falla el canal o la vaina" tabindex="0"><table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Vía afectada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ceguera monocular</td>
+<td>Nervio óptico</td>
+</tr>
+<tr>
+<td>Debilidad o parálisis motora</td>
+<td>Vías corticoespinales</td>
+</tr>
+<tr>
+<td>Sensaciones somáticas anormales</td>
+<td>Vías somatosensitivas, a menudo cordones posteriores</td>
+</tr>
+<tr>
+<td>Visión doble</td>
+<td>Fascículo longitudinal medial</td>
+</tr>
+<tr>
+<td>Mareos</td>
+<td>Vías vestibulares</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Purves §2</span>.</p>
+<p>La histología post mortem muestra múltiples lesiones con pérdida de mielina e infiltración de células inflamatorias, y en algunos casos pérdida de los propios axones. La causa sigue siendo desconocida, aunque el sistema inmunitario contribuye al daño y las terapias inmunorreguladoras benefician a algunos pacientes. La hipótesis principal es autoinmune y tiene como diana importante la contactina-2, proteína de células gliales y axones en los nodos de Ranvier. Una infección transitoria por un microorganismo con una molécula similar a la contactina-2 desencadenaría mimetismo molecular y la respuesta inmune destruiría la mielina normal. Inmunizar animales con constituyentes de la vaina induce encefalomielitis alérgica experimental, con imágenes similares a la esclerosis múltiple. La hipótesis alterna propone una infección persistente; el precedente es la paraparesia espástica tropical por HTLV-1, aunque nunca se han presentado pruebas convincentes de un virus asociado a la esclerosis múltiple <span class="cite">Purves §2</span>.</p>
+<p>El corte de tejido desmielinizado muestra la mielina rodeando los axones; en la enfermedad los axones pierden mielina y pueden romperse. Eso explica por qué los déficits se vuelven progresivos en las formas crónicas: un axón perdido no se recupera <span class="cite">Purves p. 67</span>.</p>
+<p>Al pasar de una región mielinizada a un tramo desnudo, la membrana tiene capacitancia alta y resistencia baja. La corriente entrante puede ser insuficiente para despolarizar el segmento hasta el umbral y la corriente local no se propaga tan lejos, porque la constante de longitud se acorta. El resultado es enlentecimiento y a veces bloqueo de la conducción, con efectos devastadores sobre la conducta. Como respuesta se insertan canales de sodio y potasio dependientes de voltaje adicionales en la membrana antes mielinizada <span class="cite">Kandel cap. 9</span>.</p>
+<p>El síndrome de Guillain-Barré figura junto a la esclerosis múltiple entre las enfermedades desmielinizantes. En el adulto, la expresión de cotransportadores de cloro puede revertir al patrón inmaduro y producir respuestas despolarizantes a GABA, con excitación anormalmente alta en epilepsia y dolor crónico <span class="cite">Kandel cap. 9</span>. Los canales iónicos son blancos frecuentes de trastornos neurológicos y, a la inversa, las canalopatías son una ventana para entender su papel en el encéfalo y el sistema nervioso periférico <span class="cite">Purves pp. 82-83</span>.</p>
+
+</section><section id="sec-09-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">09</span> Tema</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>El potencial de reposo de una neurona ronda −70 a −75 mV, dentro de un rango celular de −40 a −85 mV <span class="cite">Zeise §2.2.1</span>.</li>
+<li>Los equilibrios de referencia son K⁺ −94,6 mV, Na⁺ +66,6 mV, Cl⁻ −80,1 mV y Ca²⁺ +129 mV <span class="cite">Zeise §2.2.6</span>.</li>
+<li>A 37 °C, la forma decimal de Nernst usa 61 dividido por la valencia <span class="cite">apuntes, bloque III</span>.</li>
+<li>El sodio con 145 mM fuera y 12 mM dentro da una razón de 12,1 y un potencial cercano a +67 mV <span class="cite">Zeise §2.2.6</span>.</li>
+<li>El umbral se maneja alrededor de −50 mV; la tabla del texto dice −47 mV y la figura −50 a −55 mV <span class="cite">Zeise §2.5.3</span>.</li>
+<li>El sodio se activa rápido y se inactiva; el potasio se activa con retraso y no se inactiva <span class="cite">Purves §3</span>.</li>
+<li>Durante el refractario el sodio está inactivado y debe des-inactivarse; eso impide la propagación retrógrada <span class="cite">Zeise §2.5.4</span>.</li>
+<li>La mielina aumenta la resistencia de membrana, disminuye la capacitancia y no cambia la resistencia axial <span class="cite">Zeise §2.5.5</span>.</li>
+<li>Los canales de sodio se concentran en los nodos de Ranvier y la regeneración ocurre en cerca del 1 % de la membrana <span class="cite">Zeise §2.5.5</span>.</li>
+<li>La velocidad máxima en mamíferos es de 100 m/s o 360 km/h <span class="cite">Zeise §2.5</span>.</li>
+<li>La bomba de sodio y potasio expulsa 3 Na⁺ e introduce 2 K⁺ por ATP, es electrogénica y sostiene un cerebro que usa 2 % del peso y 20 % de la energía <span class="cite">Zeise §2.6</span>.</li>
+<li>La hipotermia produce bradicardia sinusal refractaria, PR y QT prolongados, onda J de Osborn y riesgo de fibrilación ventricular <span class="cite">apuntes, bloque III</span>.</li>
+<li>La eritromelalgia por SCN9A es ganancia de función y la sordera por CACNA1D es pérdida de función <span class="cite">Purves pp. 82-83</span>.</li>
+<li>La esclerosis múltiple inicia entre los 20 y los 40 años, tiene como diana la contactina-2 y puede perder axones, no solo mielina <span class="cite">Purves §2</span>.</li>
+</ul>
+
+</section><section id="sec-10-limites-del-material" class="card">
+<div class="section-kicker"><span class="n">10</span> Tema</div>
+<h2>Límites del material</h2>
+<div class="warnbox"><span class="box-title">Límites del material</span><ul>
+<li>En la tabla 2.2 de Zeise las columnas de concentración llegan entrelazadas en el escaneo; los voltajes de equilibrio son consistentes, pero las concentraciones absolutas de cloro no permiten reconstruir un gradiente único.</li>
+<li>El umbral aparece como −47 mV en la tabla 2.3 y como −50 a −55 mV en la figura y la clase; conviene retener el orden de magnitud, no una cifra única.</li>
+<li>La sección 2.2.8, dedicada a la capacitancia, no está en el escaneo, de modo que el circuito equivalente de la membrana queda incompleto.</li>
+<li>La sección de esclerosis múltiple de Purves no trae página impresa en el archivo; solo tienen página la microfotografía de la página 67 y las canalopatías de las páginas 82 a 83.</li>
+<li>Quedan fuera la sinapsis y la integración postsináptica, y también el tramo de DHA y TDAH que el propio material marca como complemento ajeno al apunte.</li>
+</ul></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Neurociencias Aplicadas a la Medicina · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Purves, <em>Neurociencia</em>; Zeise, <em>Neurociencia para la psicología y otras áreas</em>; los apuntes de clase y los artículos del curso. No se distribuyen los PDF originales.</p>
+  <p><a href="creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

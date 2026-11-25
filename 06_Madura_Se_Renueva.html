@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madura y se renueva: plasticidad y neurogénesis adulta · Neurociencias UBB</title>
+<meta name="description" content="Madura y se renueva: plasticidad y neurogénesis adulta. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3f63'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' fill='%23dbeafe' text-anchor='middle'%3ENe%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Madura y se renueva: plasticidad y neurogénesis adulta · Neurociencias UBB">
+<meta property="og:description" content="Madura y se renueva: plasticidad y neurogénesis adulta. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#0f2437 0%,#1a3d5c 55%,#2f6b9a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#b9d3e8;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#b9d3e8;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(1.9rem,4.2vw,3.2rem);
+    line-height:1.08;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:26ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d9e8f4;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1120px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a9cbe4;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#10324c;border-color:#fff}
+  .btn.primary:hover{background:#eaf4fb}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0 .45rem;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#1d3f63;background:#e3eef7;border:1px solid #a9cbe4;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Neurociencias: azul profundo y ámbar sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f3f6fa;
+  --surface:#fffefb;
+  --surface-2:#e9eff6;
+  --surface-3:#dae4ef;
+  --ink:#14202b;
+  --muted:#54677a;
+  --line:#cbd8e6;
+  --brand:#1d3f63;
+  --brand-2:#2f6b9a;
+  --brand-3:#e3eef7;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(16,36,56,.09);
+}
+[data-theme="dark"]{
+  --bg:#0e141a;
+  --surface:#151e26;
+  --surface-2:#1c2833;
+  --surface-3:#26333f;
+  --ink:#e9f1f7;
+  --muted:#a4b6c6;
+  --line:#2b3a47;
+  --brand:#7dd3fc;
+  --brand-2:#38bdf8;
+  --brand-3:#0d2a3c;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.42);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(10,18,26,.84)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Neurociencias Aplicadas a la Medicina</p>
+    <h1>06. Madura y se renueva: plasticidad y neurogénesis adulta</h1>
+    <p class="lede">Guía 06 de 08. 6.403 palabras. 141 citas y 14 filas de tabla. 3 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>06 de 08</strong></div><div><span>Fuentes</span><strong>Zeise cap. 7 · Gross · apuntes II y VII</strong></div><div><span>Citas</span><strong>141</strong></div><div><span>Figuras</span><strong>3</strong></div><div><span>Tablas</span><strong>14</strong></div><div><span>Palabras</span><strong>6.403</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-la-plasticidad-no-es-una-sola-cosa">La plasticidad no es una sola cosa</a></li>
+        <li><a href="#sec-02-lo-que-el-desarrollo-puede-y-el-adulto-no">Lo que el desarrollo puede y el adulto no</a></li>
+        <li><a href="#sec-03-ventanas-que-se-cierran-infancia-y-adolescencia">Ventanas que se cierran: infancia y adolescencia</a></li>
+        <li><a href="#sec-04-el-cerebro-que-envejece-y-el-agua-que-ocupa-el-espacio-libre">El cerebro que envejece y el agua que ocupa el espacio libre</a></li>
+        <li><a href="#sec-05-la-practica-esculpe-mapas-y-la-corriente-los-mueve">La práctica esculpe mapas y la corriente los mueve</a></li>
+        <li><a href="#sec-06-el-dogma-de-un-cerebro-sin-neuronas-nuevas">El dogma de un cerebro sin neuronas nuevas</a></li>
+        <li><a href="#sec-07-la-zona-subgranular-y-el-nicho-que-decide">La zona subgranular y el nicho que decide</a></li>
+        <li><a href="#sec-08-ejercicio-estres-antidepresivos-y-microbiota">Ejercicio, estrés, antidepresivos y microbiota</a></li>
+        <li><a href="#sec-09-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#sec-10-limites-del-material">Límites del material</a></li>
+        <li><a href="#atlas">Figuras de la guía</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice del certamen">Índice</a>
+        <a href="05_Se_Comunica_Sinapsis.html" title="Se comunica y aprende: sinapsis y neurotransmisores">05</a>
+        <a href="07_Falla_Demencias_Priones.html" title="Falla: demencias, neurodegeneración y priones">07</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Qué cambia con la edad y qué se puede recuperar: ventanas críticas, adolescencia, envejecimiento cerebral, plasticidad dependiente de la práctica, mapas corticales y estimulación no invasiva. Después, la disputa por la neurogénesis adulta, sus técnicas y su regulación por ejercicio, estrés, antidepresivos y microbiota.</div><p class="small">Las citas remiten a la fuente y a su página o sección, por ejemplo <em>Zeise p. 108</em>, <em>Purves p. 78</em> o <em>apuntes, bloque III</em>.</p><p class="small"><strong>Fuera de alcance:</strong> la neurogénesis del desarrollo, ya cubierta en las guías 02 y 03, y el detalle histológico de Cajal, que tiene guía propia.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul>
+<li>La plasticidad reorganiza estructura y función durante toda la vida, aunque no con la misma intensidad <span class="cite">Zeise §7.1</span>.</li>
+<li>El desarrollo crea y elimina sinapsis; el adulto ajusta eficacia sináptica, pero también cambia estructura <span class="cite">Zeise §7.2.1</span>.</li>
+<li>Las ventanas críticas cierran con redes perineuronales e inhibición GABAérgica, y su clausura es difícil de revertir <span class="cite">apuntes, bloque II</span>.</li>
+<li>La sustancia gris subcortical llega a su pico cerca de los 14 años y después se poda <span class="cite">apuntes, bloque II</span>.</li>
+<li>El envejecimiento dilata los ventrículos por pérdida de parénquima, no por presión: hidrocéfalo ex vacuo <span class="cite">apuntes, bloque II</span>.</li>
+<li>La práctica amplía mapas corticales; 20 minutos a 20 Hz mejoran la discriminación táctil y 1 Hz la empeoran <span class="cite">Zeise §7.3.3.1</span>.</li>
+<li>El dogma de un cerebro adulto sin neuronas nuevas cayó con Altman, Kaplan, Nottebohm y el BrdU <span class="cite">Altman §5</span>.</li>
+<li>El ejercicio, el estrés, los antidepresivos y la microbiota modulan la neurogénesis del giro dentado <span class="cite">apuntes, bloque VII</span>.</li>
+</ul></div></section><section id="sec-01-la-plasticidad-no-es-una-sola-cosa" class="card">
+<div class="section-kicker"><span class="n">01</span> Tema</div>
+<h2>La plasticidad no es una sola cosa</h2>
+<p>La palabra plasticidad viene del griego plastikos, que nombra lo formable, y su sentido original pertenece a la ciencia de los materiales, donde un objeto plástico es deformable <span class="cite">Zeise §7.1</span>. La neurociencia conservó esa idea: las funciones del cerebro y las estructuras que las sustentan no son rígidas ni fijas, sino que se reorganizan de manera activa según lo que les ha ocurrido. Esa definición amplia esconde una advertencia: la neuroplasticidad no es un proceso unitario, sino un conjunto de mecanismos que operan en condiciones y escalas de tiempo distintas <span class="cite">Zeise §7.1</span>.</p>
+<p>Su ventaja se entiende por contraste con la herencia <span class="cite">Zeise §7.1</span>. La información genética y los rasgos heredados son ventajosos para la supervivencia y, sin excepción, estructuralmente fijos; para enfrentar los cambios continuos del ambiente se necesitan mecanismos adicionales que permitan adaptaciones rápidas y eficaces no especificadas por restricciones genéticas. La plasticidad es ese margen de ajuste, y tiene un costo: los cambios no siempre son beneficiosos, y existen formas maladaptativas como las distonías y el tinnitus <span class="cite">Zeise §7.1</span>. Tampoco se ha desarrollado hasta el máximo, porque los sistemas necesitan estabilidad y los procesos demasiado rápidos pondrían en peligro la constancia del procesamiento; hay un compromiso entre modificabilidad y estabilidad.</p>
+<p>Los cambios abarcan casi todas las estructuras y ocurren en niveles molecular, celular y de red, con persistencias de minutos a toda la vida. La escala temporal ordena el fenómeno en tres franjas <span class="cite">Zeise §7.2.3</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: La plasticidad no es una sola cosa" tabindex="0"><table>
+<thead>
+<tr>
+<th>Escala</th>
+<th>Fenómenos asociados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Segundos a minutos</td>
+<td>Ejercicio, comida, cultura y vida cotidiana</td>
+</tr>
+<tr>
+<td>Horas a semanas</td>
+<td>Entrenamiento, práctica, experiencia y aprendizaje</td>
+</tr>
+<tr>
+<td>Meses a años</td>
+<td>Propiedades del cuerpo, herramientas y cambios estructurales</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Zeise §7.2.3</span>.</p>
+<p>El desempeño perceptivo, conductual y cognitivo no es constante, y varios factores lo empujan a cambiar: la lesión del cuerpo, del cerebro o de los nervios; el desarrollo temprano y el envejecimiento; y las limitaciones de la vida cotidiana, como la ocupación, el estilo de vida y la estimulación sensorial intensa de los lectores de Braille o los músicos <span class="cite">Zeise §7.2.2</span>. La práctica musical profesional exige del orden de 10.000 horas, pero incluso períodos breves de minutos pueden inducir plasticidad con mejoras significativas. El sustrato clásico es hebbiano: la alta correlación temporal entre actividad presináptica y postsináptica es la precondición para cambiar la eficacia sináptica, aunque el mecanismo exacto sigue siendo controvertido <span class="cite">Zeise §7.2.2</span>.</p>
+<p>Sobre ese fondo se distinguen dos rutas <span class="cite">Zeise §7.2.2</span>. La de abajo hacia arriba cambia las estadísticas de entrada, y lo eficaz son la simultaneidad, la repetición y la frecuencia, con LTP y LTD como sustrato. La de arriba hacia abajo trabaja con atención, contexto, tarea, recompensa, motivación y retroalimentación, y las monoaminas median esos efectos <span class="cite">Zeise §7.2.2</span>. La primera produce el protocolo de estimulación; la segunda decide cuándo ese protocolo importa.</p>
+<p>La distribución regional tampoco es homogénea <span class="cite">Zeise §7.2.4</span>. Todas las áreas corticales son modificables y el cerebro adulto no está cableado de manera invariable, pero la corteza somatosensorial y la visual difieren en magnitud, estabilidad y curso temporal. Se han propuesto diferencias moleculares, restricciones topológicas del gradiente retinotópico y el lugar en la jerarquía de procesamiento <span class="cite">Zeise §7.2.4</span>.</p>
+
+</section><section id="sec-02-lo-que-el-desarrollo-puede-y-el-adulto-no" class="card">
+<div class="section-kicker"><span class="n">02</span> Tema</div>
+<h2>Lo que el desarrollo puede y el adulto no</h2>
+<p>La plasticidad del desarrollo se estudió antes que la del adulto, y el experimento que abrió el campo tiene un título casi de manifiesto: "El desarrollo del cerebro depende del entorno visual", publicado por Blakemore y Cooper en 1970. Las propiedades de las neuronas visuales, como la detección de velocidad angular, tamaño y orientación, dependían críticamente de lo que los animales habían visto durante su desarrollo, de modo que el cerebro se organiza a partir de la experiencia <span class="cite">Zeise §7.2.1</span>.</p>
+<p>La distinción clásica atribuye al desarrollo mucha más reestructuración morfológica, con creación y eliminación de sinapsis y crecimiento dirigido de procesos neuronales, mientras que el adulto se limitaría a modificaciones rápidas y reversibles de la eficacia sináptica <span class="cite">Zeise §7.2.1</span>. Esa regla resultó demasiado simplista. En el cerebro intacto de adultos hay cambios estructurales: la LTP produce nuevas espinas en la dendrita postsináptica, las amputaciones grandes reorganizan conexiones hacia regiones vecinas, los taxistas tienen un hipocampo agrandado y los malabaristas muestran áreas corticales visuales agrandadas <span class="cite">Zeise §7.2.1</span>.</p>
+<p>Aun así, las capacidades del período ontogenético son sustancialmente mayores <span class="cite">Zeise §7.2.1</span>. El ejemplo más claro es el cambio de la adquisición del lenguaje al hemisferio contralateral después de una lesión cerebral temprana, un fenómeno que nunca ocurre en el cerebro adulto; además, hay casos con falta total de un hemisferio y funcionamiento casi normal, lo que implica mecanismos compensatorios solo presentes muy temprano. Esas diferencias hicieron que la comunidad considerara durante mucho tiempo a los cerebros adultos como estáticos y no plásticos <span class="cite">Zeise §7.2.1</span>.</p>
+<p>La primera pregunta que ordena el problema es si la maduración define el fin del período ontogenético <span class="cite">Zeise §7.2.1</span>. Las distintas habilidades tienen cursos temporales diversos, y aunque la maduración sexual suele tomarse como medida, en humanos la mielinización termina recién alrededor de los 30 años. La segunda es si esas capacidades se pueden reinstalar <span class="cite">Zeise §7.2.1</span>. Los mecanismos de la visión binocular revelaron que la maduración de la inhibición intracortical y los cambios en la matriz extracelular controlan la plasticidad del desarrollo, lo que permite especular que sería posible restaurar capacidades juveniles en el adulto. La maduración de los receptores GABA aparece como una pieza de ese cierre <span class="cite">Zeise §7.2.1</span>.</p>
+<p>El adulto no es un cerebro congelado, porque conserva cambios estructurales y funcionales; tampoco es un cerebro infantil, porque perdió la facilidad para reorganizaciones masivas <span class="cite">Zeise §7.2.1</span>.</p>
+
+</section><section id="sec-03-ventanas-que-se-cierran-infancia-y-adolescencia" class="card">
+<div class="section-kicker"><span class="n">03</span> Tema</div>
+<h2>Ventanas que se cierran: infancia y adolescencia</h2>
+<p>Los períodos críticos son fases estrictamente delimitadas del neurodesarrollo en las que un circuito tiene máxima plasticidad intrínseca y requiere estímulo ambiental, sensitivo o motor para estructurarse bien. Coinciden con sinaptogénesis acelerada, exuberancia dendrítica y el inicio posterior del pruning, y su rasgo definitorio es la irreversibilidad al cierre, mediada por redes perineuronales y por la maduración de circuitos inhibitorios GABAérgicos <span class="cite">apuntes, bloque II</span>.</p>
+<p>El ejemplo clínico más claro es la privación de estímulo en un ojo durante los primeros años, por estrabismo o catarata congénita <span class="cite">apuntes, bloque II</span>. Las columnas de dominancia ocular se reorganizan a favor del ojo sano y queda una ambliopía, una ceguera cortical parcial que no revierte con corrección óptica en la adultez. El mismo principio rige la adquisición fonológica del lenguaje y el apego, y es la razón por la que el tamizaje pediátrico y la intervención temprana tienen sentido <span class="cite">apuntes, bloque II</span>. Cuando la ventana se cierra, el circuito no queda imposibilitado de aprender, pero pierde la facilidad para hacerlo con la sola exposición.</p>
+<p>El crecimiento volumétrico permite seguir ese cierre con números <span class="cite">apuntes, bloque II</span>. A mediados de la gestación el cerebro alcanza solo el 10 % de su volumen máximo, y a los 3 años llega al 80 %, sobre un sustrato de neurogénesis masiva y arborización dendrítica. Los primeros 1.000 días constituyen una ventana crítica que determina la integridad neurocognitiva a largo plazo <span class="cite">apuntes, bloque II</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Ventanas que se cierran: infancia y adolescencia" tabindex="0"><table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Cambio volumétrico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gestación a 3 años</td>
+<td>Crecimiento acelerado: del 10 % al 80 % del volumen máximo</td>
+</tr>
+<tr>
+<td>Adolescencia</td>
+<td>La sustancia gris subcortical llega a su pico cerca de los 14 años y luego se poda</td>
+</tr>
+<tr>
+<td>Adultez temprana</td>
+<td>La sustancia blanca crece por mielinización hasta un máximo cercano a los 29 años</td>
+</tr>
+<tr>
+<td>Desde los 50 a 60 años</td>
+<td>La sustancia blanca disminuye y el líquido cefalorraquídeo aumenta de forma exponencial</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">apuntes, bloque II</span>.</p>
+<p>La adolescencia no es solo una etapa de pérdida. La poda sináptica y el adelgazamiento cortical ocurren junto con la mielinización de la sustancia blanca, que continúa hasta cerca de los 29 años y hace más rápida la conducción y más fina la integración <span class="cite">apuntes, bloque II</span>.</p>
+<p>Las diferencias por sexo existen como promedios poblacionales <span class="cite">apuntes, bloque II</span>. El pico de sustancia gris ocurre antes en mujeres, alrededor de los 10,5 a 11 años, que en hombres, alrededor de los 14,5 años, y la poda y la mielinización progresan más rápido en mujeres durante la adolescencia temprana, lo que produce una maduración anticipada de las cortezas frontal y prefrontal. En el brote puberal, los estrógenos aceleran la maduración de regiones socioemocionales y de memoria, con maduración anticipada del hipocampo, mientras que la testosterona produce un desarrollo y un pico volumétrico más prolongado en estructuras de alerta, agresividad y visoespacial, como la amígdala <span class="cite">apuntes, bloque II</span>. La conectómica añade que en el cerebro masculino predomina la conectividad intrahemisférica rostro-caudal y en el femenino la interhemisférica que cruza el cuerpo calloso, asociada a mayor velocidad de integración. Esas diferencias no definen fenotipos binarios: el cerebro mosaico mezcla rasgos según la carga hormonal y la plasticidad dependiente de experiencia <span class="cite">apuntes, bloque II</span>.</p>
+<p>El aprendizaje también tiene una ventana práctica que se abre con el esfuerzo <span class="cite">apuntes, bloque II</span>. El aprendizaje pasivo, como leer, mirar o escuchar, tiene bajo costo metabólico y atencional, deja conexiones lábiles y retiene menos del 20 % a las semanas; el aprendizaje activo y experiencial, con problemas, errores y evocación forzada, produce LTP fuerte y mielinización y retiene entre 75 % y 90 %. El esfuerzo invertido al aprender es directamente proporcional a la retención a largo plazo, un principio que la clase llama dificultad deseable <span class="cite">apuntes, bloque II</span>.</p>
+
+</section><section id="sec-04-el-cerebro-que-envejece-y-el-agua-que-ocupa-el-espacio-libre" class="card">
+<div class="section-kicker"><span class="n">04</span> Tema</div>
+<h2>El cerebro que envejece y el agua que ocupa el espacio libre</h2>
+<p>El envejecimiento normativo combina varios procesos de pérdida lenta: retracción de los tractos de sustancia blanca por pérdida de mielina, menor complejidad del árbol dendrítico y apoptosis neuronal de bajo grado <span class="cite">apuntes, bloque II</span>. Desde los 50 a 60 años la sustancia blanca disminuye y el líquido cefalorraquídeo aumenta de forma exponencial, un incremento que se lee como marcador indirecto de atrofia. Ninguno de esos cambios implica por sí solo una demencia, pero todos reducen el margen de reserva <span class="cite">apuntes, bloque II</span>.</p>
+<p>El aumento del volumen ventricular es, sobre todo, un mecanismo compensatorio pasivo llamado hidrocéfalo ex vacuo o dilatación ventricular compensatoria <span class="cite">apuntes, bloque II</span>. La doctrina de Monro-Kellie sostiene que la bóveda craneana es un continente rígido de volumen interno constante; cuando el parénquima se reduce por atrofia, el espacio libre lo ocupa pasivamente el líquido cefalorraquídeo, de modo que los ventrículos se dilatan y los surcos y cisternas se ensanchan sin aumento real de la presión intracraneal. El ventrículo grande es consecuencia del tejido que falta y no la causa de su compresión <span class="cite">apuntes, bloque II</span>.</p>
+<p>La aceleración patológica tiene patrones anatómicos reconocibles <span class="cite">apuntes, bloque II</span>. En la enfermedad de Alzheimer, la atrofia cortical e hipocampal dilata las astas temporales; en la enfermedad de Huntington, la degeneración de la cabeza del caudado dilata las astas frontales; y el daño vascular o estructural, como leucoaraiosis, traumatismos o encefalomalacia posterior a un accidente cerebrovascular, tracciona y dilata el ventrículo adyacente. La forma de la dilatación orienta hacia el tejido perdido <span class="cite">apuntes, bloque II</span>.</p>
+<p>La diferencia clínica decisiva separa el ex vacuo de las hidrocefalias activas <span class="cite">apuntes, bloque II</span>. El ex vacuo es consecuencia de la pérdida de tejido, mientras que la hidrocefalia normotensiva o de Hakim-Adams y las obstructivas tienen un problema primario de dinámica del líquido cefalorraquídeo que ejerce presión hidrostática y comprime el parénquima. Confundir ambos escenarios lleva a tratar como presión lo que es atrofia, o a ignorar una presión que sí existe <span class="cite">apuntes, bloque II</span>.</p>
+<p>En el lactante, los ventrículos son funcionales desde la etapa embrionaria pero mínimos al inicio. El crecimiento parenquimatoso explosivo comprime el espacio, el encéfalo tiene alto contenido hídrico y poca mielina, no hay espacio compensatorio porque es la fase de máxima ganancia volumétrica, y aunque el cráneo puede expandirse por suturas y fontanelas, la macrocefalia fisiológica la impulsa el parénquima y no el líquido <span class="cite">apuntes, bloque II</span>.</p>
+
+</section><section id="sec-05-la-practica-esculpe-mapas-y-la-corriente-los-mueve" class="card">
+<div class="section-kicker"><span class="n">05</span> Tema</div>
+<h2>La práctica esculpe mapas y la corriente los mueve</h2>
+<p>Los mamíferos superiores contienen mapas topográficos de las láminas receptoras de la retina, la cóclea y la piel, es decir, mapas retinotópicos, cocleotópicos y somatotópicos, ubicados en las cortezas visual, auditiva y somatosensorial. El principio básico es que las ubicaciones adyacentes se representan en ubicaciones adyacentes de la corteza, y las excepciones, como el borde entre la cara y la mano, surgen del problema de mapear un objeto tridimensional en una superficie bidimensional <span class="cite">Zeise §7.2.6</span>.</p>
+<p>La práctica modifica esos mapas <span class="cite">Zeise §7.3.1</span>. El estudio pionero de Elbert y colaboradores, publicado en 1995, encontró que la representación cortical de los dedos de los jugadores de cuerdas estaba ampliada respecto de controles no músicos en la corteza somatosensorial primaria. La cantidad de reorganización correlacionó con la edad en que la persona había comenzado a tocar, y el cambio fue mayor en quienes empezaron antes de los 12 años <span class="cite">Zeise §7.3.1</span>. Los lectores ciegos de Braille muestran mayor representación del dedo de lectura, y los músicos altamente calificados tienen ampliada la representación de los tonos de piano, pero no la de tonos puros de frecuencia similar.</p>
+<p>La pregunta de fondo es si esos cambios son específicos o generalizados <span class="cite">Zeise §7.3.1</span>. En los lectores de Braille la expansión del área del dedo de lectura se relaciona con agudeza táctil mejorada, pero sus habilidades de localización espacial en esos dedos se reducen de manera significativa, lo que revela una compensación entre capacidades opuestas. Los pianistas profesionales también tienen agudeza táctil superior a los controles, y la correlación con la práctica diaria sugiere que esa ventaja se relaciona con sus habilidades musicales <span class="cite">Zeise §7.3.1</span>.</p>
+<p>La morfometría basada en vóxeles confirmó que el cambio estructural ocurre en el cerebro humano sano <span class="cite">Zeise §7.3.1</span>. Los taxistas tienen un hipocampo posterior más grande y el volumen correlaciona con los años de experiencia; los malabaristas muestran cambios en áreas relacionadas con el procesamiento de movimientos visuales complejos; y los estudiantes de medicina aumentan materia gris en las cortezas parietal posterior y lateral durante el aprendizaje, mientras que en el hipocampo posterior el incremento es aún más pronunciado 3 meses después del examen. Esa alteración dependiente del estímulo y del contexto en la estructura macroscópica contradice la opinión tradicional de que la plasticidad cortical adulta se basa exclusivamente en cambios moleculares submicroscópicos <span class="cite">Zeise §7.3.1</span>.</p>
+<p>El aprendizaje perceptivo es la forma experimental de estudiar ese proceso: entrenar y practicar los sentidos para mejorar las habilidades perceptivas, algo demostrado en todas las modalidades sensoriales. Es un aprendizaje implícito, en el que el rendimiento mejora por entrenamiento o exposición a la estimulación, y según Goldstone se basa en la impronta, la diferenciación y la unificación, aunque su base neurofisiológica sigue siendo controvertida <span class="cite">Zeise §7.3.2</span>.</p>
+<p>En algunas tareas bastan unas pocas pruebas y en otras se necesitan semanas o meses; en el entrenamiento prolongado aparece una fase inicial de mejora rápida seguida de una segunda fase mucho más lenta y asintótica, y la primera se debería al aprendizaje de tareas y estrategias mientras la segunda implica cambios específicos en el procesamiento cortical <span class="cite">Zeise §7.3.2</span>. La especificidad es alta para los parámetros del estímulo, como ubicación y orientación, con poca generalización, lo que implica cambios en representaciones corticales tempranas. Yotsumoto y colaboradores mostraron que la activación de V1 aumentaba con la mejoría y después regresaba al nivel previo, mientras el rendimiento se mantenía <span class="cite">Zeise §7.3.2</span>.</p>
+<p>De la dificultad para inducir LTP o LTD en humanos nace el enfoque inverso: diseñar protocolos de estimulación sensorial o central que cambien la organización cerebral y, con ella, la percepción y el comportamiento <span class="cite">Zeise §7.3.3</span>. La estimulación sensorial repetitiva ofrece control completo del tiempo y de la asignación espaciotemporal, y sus diseños se transfieren a modelos animales. La terminología es heterogénea, y el término coactivación enfatiza la actividad neuronal sincrónica <span class="cite">Zeise §7.3.3.1</span>.</p>
+<p>El protocolo clave aplicado al dedo índice mostró que la estimulación tipo LTP, intermitente y de alta frecuencia a 20 Hz, baja los umbrales de discriminación táctil, mientras que la estimulación tipo LTD a 1 Hz los reduce, es decir, empeora la discriminación <span class="cite">Zeise §7.3.3.1</span>. Bastan 20 minutos, los efectos son específicos para el dedo estimulado y la estimulación LTD permite perjudicar deliberadamente el rendimiento. La señal BOLD reveló una ampliación del territorio que representa el dedo estimulado, y la magnitud del cambio correlacionó con la mejora perceptiva con r = 0,744 y p = 0,002 para la corteza somatosensorial primaria, pero no para la secundaria <span class="cite">Zeise §7.3.3.1</span>.</p>
+<p>La dependencia farmacológica reforzó el mecanismo <span class="cite">Zeise §7.3.3.1</span>. La memantina, bloqueador selectivo de receptores NMDA, eliminó por completo el aprendizaje inducido por estimulación sensorial repetitiva, tanto en la medida psicofísica como en la cortical. En la dirección opuesta, una dosis única de anfetamina, bloqueador de la recaptación de dopamina y noradrenalina, produjo casi el doble de la mejora típica y de la reorganización cortical <span class="cite">Zeise §7.3.3.1</span>. El umbral de plasticidad ordena estos hallazgos: las entradas normales suelen quedar bajo el umbral, la atención, la recompensa y la motivación las amplifican, y la estimulación repetitiva las lleva más allá con alta frecuencia y ráfagas.</p>
+<p>El uso clínico apunta a reforzar los procesos plásticos dentro y alrededor de áreas disfuncionales después de una lesión cerebral o un accidente cerebrovascular, y su ventaja es la naturaleza pasiva, que no exige participación activa ni atención. Se ha demostrado eficacia en pacientes con accidente cerebrovascular, lesiones cerebrales y dolor crónico <span class="cite">Zeise §7.3.3.2</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: La práctica esculpe mapas y la corriente los mueve" tabindex="0"><table>
+<thead>
+<tr>
+<th>Técnica</th>
+<th>Fundamento</th>
+<th>Parámetros y notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TMS o EMT</td>
+<td>Una bobina electromagnética produce pulsos magnéticos que inducen corrientes eléctricas en el cerebro</td>
+<td>Un pulso único permite una lesión virtual; la rTMS va de 1 Hz a 40 Hz y las frecuencias altas son más propensas a inducir convulsiones</td>
+</tr>
+<tr>
+<td>TBS</td>
+<td>Ráfagas cortas de TMS a 50 Hz durante minutos</td>
+<td>La modalidad intermitente facilita y la continua inhibe</td>
+</tr>
+<tr>
+<td>tDCS</td>
+<td>Corriente continua de baja intensidad entre dos electrodos</td>
+<td>De 1 a 2 mA; la anodal excita y la catódica inhibe; es barata, indolora, segura y portátil</td>
+</tr>
+<tr>
+<td>tACS, tRACS y RNCS</td>
+<td>Corriente alterna, de ondulación o ruido aleatorio</td>
+<td>Aplicaciones comparables a la TMS</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Zeise §7.3.3.2</span>.</p>
+<p>La TMS se usa clínicamente para depresión, accidentes cerebrovasculares, dolor, tinnitus, distonía y migraña <span class="cite">Zeise §7.3.3.2</span>. La rTMS sobre el lóbulo frontotemporal mejoró habilidades tipo sabio en 5 de 17 participantes. De la TMS y de las técnicas de corriente se sabe poco sobre los cambios cerebrales subyacentes: no dejan las redes desorganizadas, sino que conducen a un comportamiento diferente, organizado y significativo <span class="cite">Zeise §7.3.3.2</span>.</p>
+
+</section><section id="sec-06-el-dogma-de-un-cerebro-sin-neuronas-nuevas" class="card">
+<div class="section-kicker"><span class="n">06</span> Tema</div>
+<h2>El dogma de un cerebro sin neuronas nuevas</h2>
+<p>Desde el comienzo de la doctrina neuronal, a fines del siglo XIX, hasta comienzos de los años noventa, el dogma central de la neurociencia fue que no se agregan neuronas nuevas al encéfalo adulto de los mamíferos <span class="cite">Altman §1</span>. Koelliker, His y otros encontraron que la estructura del encéfalo queda fija poco después del nacimiento, y nunca se vieron figuras mitóticas ni estadios preadultos en el encéfalo adulto. La frase de Cajal resume el dogma: "En los centros adultos, los caminos nerviosos son algo fijo, terminado e inmutable. Todo puede morir, nada puede regenerarse" <span class="cite">Altman §1</span>.</p>
+<p>En la primera mitad del siglo XX hubo reportes ocasionales de neurogénesis posnatal en mamíferos, pero fueron ignorados por los libros de texto y casi nunca citados. El autor atribuye esa indiferencia al peso de la autoridad y a la insuficiencia de los métodos para detectar la división celular y distinguir glía de neuronas <span class="cite">Altman §1</span>.</p>
+<p>A fines de los años cincuenta se introdujo la autorradiografía con timidina tritiada, que se incorpora al ADN de las células que se dividen y permite marcar la progenie y determinar cuándo y dónde nació <span class="cite">Altman §2</span>. El método se aplicó inicialmente solo al desarrollo de roedores, una preferencia que refleja la persistencia del dogma. Desde comienzos de los años sesenta, Joseph Altman publicó evidencia autorradiográfica de neuronas nuevas en el giro dentado del hipocampo, el bulbo olfatorio, la corteza cerebral de la rata adulta y la neocorteza del gato adulto <span class="cite">Altman §2</span>. La mayoría de esas neuronas eran pequeñas y Altman propuso que eran cruciales para el aprendizaje y la memoria.</p>
+<p>Los trabajos aparecieron en revistas de prestigio como Journal of Comparative Neurology, Science y Nature, y aun así fueron ignorados o descartados durante más de dos décadas <span class="cite">Altman §2</span>. Todavía en 1970 un libro de texto autorizado negaba evidencia convincente de producción de neuronas en el encéfalo adulto. A Altman no le dieron la titularidad en MIT, se trasladó a Purdue University, se volcó a preguntas más convencionales y, sin financiamiento, sostuvo su trabajo produciendo atlas cerebrales <span class="cite">Altman §2</span>.</p>
+<p>Quince años después del primer reporte llegó el apoyo de la microscopía electrónica de Michael Kaplan <span class="cite">Altman §3</span>. Las células marcadas con timidina en el giro dentado y el bulbo olfatorio tenían características ultraestructurales de neuronas, y no de glía; además, había evidencia de neuronas nuevas en la corteza y mitosis en la zona subventricular de macacos adultos. Kaplan fue atacado por sus afirmaciones iconoclastas, abandonó el campo y se hizo estudiante de medicina <span class="cite">Altman §3</span>.</p>
+<p>La contra más influyente vino de Pasko Rakic, profesor de la Yale Medical School <span class="cite">Altman §4</span>. En 1984, con publicación en 1985, presentó un estudio con timidina en monos rhesus adultos en el que examinó todas las estructuras y subdivisiones principales del encéfalo, incluidas la neocorteza, el hipocampo y el bulbo olfatorio, y no encontró una sola célula marcada intensamente con características morfológicas de neurona en ningún encéfalo de ningún animal adulto. Eckenhoff y Rakic repitieron el trabajo y sugirieron que las ratas nunca dejan de crecer, argumento refutado después porque hay cepas que sí dejan de crecer y muestran neurogénesis adulta <span class="cite">Altman §4</span>.</p>
+<p>La interpretación teórica de Rakic convertía un dato en una necesidad <span class="cite">Altman §4</span>. Una población estable de neuronas podía ser una necesidad biológica en un organismo cuya supervivencia depende de conducta aprendida adquirida durante un período largo, y la conducta social y cognitiva de los primates podría requerir la ausencia de neurogénesis adulta. El autor observa que esta es quizás la única vez en que la diferencia entre primates y no primates se atribuyó a la presencia o ausencia de neurogénesis adulta <span class="cite">Altman §4</span>.</p>
+<p>La vindicación llegó por tres desarrollos: la demostración de neurogénesis en aves adultas, la introducción de nuevos métodos para marcar células nuevas y distinguir neuronas de glía, y la demostración de que la neurogénesis puede subir y bajar por variables psicológicas como el estrés, la complejidad ambiental y el aprendizaje <span class="cite">Altman §5</span>. A fines de los años ochenta, Nottebohm y sus colegas mostraron que el volumen de dos núcleos del canto depende, entre otros factores, del sexo, la testosterona y la estación. Los cambios estacionales y hormonales llevaron a preguntar si reflejaban el número real de neuronas, y la respuesta fue que miles de neuronas nuevas se agregan cada día <span class="cite">Altman §6</span>.</p>
+<p>La prueba se construyó en tres pasos: producción de células nuevas marcada con timidina, evidencia ultraestructural de que esas células eran neuronas que recibían sinapsis y prueba funcional de que respondían al sonido con potenciales de acción <span class="cite">Altman §6</span>. La neurogénesis era amplia en todo el prosencéfalo aviar, incluido el hipocampo. Aun así, la resistencia persistió: los estudios se veían como una especialización exótica, explicable por la necesidad de cerebros livianos en aves voladoras y por los ciclos estacionales de canto <span class="cite">Altman §6</span>.</p>
+<p>Hacia los años noventa, varios desarrollos establecieron por fin la realidad de la neurogénesis en el giro dentado de la rata adulta <span class="cite">Altman §7</span>. Aparecieron marcadores más prácticos: el BrdU, análogo sintético de la timidina que se incorpora durante la fase S de la mitosis y se visualiza con inmunocitoquímica sin autorradiografía, y el Ki-67, proteína endógena presente durante la mitosis y ausente en la célula en reposo. Los marcadores de tipo celular, como NSE, MAP-2, TuJ1 y NeuN, permitieron distinguir neuronas nuevas de glía <span class="cite">Altman §7</span>. Algunos tiñen células no neuronales y otros no tiñen todos los tipos neuronales, pero la expresión de varios antígenos se considera buena evidencia. La combinación de BrdU con marcadores de tipo celular resolvió la identificación <span class="cite">Altman §7</span>.</p>
+<p>La regulación confirmó que el fenómeno no era un vestigio <span class="cite">Altman §8</span>. En ratas, el número de células hipocampales nuevas supera las 9.000 por día, y la neurogénesis se modula por variables experienciales. El estrés agudo y crónico la disminuye, los glucocorticoides también, y la complejidad ambiental y correr en rueda la aumentan <span class="cite">Altman §8</span>. La especulación de Altman recibió apoyo: el número de neuronas nuevas correlaciona con el aprendizaje dependiente del hipocampo, aprender esas tareas tiende a aumentar el número y la depleción de neuronas nuevas deteriora el aprendizaje.</p>
+<p>El bulbo olfatorio se replicó en varios mamíferos incluidos humanos y está modulado por la experiencia olfatoria y el aprendizaje <span class="cite">Altman §9</span>. La corteza cerebral quedó en un estatus poco claro: varios investigadores reportaron neurogénesis cortical en hámster, rata, tití y macaco, y otros no la encontraron. Gould, Cameron y Dayer lo atribuyeron a la sensibilidad insuficiente de los métodos y al pequeño tamaño de esas neuronas <span class="cite">Altman §9</span>.</p>
+<p>El debate cortical se mide en números <span class="cite">Altman §12</span>. Desde 1999 hay al menos cinco grupos con evidencia positiva y cerca de la misma cantidad que no la encontró, y la incidencia reportada es de 1 a 2 células por mm³. Las neuronas corticales nuevas son raras, dispersas y más pequeñas que las células piramidales <span class="cite">Altman §12</span>. El problema decisivo es que los estudios negativos tampoco mostraron evidencia adecuada en el giro dentado; sin control positivo, un negativo cortical no informa nada.</p>
+<p>El caso de Altman tardó unos 30 años en ser reconocido <span class="cite">Altman §11</span>. Las razones del ninguneo fueron tres: no existían técnicas confiables para diferenciar neuronas pequeñas de glía, Altman era un profesor junior de psicología sin formación en autorradiografía, y el dogma estaba sostenido por los anatomistas del desarrollo de primates más poderosos de la época <span class="cite">Altman §10</span>.</p>
+
+</section><section id="sec-07-la-zona-subgranular-y-el-nicho-que-decide" class="card">
+<div class="section-kicker"><span class="n">07</span> Tema</div>
+<h2>La zona subgranular y el nicho que decide</h2>
+<p>La zona subgranular del giro dentado es uno de los principales nichos neurogénicos del cerebro adulto y alberga células madre neurales tipo 1 con morfología de glía radial <span class="cite">apuntes, bloque VII</span>. En condiciones basales, la mayoría permanece en quiescencia, detenida en G0, y ese estado no es reposo inactivo sino un estado regulado. La quiescencia previene el agotamiento de la reserva de células madre y mantiene una población disponible durante toda la vida, y a la vez protege el genoma porque no replicar el ADN reduce el daño por estrés oxidativo y las mutaciones <span class="cite">apuntes, bloque VII</span>.</p>
+<p>Al salir de G0, la célula madre reingresa al ciclo y se divide de forma asimétrica: una célula se autorrenueva y vuelve a G0, mientras la otra genera progenitores amplificadores transitorios de tipo 2 que maduran a neuronas granulares <span class="cite">apuntes, bloque VII</span>.</p>
+<p>El nicho no es solo un espacio anatómico <span class="cite">apuntes, bloque VII</span>. Las células madre están en contacto íntimo con capilares, células endoteliales y pericitos, y los vasos no solo aportan oxígeno y nutrientes sino que funcionan como centro regulador. Las células endoteliales secretan VEGF, PEDF, BDNF y neurotrofinas, que deciden si la célula madre se mantiene en G0, se activa o se diferencia, y los capilares aportan una matriz física que los neuroblastos usan como rieles para migrar <span class="cite">apuntes, bloque VII</span>. El ejercicio aeróbico activa VEGF y las vías MAPK y PI3K-Akt, que inducen ciclina D, activan CDK4/6, fosforilan Rb, liberan E2F y hacen reingresar la célula a G1; al cruzar el punto de restricción, avanza a S. La vasculatura funciona como interruptor molecular del ciclo <span class="cite">apuntes, bloque VII</span>.</p>
+<p>El BDNF cumple un papel crucial en fases posteriores, en la supervivencia, la diferenciación neuronal y la integración de dendritas y axones <span class="cite">apuntes, bloque VII</span>. La proliferación ocupa hasta 3 días, la diferenciación va de 3 días a 2 semanas, y la supervivencia y maduración se extienden de 2 semanas a más de 4 semanas, con apoptosis de parte de los progenitores. La neurona nueva debe sobrevivir un período largo antes de integrarse, y esa demora explica por qué los efectos de una intervención no se ven de inmediato <span class="cite">apuntes, bloque VII</span>.</p>
+<p>Las zonas neurogénicas se dividen en clásicas y nuevas. Las clásicas son el hipocampo, en el giro dentado, y la zona subventricular; las nuevas incluyen la corteza prefrontal, el hipotálamo, el estriado, la amígdala y la corteza piriforme <span class="cite">apuntes, bloque VII</span>.</p>
+<p>El ambiente enriquecido muestra cómo la experiencia actúa sobre el nicho <span class="cite">apuntes, bloque VII</span>. La estimulación sensorial, cognitiva, motora y social compleja no aumenta necesariamente la proliferación de las células madre, pero incrementa la supervivencia y la integración de las neuronas nuevas y rescata a los neuroblastos de la apoptosis. A nivel microestructural produce arborización dendrítica, más espinas y angiogénesis en CA1, CA3 y giro dentado, y a nivel molecular aumenta BDNF e IGF-1 y disminuye el umbral para inducir LTP, lo que constituye la base de la reserva cognitiva <span class="cite">apuntes, bloque VII</span>. La neurona nueva se incorpora paso a paso al circuito del giro dentado a CA3, de allí a CA1 y de allí a la corteza. El ambiente no fabrica más células: decide cuáles sobreviven y cómo se conectan <span class="cite">apuntes, bloque VII</span>.</p>
+<p>La controversia humana sigue abierta <span class="cite">apuntes, bloque VII</span>. Pasko Rakic ha sido el principal opositor, y su hipótesis de la estabilidad sostiene que el cerebro de primates requiere una arquitectura sináptica permanente para almacenar recuerdos, de modo que neuronas nuevas en circuitos establecidos interferirían y borrarían esa información. En roedores la neurogénesis del giro dentado está demostrada, pero en humanos la tasa cae drásticamente durante la infancia y se vuelve prácticamente indetectable en el adulto, y estudios recientes en tejido humano respaldan parcialmente el escepticismo <span class="cite">apuntes, bloque VII</span>. La discusión no es si existen células nuevas, sino cuántas quedan, dónde y si alcanzan para sostener una función.</p>
+
+<figure class="fig" id="fig-1">
+  <a class="fig-open" href="assets/fig/06-fig58.jpg" data-caption="Figura 1. Línea de tiempo de la neurogénesis adulta: desde la célula madre neural hasta la neurona madura que se integra en CA3, con las etapas de proliferación (hasta 3 días), diferenciación (3 días a 2 semanas) y supervivencia y maduración (2 semanas a más de 4)." data-alt="Figura 1. Línea de tiempo de la neurogénesis adulta: desde la célula madre neural hasta la neurona madura que se integra en CA3, con las etapas de proliferación (hasta 3 días), diferenciación (3 días a 2 semanas) y supervivencia y maduración (2 semanas a más de 4).">
+    <img src="assets/fig/06-fig58.jpg" width="1100" height="768" loading="lazy" decoding="async" alt="Figura 1. Línea de tiempo de la neurogénesis adulta: desde la célula madre neural hasta la neurona madura que se integra en CA3, con las etapas de proliferación (hasta 3 días), diferenciación (3 días a 2 semanas) y supervivencia y maduración (2 semanas a más de 4).">
+  </a>
+  <figcaption>
+    <strong>Figura 1.</strong> Línea de tiempo de la neurogénesis adulta: desde la célula madre neural hasta la neurona madura que se integra en CA3, con las etapas de proliferación (hasta 3 días), diferenciación (3 días a 2 semanas) y supervivencia y maduración (2 semanas a más de 4).
+    <span class="fig-source">Apuntes de clase, figura 58. <a href="creditos.html#fig-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-2">
+  <a class="fig-open" href="assets/fig/06-fig52.jpg" data-caption="Figura 2. Nicho neurovascular de la zona subgranular: las células madre neurales están en contacto con capilares, células endoteliales y pericitos, que aportan señales paracrinas, un andamiaje físico para la migración y el interruptor molecular que decide si la célula se mantiene en G0, se activa o se diferencia." data-alt="Figura 2. Nicho neurovascular de la zona subgranular: las células madre neurales están en contacto con capilares, células endoteliales y pericitos, que aportan señales paracrinas, un andamiaje físico para la migración y el interruptor molecular que decide si la célula se mantiene en G0, se activa o se diferencia.">
+    <img src="assets/fig/06-fig52.jpg" width="718" height="424" loading="lazy" decoding="async" alt="Figura 2. Nicho neurovascular de la zona subgranular: las células madre neurales están en contacto con capilares, células endoteliales y pericitos, que aportan señales paracrinas, un andamiaje físico para la migración y el interruptor molecular que decide si la célula se mantiene en G0, se activa o se diferencia.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.</strong> Nicho neurovascular de la zona subgranular: las células madre neurales están en contacto con capilares, células endoteliales y pericitos, que aportan señales paracrinas, un andamiaje físico para la migración y el interruptor molecular que decide si la célula se mantiene en G0, se activa o se diferencia.
+    <span class="fig-source">Apuntes de clase, figura 52. <a href="creditos.html#fig-2">Ver créditos</a></span>
+  </figcaption>
+</figure>
+</section><section id="sec-08-ejercicio-estres-antidepresivos-y-microbiota" class="card">
+<div class="section-kicker"><span class="n">08</span> Tema</div>
+<h2>Ejercicio, estrés, antidepresivos y microbiota</h2>
+<p>El ejercicio voluntario es uno de los reguladores mejor documentados <span class="cite">apuntes, bloque VII</span>. La inmunofluorescencia con BrdU muestra más células marcadas en el giro dentado de los ratones que corren que en los controles, el aumento se observa a cualquier dosis de BrdU y la neurogénesis llega a ser 2 a 3 veces mayor que en sedentarios. Las células nuevas se diferencian en neuronas maduras con fenotipo NeuN positivo y GFAP negativo, lo que confirma que el ejercicio produce neuronas y no solo progenitores <span class="cite">apuntes, bloque VII</span>.</p>
+<p>Los mecanismos del ejercicio aeróbico y de resistencia convergen en CREB <span class="cite">apuntes, bloque VII</span>. El aeróbico aumenta BDNF hipocampal, la fosforilación de CREB y proteínas glutamatérgicas como el receptor NMDA; el de resistencia disminuye la IL-6, que inhibe NMDA, y aumenta el IGF-1 muscular, TrkB y PKCα. Ambos caminos confluyen en CREB, la transcripción, la LTP y una mejor memoria, y el aumento del flujo sanguíneo cerebral acompaña el proceso <span class="cite">apuntes, bloque VII</span>.</p>
+<p>Cuatro mediadores explican la neurogénesis inducida por ejercicio: las β-endorfinas por la vía POMC y opiáceos, el VEGF en los nichos vasculares, el BDNF producido en el sistema nervioso central y no en el músculo, y la serotonina, cuyo aumento depende de la triptófano hidroxilasa en los núcleos del rafe y de sus proyecciones al hipocampo <span class="cite">apuntes, bloque VII</span>.</p>
+<p>El estrés crónico actúa en la dirección opuesta. El estrés repetido disminuye la neurogénesis y produce atrofia de las dendritas en CA3, mediado por corticosteroides, y altera el eje hipotálamo-hipófisis-suprarrenal, con deterioro del aprendizaje y la memoria <span class="cite">apuntes, bloque VII</span>. Los esteroides suprarrenales y los glucocorticoides disminuyen la tasa de neurogénesis y probablemente subyacen al efecto del estrés, porque el estrés eleva esos esteroides <span class="cite">Altman §8</span>.</p>
+<p>La depresión aporta el vínculo clínico más discutido <span class="cite">apuntes, bloque VII</span>. Se postula que una disminución de la neurogénesis hipocampal contribuye al trastorno depresivo mayor, y hay reducción del volumen hipocampal en pacientes. Los antidepresivos inhibidores selectivos de la recaptación de serotonina y la terapia electroconvulsiva aumentan la neurogénesis en animales adultos, y la latencia terapéutica de 4 a 5 semanas coincide con el tiempo que tardan las neuronas nuevas en madurar e integrarse <span class="cite">apuntes, bloque VII</span>. El mecanismo propuesto es la vía AMPc-CREB con aumento de BDNF, que favorece proliferación, diferenciación y supervivencia de progenitores.</p>
+<p>El eje del estrés y la depresión se conectan por el BDNF <span class="cite">apuntes, bloque VII</span>. En el trastorno depresivo mayor, la hiperactividad del eje hipotálamo-hipófisis-suprarrenal y el estrés crónico disminuyen BDNF, producen atrofia hipocampal y menor neurogénesis, y comprometen la plasticidad límbica. La anhedonia se relaciona con disfunción del circuito de recompensa mesolímbico y estriatal, considerado nueva zona neurogénica, y con la atrofia hipocampal <span class="cite">apuntes, bloque VII</span>.</p>
+<p>El propio material destaca las limitaciones <span class="cite">apuntes, bloque VII</span>. El trastorno depresivo mayor es exclusivo del humano, mientras casi toda la evidencia de neurogénesis viene de animales, de modo que el hecho de que el ejercicio aumente la neurogénesis en roedores y reduzca síntomas en humanos sugiere una relación pero no prueba causalidad. Falta determinar si la neurogénesis media el efecto terapéutico o es un fenómeno secundario, por ejemplo del BDNF, y medir neurogénesis in vivo en humanos es metodológicamente difícil <span class="cite">apuntes, bloque VII</span>.</p>
+<p>La microbiota añade una vía indirecta <span class="cite">apuntes, bloque VII</span>. En modelos murinos, la sucralosa no produce neurotoxicidad directa, sino daño a través del eje microbiota-intestino-cerebro: disbiosis con menor diversidad alfa y depleción de Bacteroides acidifaciens, disminución del triptófano cecal y por lo tanto menos sustrato para la serotonina, y reducción de ácidos grasos de cadena corta como el acetato fecal, que afecta la barrera hematoencefálica y la activación de la microglía. La neuroinflamación de bajo grado por endotoxinas consolida fenotipos de anhedonia y desesperanza conductual en pruebas de suspensión por la cola y nado forzado <span class="cite">apuntes, bloque VII</span>.</p>
+
+<figure class="fig" id="fig-3">
+  <a class="fig-open" href="assets/fig/06-fig57.jpg" data-caption="Figura 3. Inmunofluorescencia para BrdU en el giro dentado: el grupo con acceso voluntario a la rueda muestra más células marcadas que el control, y el efecto aparece con cualquier dosis de BrdU." data-alt="Figura 3. Inmunofluorescencia para BrdU en el giro dentado: el grupo con acceso voluntario a la rueda muestra más células marcadas que el control, y el efecto aparece con cualquier dosis de BrdU.">
+    <img src="assets/fig/06-fig57.jpg" width="602" height="735" loading="lazy" decoding="async" alt="Figura 3. Inmunofluorescencia para BrdU en el giro dentado: el grupo con acceso voluntario a la rueda muestra más células marcadas que el control, y el efecto aparece con cualquier dosis de BrdU.">
+  </a>
+  <figcaption>
+    <strong>Figura 3.</strong> Inmunofluorescencia para BrdU en el giro dentado: el grupo con acceso voluntario a la rueda muestra más células marcadas que el control, y el efecto aparece con cualquier dosis de BrdU.
+    <span class="fig-source">Apuntes de clase, figura 57. <a href="creditos.html#fig-3">Ver créditos</a></span>
+  </figcaption>
+</figure>
+</section><section id="sec-09-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">09</span> Tema</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>La plasticidad es la capacidad de reorganizar estructura y función, y su compromiso central es modificabilidad frente a estabilidad; la distonía y el tinnitus son ejemplos maladaptativos <span class="cite">Zeise §7.1</span>.</li>
+<li>La distinción clásica opone reestructuración morfológica en el desarrollo a eficacia sináptica en el adulto, pero el adulto también forma espinas nuevas y cambia volúmenes <span class="cite">Zeise §7.2.1</span>.</li>
+<li>La mielinización humana termina alrededor de los 30 años, y el lenguaje solo cambia de hemisferio tras una lesión temprana, nunca en el adulto <span class="cite">Zeise §7.2.1</span>.</li>
+<li>El cierre de las ventanas críticas depende de redes perineuronales y de la maduración de la inhibición GABAérgica; la ambliopía por deprivación no revierte con lentes en la adultez <span class="cite">apuntes, bloque II</span>.</li>
+<li>A mediados de la gestación el cerebro tiene el 10 % del volumen máximo y a los 3 años el 80 %; la sustancia gris subcortical tiene su pico cerca de los 14 años y la blanca cerca de los 29 <span class="cite">apuntes, bloque II</span>.</li>
+<li>El hidrocéfalo ex vacuo sigue la doctrina de Monro-Kellie, no aumenta la presión intracraneal y en el Alzheimer dilata las astas temporales mientras en Huntington dilata las frontales <span class="cite">apuntes, bloque II</span>.</li>
+<li>La estimulación a 20 Hz mejora la discriminación táctil, 1 Hz la empeora, bastan 20 minutos, el efecto es específico del dedo y la memantina lo elimina por bloqueo NMDA <span class="cite">Zeise §7.3.3.1</span>.</li>
+<li>La correlación entre ampliación cortical y mejora táctil es r = 0,744 con p = 0,002 en la corteza somatosensorial primaria, y una dosis de anfetamina casi duplica el efecto <span class="cite">Zeise §7.3.3.1</span>.</li>
+<li>La rTMS va de 1 a 40 Hz, la TBS usa 50 Hz y la tDCS de 1 a 2 mA; las frecuencias altas de rTMS son más propensas a inducir convulsiones <span class="cite">Zeise §7.3.3.2</span>.</li>
+<li>El dogma duró de fines del siglo XIX a comienzos de los noventa; Altman usó timidina tritiada, Kaplan microscopía electrónica, Rakic monos rhesus y Nottebohm aves cantoras <span class="cite">Altman §4</span>.</li>
+<li>El BrdU es un análogo de timidina que se incorpora en la fase S y se revela por inmunocitoquímica; el Ki-67 es endógeno y la combinación con NeuN permite identificar neuronas nuevas <span class="cite">Altman §7</span>.</li>
+<li>En ratas se producen más de 9.000 células nuevas por día en el hipocampo <span class="cite">Altman §8</span>.</li>
+<li>La corteza muestra 1 a 2 células por mm³ y, sin control positivo en el giro dentado, un negativo cortical no prueba nada <span class="cite">Altman §12</span>.</li>
+<li>El ejercicio voluntario aumenta la neurogénesis 2 a 3 veces, los antidepresivos tardan 4 a 5 semanas y el estrés crónico con glucocorticoides la disminuye <span class="cite">apuntes, bloque VII</span>.</li>
+</ul>
+
+</section><section id="sec-10-limites-del-material" class="card">
+<div class="section-kicker"><span class="n">10</span> Tema</div>
+<h2>Límites del material</h2>
+<div class="warnbox"><span class="box-title">Límites del material</span><ul>
+<li>El capítulo 7 de Zeise está escaneado desde la página 287 hasta la mitad de 7.3.4, en la página 320; las secciones posteriores no están en el archivo y las figuras no fueron transcritas.</li>
+<li>El OCR de ese capítulo es el peor de los tres, con columnas entrelazadas y varias frases reconstruidas, por lo que las citas se hacen por sección y no por página exacta.</li>
+<li>La neurogénesis cortical adulta y la tasa funcional en humanos siguen en debate; el material no resuelve cuántas neuronas nuevas necesita un circuito humano para tener relevancia conductual.</li>
+<li>Los apuntes de clase no tienen paginación, de modo que se citan por bloque; el estudio de la sucralosa es en modelos murinos y no demuestra causalidad en humanos.</li>
+<li>El detalle biográfico de Cajal y la neurogénesis del desarrollo se tratan en otras guías y no se repiten aquí.</li>
+</ul></div>
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras de la guía</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-1" aria-label="Figura 1"><img src="assets/fig/06-fig58.jpg" loading="lazy" decoding="async" alt="Figura 1"><span>Figura 1</span></a><a class="fig-thumb" href="#fig-2" aria-label="Figura 2"><img src="assets/fig/06-fig52.jpg" loading="lazy" decoding="async" alt="Figura 2"><span>Figura 2</span></a><a class="fig-thumb" href="#fig-3" aria-label="Figura 3"><img src="assets/fig/06-fig57.jpg" loading="lazy" decoding="async" alt="Figura 3"><span>Figura 3</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Neurociencias Aplicadas a la Medicina · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Purves, <em>Neurociencia</em>; Zeise, <em>Neurociencia para la psicología y otras áreas</em>; los apuntes de clase y los artículos del curso. No se distribuyen los PDF originales.</p>
+  <p><a href="creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

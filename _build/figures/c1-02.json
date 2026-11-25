@@ -1,0 +1,22 @@
+{
+ "figures": [
+  {
+   "number": "1",
+   "image": "02-linaje-neural.jpg",
+   "section": "Cresta neural y placodas",
+   "caption": "Linaje de las células del sistema nervioso: lo derivado del tubo neural (neuronas del sistema nervioso central, ependimarias, oligodendrocitos y astrocitos) y lo derivado de la cresta neural (neuronas sensitivas y autonómicas, células cromafines, melanocitos, células de Schwann y satélite, piamadre, aracnoides y microglía).",
+   "source": "Apuntes de clase, figura 3.",
+   "width": 582,
+   "height": 750
+  },
+  {
+   "number": "2",
+   "image": "02-migracion-cresta.jpg",
+   "section": "Cresta neural y placodas",
+   "caption": "Migración de células de la cresta neural en el embrión de pollo: inyección en estadio HH11, cultivo hasta HH18, reconstrucción tridimensional y registro en tiempo real a las 4, 7 y 10 horas.",
+   "source": "Apuntes de clase, figura 1.",
+   "width": 800,
+   "height": 303
+  }
+ ]
+}

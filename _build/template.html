@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>%%TITLE%%</title>
+<meta name="description" content="%%DESC%%">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3f63'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' fill='%23dbeafe' text-anchor='middle'%3ENe%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="%%TITLE%%">
+<meta property="og:description" content="%%DESC%%">
+<meta property="og:type" content="website">
+<style>%%CSS%%</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+%%HERO%%
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+%%TOC%%
+      </ul>
+      <div class="figs">
+%%NAV%%
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+%%BODY%%
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Neurociencias Aplicadas a la Medicina · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Purves, <em>Neurociencia</em>; Zeise, <em>Neurociencia para la psicología y otras áreas</em>; los apuntes de clase y los artículos del curso. No se distribuyen los PDF originales.</p>
+  <p><a href="creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>%%JS%%</script>
+</body>
+</html>

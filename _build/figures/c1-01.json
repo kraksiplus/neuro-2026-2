@@ -1,0 +1,13 @@
+{
+ "figures": [
+  {
+   "number": "1",
+   "image": "01-neurona-cultivo.jpg",
+   "section": "Una célula polarizada: soma, dendritas y axón",
+   "caption": "Neurona en cultivo vista con contraste de fases: el soma, el axón y las prolongaciones dendríticas ya están definidos. La barra de escala mide 20 µm.",
+   "source": "Apuntes de clase, figura 4.",
+   "width": 402,
+   "height": 426
+  }
+ ]
+}

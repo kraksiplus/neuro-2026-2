@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cajal y la doctrina neuronal · Neurociencias UBB</title>
+<meta name="description" content="Cajal y la doctrina neuronal. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3f63'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' fill='%23dbeafe' text-anchor='middle'%3ENe%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Cajal y la doctrina neuronal · Neurociencias UBB">
+<meta property="og:description" content="Cajal y la doctrina neuronal. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#0f2437 0%,#1a3d5c 55%,#2f6b9a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#b9d3e8;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#b9d3e8;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(1.9rem,4.2vw,3.2rem);
+    line-height:1.08;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:26ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d9e8f4;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1120px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a9cbe4;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#10324c;border-color:#fff}
+  .btn.primary:hover{background:#eaf4fb}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0 .45rem;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#1d3f63;background:#e3eef7;border:1px solid #a9cbe4;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Neurociencias: azul profundo y ámbar sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f3f6fa;
+  --surface:#fffefb;
+  --surface-2:#e9eff6;
+  --surface-3:#dae4ef;
+  --ink:#14202b;
+  --muted:#54677a;
+  --line:#cbd8e6;
+  --brand:#1d3f63;
+  --brand-2:#2f6b9a;
+  --brand-3:#e3eef7;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(16,36,56,.09);
+}
+[data-theme="dark"]{
+  --bg:#0e141a;
+  --surface:#151e26;
+  --surface-2:#1c2833;
+  --surface-3:#26333f;
+  --ink:#e9f1f7;
+  --muted:#a4b6c6;
+  --line:#2b3a47;
+  --brand:#7dd3fc;
+  --brand-2:#38bdf8;
+  --brand-3:#0d2a3c;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.42);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(10,18,26,.84)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Neurociencias Aplicadas a la Medicina</p>
+    <h1>08. Cajal y la doctrina neuronal</h1>
+    <p class="lede">Guía 08 de 08. 2.689 palabras. 47 citas y 8 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>08 de 08</strong></div><div><span>Fuentes</span><strong>apuntes, bloque VIII · Gross</strong></div><div><span>Citas</span><strong>47</strong></div><div><span>Tablas</span><strong>8</strong></div><div><span>Palabras</span><strong>2.689</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-la-tecnica-antes-que-la-teoria">La técnica antes que la teoría</a></li>
+        <li><a href="#sec-02-dos-lecturas-de-una-misma-tincion">Dos lecturas de una misma tinción</a></li>
+        <li><a href="#sec-03-la-neurona-entra-en-la-teoria-celular">La neurona entra en la teoría celular</a></li>
+        <li><a href="#sec-04-la-polarizacion-dinamica">La polarización dinámica</a></li>
+        <li><a href="#sec-05-cono-de-crecimiento-y-plasticidad">Cono de crecimiento y plasticidad</a></li>
+        <li><a href="#sec-06-darwin-la-espana-conservadora-y-el-nobel">Darwin, la España conservadora y el Nobel</a></li>
+        <li><a href="#sec-07-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#sec-08-limites-del-material">Límites del material</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice del certamen">Índice</a>
+        <a href="07_Falla_Demencias_Priones.html" title="Falla: demencias, neurodegeneración y priones">07</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>La revolución técnica y conceptual de Cajal: microscopía, tinción argéntica y método ontogénico; la doctrina neuronal frente a la teoría reticular de Golgi; la contigüidad, la polarización dinámica y el cono de crecimiento; y el contexto histórico que hizo de todo esto una disputa.</div><p class="small">Las citas remiten a la fuente y a su página o sección, por ejemplo <em>Zeise p. 108</em>, <em>Purves p. 78</em> o <em>apuntes, bloque III</em>.</p><p class="small"><strong>Fuera de alcance:</strong> la biografía personal y la producción artística, que no están en el material; el detalle de la disputa sobre neurogénesis adulta, que se cuenta en la guía 06.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul>
+<li>La tinción argéntica de Golgi, optimizada por Cajal, convirtió una masa opaca en células individuales visibles.</li>
+<li>Importó lentes Zeiss y objetivos de inmersión de Abbe cuando esa tecnología casi no existía en la academia española.</li>
+<li>Estudió embriones y recién nacidos de aves y roedores: menos células y mielina que aún no oculta axones.</li>
+<li>Golgi defendía un sincitio continuo; Cajal, unidades anatómicas, genéticas y funcionales independientes.</li>
+<li>Las terminaciones axónicas acaban libres y contactan sin fusionarse: contigüidad, no continuidad.</li>
+<li>La ley de polarización dinámica, de 1891, fija dendrita y soma como entrada y axón como salida.</li>
+<li>El cono de crecimiento y la plasticidad funcional introducen un cerebro dinámico, no una red rígida.</li>
+<li>Cajal, darwinista en una España creacionista, recibió el Premio Nobel en 1906.</li>
+</ul></div></section><section id="sec-01-la-tecnica-antes-que-la-teoria" class="card">
+<div class="section-kicker"><span class="n">01</span> Tema</div>
+<h2>La técnica antes que la teoría</h2>
+<p>La revolución de Cajal empieza en el microscopio, no en la hipótesis. El tejido nervioso adulto es denso y la mielina oculta las ramificaciones; en esas condiciones, distinguir una terminación libre de una fusión exige una resolución que el material de la época no siempre alcanzaba. Cajal invirtió sus propios ahorros en importar los microscopios más avanzados de Alemania, lentes Zeiss y objetivos de inmersión en aceite de Ernst Abbe, equipos casi inexistentes en el ámbito académico español de su tiempo <span class="cite">apuntes p. 54</span>. Esa inversión no era un lujo: definía qué estructuras podían verse.</p>
+<p>La tinción argéntica de Golgi, la reazione nera, permitía seguir el contorno de células enteras, pero Cajal no se limitó a aplicarla. Modificó los tiempos de impregnación, introdujo el doble método de nitrato de plata e ideó variantes con oro sublimado para estudiar la glía <span class="cite">apuntes p. 54</span>. El resultado fue una impregnación más controlada, que hacía visible la célula entera y sus prolongaciones. La química dejó de ser un accidente de preparación y se volvió un método.</p>
+<p>El cambio decisivo fue ontogénico. En lugar de tejido adulto, Cajal estudió embriones y animales recién nacidos, sobre todo aves y roedores <span class="cite">apuntes, bloque VIII</span>. En esas fases la densidad celular es menor y la mielinización aún no cubre las prolongaciones, de modo que el axón aparece completo, desde su origen hasta su destino <span class="cite">apuntes p. 54</span>. Lo que en el adulto era un bosque impenetrable se volvió un trazado legible. La consecuencia conceptual es directa: si se puede seguir una fibra de punta a punta y ver que termina libre, la continuidad deja de ser una necesidad.</p>
+<p>El método científico completó la técnica. Cajal no aceptó la teoría reticular de Golgi y diseñó experimentos para responder una pregunta que en su época tenía una sola respuesta <span class="cite">apuntes, bloque VIII</span>. La observación no bastaba: había que producir preparaciones que permitieran distinguir entre fusión y contacto. Esa exigencia explica por qué su aporte no se redujo a describir células, sino a proponer una arquitectura funcional.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: La técnica antes que la teoría" tabindex="0"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Qué aportó</th>
+<th>Efecto sobre la observación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microscopía</td>
+<td>Lentes Zeiss y objetivos de inmersión de Abbe</td>
+<td>Mayor aumento y resolución para seguir prolongaciones finas</td>
+</tr>
+<tr>
+<td>Tinción argéntica</td>
+<td>Tiempos de impregnación, doble nitrato de plata y oro sublimado</td>
+<td>Impregnación más controlada y preparaciones aptas para estudiar la glía</td>
+</tr>
+<tr>
+<td>Método ontogénico</td>
+<td>Embriones y recién nacidos de aves y roedores</td>
+<td>Menor densidad y ausencia de mielina; axón visible de origen a destino</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">apuntes p. 54</span>.</p>
+
+</section><section id="sec-02-dos-lecturas-de-una-misma-tincion" class="card">
+<div class="section-kicker"><span class="n">02</span> Tema</div>
+<h2>Dos lecturas de una misma tinción</h2>
+<p>Golgi y Cajal miraron preparaciones teñidas con la misma reacción y vieron sistemas incompatibles <span class="cite">apuntes p. 54</span>. Para Golgi, los axones se anastomosan, es decir, se fusionan directamente entre sí, y forman una red física continua o sincitio. Esa malla indivisible funcionaba como un solo sistema completo, donde la actividad eléctrica se propagaba de manera difusa por todo el retículo <span class="cite">apuntes p. 54</span>. No había células separadas que condujeran, sino un medio continuo que transmitía.</p>
+<p>Para Cajal, cada célula nerviosa es una unidad anatómica, genética y funcional independiente <span class="cite">apuntes, bloque VIII</span>. Las terminaciones axónicas no se funden con la célula siguiente: terminan de forma libre y hacen contacto estrecho sobre sus dendritas o su soma <span class="cite">apuntes p. 54</span>. La diferencia no es de vocabulario. Si las fibras se fusionan, el impulso se diluye en una red; si solo contactan, cada neurona es un eslabón y el circuito tiene estaciones.</p>
+<p>Las preparaciones mismas admitían ambas lecturas: sobre la misma tinción, Golgi y Cajal construyeron interpretaciones opuestas. La ventaja de Cajal no fue solo la tinción, sino el conjunto: tiempos de impregnación controlados y material ontogénico que dejaban a la vista las terminaciones libres <span class="cite">apuntes p. 54</span>. Donde Golgi veía una malla, Cajal veía terminaciones que cesan.</p>
+<p>El desacuerdo no fue un detalle de escuela. La teoría reticular no era una ocurrencia menor: ordenaba la anatomía del sistema nervioso bajo la idea de un sincitio y explicaba la difusión de la actividad por el retículo <span class="cite">apuntes p. 54</span>. La doctrina neuronal, en cambio, obligaba a buscar dónde termina una célula y dónde empieza la siguiente, y a explicar cómo el impulso pasa de una a otra. Ese programa es el que después hace posible la fisiología sináptica.</p>
+
+</section><section id="sec-03-la-neurona-entra-en-la-teoria-celular" class="card">
+<div class="section-kicker"><span class="n">03</span> Tema</div>
+<h2>La neurona entra en la teoría celular</h2>
+<p>La doctrina neuronal no solo describía células: devolvía el cerebro a la biología general. Antes de las observaciones de Cajal se consideraba que el tejido nervioso no obedecía al principio celular universal de Schleiden y Schwann, y se asumía que funcionaba como un retículo continuo <span class="cite">apuntes p. 54</span>. El cerebro quedaba fuera del principio celular que regía el resto de los tejidos. Al demostrar la individualidad de la neurona, con límites de membrana definidos, Cajal integró el tejido cerebral en las leyes biológicas generales de la patología y la histología moderna <span class="cite">apuntes p. 54</span>. La excepción desapareció.</p>
+<p>La consecuencia es que el tejido nervioso deja de regirse por una regla especial y pasa a compartir las leyes celulares del resto del organismo. El material no desarrolla las consecuencias clínicas de esa inclusión, pero sí afirma que la doctrina integró el cerebro a las leyes generales de la patología y la histología modernas <span class="cite">apuntes p. 54</span>.</p>
+<p>El punto más fino es la contigüidad. Cajal documentó que las terminaciones nerviosas finalizan libremente y entran en contacto íntimo sin fusionarse <span class="cite">apuntes p. 55</span>. No hay fusión, pero sí una relación funcional estrecha. Esa distinción es la base estructural necesaria para que la fisiología y la farmacología posteriores pudieran conceptualizar la sinapsis, los neurotransmisores y los receptores de membrana <span class="cite">apuntes p. 55</span>. Sin terminaciones libres, el contacto sería fusión y no habría frontera entre una célula y la siguiente.</p>
+<p>Conviene separar tres piezas que suelen confundirse. La doctrina neuronal afirma la individualidad de la célula y el contacto por contigüidad; la teoría reticular de Golgi afirma la red continua; y la ley de polarización dinámica describe la dirección del impulso dentro de cada neurona <span class="cite">apuntes, bloque VIII</span>. Son tres afirmaciones de distinto nivel: una celular, una rival de la anterior y una fisiológica. La primera dice qué es una neurona; la segunda, cómo se organiza el tejido; la tercera, hacia dónde va la señal.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: La neurona entra en la teoría celular" tabindex="0"><table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Afirmación</th>
+<th>Nivel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Doctrina neuronal</td>
+<td>La neurona es unidad anatómica, genética y funcional; el contacto es por contigüidad</td>
+<td>Celular</td>
+</tr>
+<tr>
+<td>Teoría reticular</td>
+<td>Los axones se anastomosan y forman una red continua o sincitio</td>
+<td>Tisular</td>
+</tr>
+<tr>
+<td>Ley de polarización dinámica</td>
+<td>Dendrita y soma reciben; el axón conduce hacia la periferia</td>
+<td>Fisiológico</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">apuntes, bloque VIII</span>.</p>
+<p>La doctrina tuvo un precio histórico. Desde fines del siglo XIX hasta comienzos de los años noventa, el dogma central de la neurociencia fue que no se agregan neuronas nuevas al encéfalo adulto de los mamíferos. La arquitectura cerebral parecía fija poco después del nacimiento, y Cajal y otros describieron las fases del desarrollo que terminan en la neurona multipolar adulta <span class="cite">Altman §1</span>. Esa descripción culminó en una sentencia que resume el cierre de la época: «En los centros adultos, los caminos nerviosos son algo fijo, terminado e inmutable. Todo puede morir, nada puede regenerarse». La autoridad de la frase, junto con la insuficiencia de los métodos para detectar división celular y distinguir células nuevas de glía, pesó sobre la investigación durante décadas <span class="cite">Altman §1</span>.</p>
+
+</section><section id="sec-04-la-polarizacion-dinamica" class="card">
+<div class="section-kicker"><span class="n">04</span> Tema</div>
+<h2>La polarización dinámica</h2>
+<p>La ley de polarización dinámica se formula en 1891, tras el estudio detallado de la retina y el bulbo olfatorio <span class="cite">apuntes p. 55</span>. Establece que la transmisión del impulso nervioso a través de la neurona es estrictamente unidireccional. Las dendritas y el soma actúan como estructuras receptoras o celulípetas, que captan las señales aferentes; el cilindroeje o axón funciona como vía efectora o celulífuga, que conduce la corriente bioeléctrica hacia la periferia para contactar con otras células <span class="cite">apuntes p. 55</span>. La morfología se convierte en dirección.</p>
+<p>El alcance de la ley es mayor que el de una descripción. Al asignar una entrada y una salida a cada neurona, Cajal transforma la neuroanatomía descriptiva en una neurofisiología de circuitos y permite trazar la dirección del flujo de información en el sistema nervioso central y periférico sin registros electrofisiológicos <span class="cite">apuntes p. 55</span>. La forma de la célula basta para predecir por dónde entra y por dónde sale la señal. Esa deducción funcional a partir de la morfología le permite reconstruir la arquitectura de los circuitos reflejos y sensoriales, como la vía visual en la retina o las capas cerebelosas <span class="cite">apuntes p. 54</span>.</p>
+<p>El propio Cajal matizó la ley hacia una polarización axípeta al constatar que, en ciertas neuronas sensitivas primarias, el impulso viaja directamente desde una prolongación dendrítica modificada hacia el axón sin atravesar necesariamente el cuerpo neuronal <span class="cite">apuntes p. 55</span>. La excepción no derriba el principio: muestra que la dirección depende de la geometría de la célula y no de un paso obligatorio por el soma. El axón sigue siendo la salida; lo que cambia es el punto de entrada.</p>
+<p>Sin la polarización dinámica, la contigüidad sería un dato morfológico sin consecuencia fisiológica. Al unir ambas ideas, Cajal puede explicar por qué el impulso no retrocede por donde vino y cómo se encadenan las neuronas de un arco reflejo <span class="cite">apuntes, bloque VIII</span>. La neurona es una unidad, pero no una unidad aislada: es un eslabón orientado. Esa orientación es la que da sentido a la arquitectura de los circuitos.</p>
+
+</section><section id="sec-05-cono-de-crecimiento-y-plasticidad" class="card">
+<div class="section-kicker"><span class="n">05</span> Tema</div>
+<h2>Cono de crecimiento y plasticidad</h2>
+<p>Frente a la imagen de una red rígida e inmutable, Cajal introdujo un cerebro que se construye y se modifica. La identificación del cono de crecimiento mostró que los axones buscan activamente sus dianas mediante señales químicas durante el desarrollo <span class="cite">apuntes p. 55</span>. El axón no crece a ciegas: su extremo explora el entorno y responde a señales químicas. Esa idea desplaza el centro de gravedad desde la anatomía adulta hacia el proceso que la produce.</p>
+<p>La plasticidad funcional completa el cuadro. Cajal propuso que el aprendizaje y la memoria dependen de la modificación física de las conexiones <span class="cite">apuntes p. 55</span>. No se trata de un cambio de conducta sin sustrato, sino de una alteración material de los contactos entre neuronas. La hipótesis es coherente con la doctrina: si cada neurona es una unidad y los contactos son contiguos, la conexión es un objeto material que puede modificarse.</p>
+<p>El material presenta ambas ideas con distinto estatuto. El cono de crecimiento aparece como una estructura identificada por Cajal, mientras que la plasticidad funcional se enuncia como una hipótesis que atribuye al aprendizaje y la memoria una modificación física de las conexiones <span class="cite">apuntes, bloque VIII</span>. La distinción importa: una cosa es haber visto el cono, otra es haber propuesto que la memoria depende de cambios de conexión. La segunda afirmación es una inferencia funcional, no una medición.</p>
+<p>Con todo, el gesto conceptual es decisivo. Una red continua no necesita historia: está completa o no está. Un sistema de neuronas separadas, en cambio, puede cambiar sin cambiar el número de células, porque lo que se modifica es la conexión misma. La plasticidad presupone la contigüidad: solo puede modificarse una conexión que no es fusión.</p>
+
+</section><section id="sec-06-darwin-la-espana-conservadora-y-el-nobel" class="card">
+<div class="section-kicker"><span class="n">06</span> Tema</div>
+<h2>Darwin, la España conservadora y el Nobel</h2>
+<p>El programa de Cajal se entiende mejor contra el fondo intelectual de su época. La publicación de <em>El origen de las especies</em> en 1859 desató un choque frontal contra el dogma creacionista, que sostenía la inmutabilidad de las especies y un origen divino literal para la complejidad biológica humana. En la España decimonónica, la Iglesia católica y los sectores académicos conservadores resistían las ideas evolucionistas y el materialismo científico, y defendían posturas creacionistas o providencialistas en la enseñanza universitaria <span class="cite">apuntes p. 55</span>. Cajal tomó partido: fue un defensor decidido del evolucionismo darwinista.</p>
+<p>Su opción no quedó en el plano de las ideas. Aplicó el enfoque filogenético y comparativo para estudiar cómo la complejidad del sistema nervioso aumenta progresivamente desde los invertebrados y vertebrados inferiores hasta el cerebro humano, y descartó cualquier explicación sobrenatural o teleológica de la organización anatómica <span class="cite">apuntes p. 55</span>. La escala comparada reemplaza al designio. Si el cerebro humano es el extremo de una serie, su anatomía no necesita un plan divino, sino una historia natural.</p>
+<p>En esa historia, la formación también cuenta. Su padre, Justo Ramón Casasús, cirujano-médico rural y profesor de disección anatómica, lo introdujo en el estudio riguroso del cuerpo humano <span class="cite">apuntes p. 55</span>. El dato importa menos por la biografía que por el ambiente: la disección como práctica cotidiana y el cuerpo como objeto de observación metódica. Cajal llegó a la histología con esa disposición anatómica.</p>
+<p>El reconocimiento llegó en 1906, con el Premio Nobel. El material lo presenta como médico histólogo, patólogo y catedrático español, y como padre de la neurociencia moderna tras recibir ese premio <span class="cite">apuntes p. 55</span>. La fecha cierra el arco: quince años después de la ley de polarización dinámica, su nombre era una referencia internacional. El Nobel no prueba la teoría, pero mide su impacto.</p>
+
+</section><section id="sec-07-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">07</span> Tema</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>La reazione nera es la tinción argéntica de Golgi; Cajal la optimizó con tiempos de impregnación, doble nitrato de plata y variantes de oro sublimado <span class="cite">apuntes p. 54</span>.</li>
+<li>Microscopía: lentes Zeiss y objetivos de inmersión en aceite de Ernst Abbe, importados con ahorros propios <span class="cite">apuntes, bloque VIII</span>.</li>
+<li>Método ontogénico: embriones y recién nacidos de aves y roedores; menor densidad celular y mielina ausente <span class="cite">apuntes p. 54</span>.</li>
+<li>Teoría reticular de Golgi: anastomosis axónica, red continua o sincitio y actividad eléctrica difusa <span class="cite">apuntes, bloque VIII</span>.</li>
+<li>Doctrina neuronal: la célula nerviosa es una unidad anatómica, genética y funcional independiente <span class="cite">apuntes p. 54</span>.</li>
+<li>Contigüidad: terminaciones libres y contacto estrecho sin fusión; base de la sinapsis, los neurotransmisores y los receptores <span class="cite">apuntes p. 55</span>.</li>
+<li>Teoría celular: Schleiden y Schwann; el tejido nervioso deja de ser una excepción y se integra a la histología y la patología <span class="cite">apuntes p. 54</span>.</li>
+<li>Ley de polarización dinámica: 1891, retina y bulbo olfatorio; dendrita y soma celulípetas, axón celulífugo <span class="cite">apuntes p. 55</span>.</li>
+<li>Polarización axípeta: en neuronas sensitivas primarias el impulso va de la prolongación dendrítica modificada al axón sin pasar por el soma <span class="cite">apuntes, bloque VIII</span>.</li>
+<li>Cono de crecimiento: el axón busca su diana mediante señales químicas durante el desarrollo <span class="cite">apuntes p. 55</span>.</li>
+<li>Plasticidad funcional: aprendizaje y memoria como modificación física de las conexiones <span class="cite">apuntes, bloque VIII</span>.</li>
+<li>Contexto: El origen de las especies (1859), darwinismo frente a creacionismo español y Premio Nobel en 1906 <span class="cite">apuntes p. 55</span>.</li>
+<li>Altman: la doctrina neuronal fijó el dogma de que no se agregan neuronas al encéfalo adulto; la cita de Cajal habla de caminos fijos, terminados e inmutables <span class="cite">Altman §1</span>.</li>
+</ul>
+
+</section><section id="sec-08-limites-del-material" class="card">
+<div class="section-kicker"><span class="n">08</span> Tema</div>
+<h2>Límites del material</h2>
+<div class="warnbox"><span class="box-title">Límites del material</span><ul>
+<li>El material base son tres páginas, de la 54 a la 56; no hay una biografía personal desarrollada ni un tratamiento de su producción artística, y el detalle de la disputa por la neurogénesis adulta corresponde a la guía 06.</li>
+<li>El OCR contiene anotaciones personales y errores como "no em convence" y "teoría retuicular", por lo que algunas frases se reconstruyen por sentido y no se citan textualmente.</li>
+<li>No se detallan los experimentos concretos con que Cajal respondió a Golgi, ni las fechas de cada hallazgo, salvo 1891 para la polarización dinámica y 1906 para el Nobel.</li>
+<li>El material no explica la recepción inicial de la doctrina neuronal ni la suerte del debate después de Cajal.</li>
+<li>La página 56 intercala notas sobre Humboldt, y la página 55 sobre la sociedad de masas; ambas quedan fuera del problema neuronal y no se usan aquí.</li>
+</ul></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Neurociencias Aplicadas a la Medicina · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Purves, <em>Neurociencia</em>; Zeise, <em>Neurociencia para la psicología y otras áreas</em>; los apuntes de clase y los artículos del curso. No se distribuyen los PDF originales.</p>
+  <p><a href="creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

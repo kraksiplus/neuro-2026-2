@@ -1,0 +1,13 @@
+{
+ "figures": [
+  {
+   "number": "1",
+   "image": "05-dsc-figura1.jpg",
+   "section": "El tronco dendrítico no es un cable",
+   "caption": "Constricciones nanométricas del tronco dendrítico en células granulares del giro dentado. Las tres técnicas independientes (microscopía de expansión, STED y microscopía electrónica) muestran el mismo rasgo: el diámetro cae a 0,26 a 0,46 µm y luego se recupera, con largos de 1,4 a 2,8 µm. Los paneles D a G sitúan las constricciones en la porción distal del árbol dendrítico.",
+   "source": "Kelly et al., <em>Sci. Adv.</em> 12, eaec4911 (2026), figura 1.",
+   "width": 2180,
+   "height": 1545
+  }
+ ]
+}

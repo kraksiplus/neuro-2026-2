@@ -1,0 +1,31 @@
+{
+ "figures": [
+  {
+   "number": "1",
+   "image": "06-fig58.jpg",
+   "section": "La zona subgranular y el nicho que decide",
+   "caption": "Línea de tiempo de la neurogénesis adulta: desde la célula madre neural hasta la neurona madura que se integra en CA3, con las etapas de proliferación (hasta 3 días), diferenciación (3 días a 2 semanas) y supervivencia y maduración (2 semanas a más de 4).",
+   "source": "Apuntes de clase, figura 58.",
+   "width": 1100,
+   "height": 768
+  },
+  {
+   "number": "2",
+   "image": "06-fig52.jpg",
+   "section": "La zona subgranular y el nicho que decide",
+   "caption": "Nicho neurovascular de la zona subgranular: las células madre neurales están en contacto con capilares, células endoteliales y pericitos, que aportan señales paracrinas, un andamiaje físico para la migración y el interruptor molecular que decide si la célula se mantiene en G0, se activa o se diferencia.",
+   "source": "Apuntes de clase, figura 52.",
+   "width": 718,
+   "height": 424
+  },
+  {
+   "number": "3",
+   "image": "06-fig57.jpg",
+   "section": "Ejercicio, estrés, antidepresivos y microbiota",
+   "caption": "Inmunofluorescencia para BrdU en el giro dentado: el grupo con acceso voluntario a la rueda muestra más células marcadas que el control, y el efecto aparece con cualquier dosis de BrdU.",
+   "source": "Apuntes de clase, figura 57.",
+   "width": 602,
+   "height": 735
+  }
+ ]
+}

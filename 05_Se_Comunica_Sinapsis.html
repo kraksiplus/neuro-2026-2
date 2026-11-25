@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Se comunica y aprende: sinapsis y neurotransmisores · Neurociencias UBB</title>
+<meta name="description" content="Se comunica y aprende: sinapsis y neurotransmisores. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3f63'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' fill='%23dbeafe' text-anchor='middle'%3ENe%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Se comunica y aprende: sinapsis y neurotransmisores · Neurociencias UBB">
+<meta property="og:description" content="Se comunica y aprende: sinapsis y neurotransmisores. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#0f2437 0%,#1a3d5c 55%,#2f6b9a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#b9d3e8;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#b9d3e8;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(1.9rem,4.2vw,3.2rem);
+    line-height:1.08;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:26ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d9e8f4;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1120px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a9cbe4;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#10324c;border-color:#fff}
+  .btn.primary:hover{background:#eaf4fb}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0 .45rem;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#1d3f63;background:#e3eef7;border:1px solid #a9cbe4;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Neurociencias: azul profundo y ámbar sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f3f6fa;
+  --surface:#fffefb;
+  --surface-2:#e9eff6;
+  --surface-3:#dae4ef;
+  --ink:#14202b;
+  --muted:#54677a;
+  --line:#cbd8e6;
+  --brand:#1d3f63;
+  --brand-2:#2f6b9a;
+  --brand-3:#e3eef7;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(16,36,56,.09);
+}
+[data-theme="dark"]{
+  --bg:#0e141a;
+  --surface:#151e26;
+  --surface-2:#1c2833;
+  --surface-3:#26333f;
+  --ink:#e9f1f7;
+  --muted:#a4b6c6;
+  --line:#2b3a47;
+  --brand:#7dd3fc;
+  --brand-2:#38bdf8;
+  --brand-3:#0d2a3c;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.42);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(10,18,26,.84)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Neurociencias Aplicadas a la Medicina</p>
+    <h1>05. Se comunica y aprende: sinapsis y neurotransmisores</h1>
+    <p class="lede">Guía 05 de 08. 6.400 palabras. 124 citas y 22 filas de tabla. 1 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>05 de 08</strong></div><div><span>Fuentes</span><strong>Zeise cap. 4 · Kelly · apuntes III</strong></div><div><span>Citas</span><strong>124</strong></div><div><span>Figuras</span><strong>1</strong></div><div><span>Tablas</span><strong>22</strong></div><div><span>Palabras</span><strong>6.400</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-dos-modos-de-contacto">Dos modos de contacto</a></li>
+        <li><a href="#sec-02-que-convierte-una-molecula-en-transmisor">Qué convierte una molécula en transmisor</a></li>
+        <li><a href="#sec-03-glutamato-el-eje-excitatorio">Glutamato: el eje excitatorio</a></li>
+        <li><a href="#sec-04-la-puerta-and-y-la-memoria-sinaptica">La puerta AND y la memoria sináptica</a></li>
+        <li><a href="#sec-05-excitotoxicidad-y-recaptacion">Excitotoxicidad y recaptación</a></li>
+        <li><a href="#sec-06-gaba-y-glicina-el-freno">GABA y glicina: el freno</a></li>
+        <li><a href="#sec-07-monoaminas-y-acetilcolina">Monoaminas y acetilcolina</a></li>
+        <li><a href="#sec-08-el-tronco-dendritico-no-es-un-cable">El tronco dendrítico no es un cable</a></li>
+        <li><a href="#sec-09-dha-la-membrana-que-facilita-el-cambio">DHA: la membrana que facilita el cambio</a></li>
+        <li><a href="#sec-10-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#sec-11-limites-del-material">Límites del material</a></li>
+        <li><a href="#atlas">Figuras de la guía</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice del certamen">Índice</a>
+        <a href="04_Emite_Senal_Membrana.html" title="Emite señal: membrana y potencial de acción">04</a>
+        <a href="06_Madura_Se_Renueva.html" title="Madura y se renueva: plasticidad y neurogénesis adulta">06</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>La transmisión sináptica: sinapsis química y eléctrica, qué convierte una molécula en neurotransmisor, la clasificación clásica y el glutamato como eje (AMPA, NMDA, LTP-LTD, excitotoxicidad), seguido de GABA, glicina, monoaminas y acetilcolina. Cierra con las constricciones del tronco dendrítico y el DHA de membrana.</div><p class="small">Las citas remiten a la fuente y a su página o sección, por ejemplo <em>Zeise p. 108</em>, <em>Purves p. 78</em> o <em>apuntes, bloque III</em>.</p><p class="small"><strong>Fuera de alcance:</strong> la plasticidad en humanos y la neurogénesis, que son materia de la guía 06.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul>
+<li>La sinapsis química libera transmisor desde vesículas; la eléctrica une citoplasmas por uniones gap <span class="cite">Zeise §4.1.1</span>.</li>
+<li>Un transmisor debe posibilitar la transmisión química y almacenarse en vesículas sinápticas <span class="cite">Zeise §4.1</span>.</li>
+<li>Glutamato excita y GABA o glicina inhiben; ambos sistemas suman cerca de 80 millones de neuronas <span class="cite">Zeise §4.2</span>.</li>
+<li>El receptor NMDA es una puerta AND: necesita glutamato y despolarización para expulsar el magnesio <span class="cite">Zeise §4.3.2.1</span>.</li>
+<li>El calcio que entra por NMDA activa CaMKII y fosforila receptores AMPA, y así sostiene la LTP <span class="cite">Zeise §4.3.2.1</span>.</li>
+<li>La falla energética vuelve tóxico al glutamato y desencadena excitotoxicidad por calcio <span class="cite">Zeise §4.3.3</span>.</li>
+<li>Las monoaminas son pocas neuronas que proyectan a casi todo el sistema nervioso central <span class="cite">Zeise §4.3.6</span>.</li>
+<li>Las constricciones del tronco dendrítico amplifican la señal local y atenúan la que llega al soma <span class="cite">Kelly §7</span>.</li>
+</ul></div></section><section id="sec-01-dos-modos-de-contacto" class="card">
+<div class="section-kicker"><span class="n">01</span> Tema</div>
+<h2>Dos modos de contacto</h2>
+<p>Las células del sistema nervioso están separadas por membranas y no se comunican de manera directa <span class="cite">Zeise §4.1.1</span>. La sinapsis química resuelve el problema mediante un relevo: el terminal presináptico almacena transmisor en vesículas, lo libera hacia la hendidura y la molécula se une a receptores de la membrana postsináptica. El nexo, también llamado sinapsis eléctrica, lo resuelve sin relevo, porque los citoplasmas quedan en continuidad y pueden intercambiar iones y moléculas pequeñas, entre ellas algunos segundos mensajeros <span class="cite">Zeise §4.1.1</span>.</p>
+<p>El nexo predomina en sinapsis inhibitorias, existe en todos los organismos vivos, desde unicelulares y plantas con plasmodesmos hasta animales, y en el ser humano sostiene el funcionamiento del corazón <span class="cite">Zeise §4.1.1</span>. Los nexos forman parte de una familia de canales iónicos distinta de la de los canales de voltaje del axón. Las sinapsis químicas, en cambio, están prácticamente restringidas a contactos neuronales, con unas pocas estructuras similares entre células del sistema inmune <span class="cite">Zeise §4.1.1</span>.</p>
+<p>La dependencia de las uniones gap se vuelve clínica cuando falla una conexina. La conexina 32 se expresa en células de Schwann y forma canales que mantienen unidas las capas de mielina; su mutación causa la forma ligada al X de la enfermedad de Charcot-Marie-Tooth, un trastorno desmielinizante <span class="cite">Kandel cap. 11</span>. En la cóclea, la conexina 26 participa en la secreción de fluidos del oído interno, y sus mutaciones explican hasta la mitad de los casos de sordera congénita. Ambas conexinas forman canales de unión gap en tejidos distintos.</p>
+<p>La sinapsis química es la sede de la farmacología nerviosa. La mayoría de las sustancias neuroactivas, tanto terapéuticas como recreativas, debe sus efectos a acciones sobre sinapsis o receptores de transmisores <span class="cite">Zeise §4.1.2</span>. Esa selectividad hizo posible que el curare y la nicotina revelaran una molécula receptiva en el músculo esquelético, aislada después como el receptor de acetilcolina de la unión neuromuscular (Langley, 1906). El concepto de receptor, formulado por Ehrlich en 1900 para explicar la acción selectiva de toxinas y la especificidad inmunológica, nace de ese mismo tipo de observación farmacológica <span class="cite">Kandel cap. 11</span>.</p>
+<p>El transmisor no siempre actúa como tal. Una misma molécula puede cumplir funciones de hormona y de neurotransmisor, como la adrenalina o el glutamato, y la diferencia está en el modo de secreción <span class="cite">Zeise §4.1.2</span>. La hormona sale de una glándula endocrina o de otro tejido, viaja por la sangre y expone a casi todas las células, mientras el transmisor se libera en la hendidura y actúa de manera extremadamente local. Existe además la comunicación paracrina, en la que la secreción difunde solo a unas pocas células cercanas y que es común en los sistemas monoaminérgicos y en muchos neuropéptidos <span class="cite">Zeise §4.1.2</span>.</p>
+<p>Los mensajeros retrógrados completan el cuadro: se liberan en el sitio postsináptico y afectan al presináptico, con lo que la comunicación deja de ser unidireccional <span class="cite">Zeise §4.1.2</span>. La transmisión punto a punto y la modulación de un circuito son, por eso, dos escalas distintas de análisis. La célula postsináptica puede así ajustar lo que la presináptica libera.</p>
+
+</section><section id="sec-02-que-convierte-una-molecula-en-transmisor" class="card">
+<div class="section-kicker"><span class="n">02</span> Tema</div>
+<h2>Qué convierte una molécula en transmisor</h2>
+<p>En informática, un transmisor es un dispositivo que crea una señal a partir de una fuente de datos (Shannon y Weaver, 1949); en neurociencia, el término designa moléculas mensajeras que forman parte de un canal de información <span class="cite">Zeise §4.1</span>. La literatura no es unánime sobre qué cuenta como neurotransmisor. La definición estricta, adoptada por el libro, exige que la sustancia posibilite la transmisión sináptica química y se almacene en vesículas sinápticas, mientras la definición amplia acepta toda molécula que module la transmisión. De ahí surge un criterio operativo: si una sustancia no se encuentra en ninguna vesícula sináptica, no se considera neurotransmisor, aunque pueda tratarse aparte como mensajero sináptico que no cumple función de transmisión <span class="cite">Zeise §4.1</span>. El criterio obliga a demostrar la presencia vesicular antes de otorgar el título.</p>
+<p>El principio de Dale estipula que una neurona contiene y secreta un solo transmisor, y vale por lo general, con excepciones como la secreción conjunta de glutamato y dopamina <span class="cite">Zeise §4.2</span>. Ese principio permite clasificar las neuronas por su transmisor principal y hablar de neuronas glutamatérgicas o serotoninérgicas; el sufijo -érgico viene del griego ergon, trabajo. Una neurona, en cambio, recibe señales de una variedad de transmisores aunque use uno solo para enviar las propias <span class="cite">Zeise §4.2</span>.</p>
+<p>Los transmisores principales se dividen en tres grupos: tres aminoácidos, cinco monoaminas y la acetilcolina sola <span class="cite">Zeise §4.2</span>. En el cerebro y el cerebelo hay alrededor de 80 millones de neuronas glutamatérgicas y GABAérgicas, frente a 165.000 serotoninérgicas de los núcleos del rafe y 20.000 noradrenérgicas del locus coeruleus. La proporción entre las neuronas que usan los dos aminoácidos y las que usan otros transmisores es de al menos 100.000 a 1, y el resto apenas alcanza unas 500.000 neuronas <span class="cite">Zeise §4.2</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Qué convierte una molécula en transmisor" tabindex="0"><table>
+<thead>
+<tr>
+<th>Grupo</th>
+<th>Miembros</th>
+<th>Papel funcional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aminoácidos</td>
+<td>Glutamato, GABA, glicina</td>
+<td>Excitación e inhibición rápidas; cerca de 80 millones de neuronas</td>
+</tr>
+<tr>
+<td>Monoaminas</td>
+<td>Dopamina, noradrenalina, adrenalina, serotonina, histamina</td>
+<td>Modulación de proyección extensa</td>
+</tr>
+<tr>
+<td>Acetilcolina</td>
+<td>Acetilcolina</td>
+<td>Única de su grupo; actúa en el sistema nervioso central, el autónomo y la unión neuromuscular</td>
+</tr>
+</tbody>
+</table></div>
+<p>Los aminoácidos son los caballos de trabajo del cerebro: el glutamato funciona como acelerador y el GABA o la glicina como frenos, que inhiben localmente y en gran parte por receptores ionotrópicos, de manera rápida y precisa <span class="cite">Zeise §4.2</span>. Esa arquitectura sostiene la mayor parte de la señalización rápida del cerebro. Las monoaminas y la acetilcolina, en cambio, no construyen la vía principal: la modulan.</p>
+<p>La distinción entre transmisores principales y co-transmisores no es de número de tipos, sino de cantidad. Los principales son con creces los más importantes porque las cantidades liberadas superan en varios órdenes de magnitud a las de los neuropéptidos y co-transmisores <span class="cite">Zeise §4.2</span>. En situaciones normales, una neurona usa un transmisor clásico como su mensajero sináptico principal.</p>
+
+</section><section id="sec-03-glutamato-el-eje-excitatorio" class="card">
+<div class="section-kicker"><span class="n">03</span> Tema</div>
+<h2>Glutamato: el eje excitatorio</h2>
+<p>El glutamato es, quizá, el transmisor más importante del cerebro y el principal excitatorio <span class="cite">Zeise §4.3.1</span>. Su característica más valiosa es la plasticidad, pero esa misma potencia lo vuelve peligroso cuando la liberación se descontrola. La misma maquinaria que sostiene el aprendizaje puede, en condiciones de falla energética, ejecutar la muerte neuronal <span class="cite">Zeise §4.3.3</span>.</p>
+<p>Los receptores metabotrópicos de glutamato son ocho, mGluR1 a mGluR8, y se ubican tanto en el lado postsináptico como en el presináptico <span class="cite">Zeise §4.3.1</span>. Activan segundos mensajeros que suelen terminar en fosforilación o desfosforilación de proteínas blanco, y como casi todas las proteínas pueden pasar por ambos procesos, los efectos son numerosos. Regulan la liberación de glutamato mediante autorreceptores, modifican la excitabilidad neuronal e influyen en la plasticidad. También se los ha implicado en enfermedades neurodegenerativas y en la modulación de comportamientos sociales, con posible interés para trastornos psiquiátricos asociados al aislamiento <span class="cite">Zeise §4.3.1</span>.</p>
+<p>La transmisión rápida depende de los receptores ionotrópicos. El receptor AMPA es un canal catiónico y su composición determina cuánto calcio puede pasar: la edición del ARN de la subunidad GluA2 coloca una arginina en el poro y establece la repulsión electrostática que impide el ingreso de calcio <span class="cite">Kandel cap. 13</span>. El receptor NMDA, en cambio, es permeable al calcio y exige coincidencia de señales.</p>
+<p>El glutamato extracelular se mantiene bajo por un sistema de transportadores. Existen cuatro tipos principales, responsables de una recaptación que asegura el funcionamiento dinámico y una concentración extracelular baja <span class="cite">Zeise §4.3.1</span>. Esa recaptación impide que la señal se prolongue y que el transmisor se acumule en la hendidura <span class="cite">Zeise §4.3.4</span>.</p>
+<p>Las patologías de los receptores ionotrópicos muestran cuánto depende la excitación de su composición exacta. Los autoanticuerpos contra la subunidad GluA3 del receptor AMPA lo activan como si fuera glutamato y producen crisis epilépticas. La pérdida de estargazina, necesaria para el tráfico y la localización sináptica de los AMPA, elimina estos receptores de las células granulares del cerebelo y causa ataxia con crisis frecuentes en el ratón stargazer. Si la edición de GluA2 falla, todos los AMPA se vuelven permeables al calcio y el animal presenta crisis y muerte en pocas semanas. La neuroligina postsináptica, que contacta con la neurexina presináptica, completa el cuadro de proteínas de adhesión cuya alteración se relaciona con autismo <span class="cite">Kandel cap. 13</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Glutamato: el eje excitatorio" tabindex="0"><table>
+<thead>
+<tr>
+<th>Receptor</th>
+<th>Tipo</th>
+<th>Rasgo distintivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AMPA</td>
+<td>Ionotrópico</td>
+<td>Permeabilidad al calcio controlada por la edición de GluA2; su tráfico depende de estargazina</td>
+</tr>
+<tr>
+<td>NMDA</td>
+<td>Ionotrópico</td>
+<td>Permeable a sodio, potasio y calcio; bloqueo por magnesio; funciona como puerta AND</td>
+</tr>
+<tr>
+<td>mGluR1 a mGluR8</td>
+<td>Metabotrópico</td>
+<td>Ocho subtipos; segundos mensajeros; autorreceptores presinápticos</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-04-la-puerta-and-y-la-memoria-sinaptica" class="card">
+<div class="section-kicker"><span class="n">04</span> Tema</div>
+<h2>La puerta AND y la memoria sináptica</h2>
+<p>La hipótesis de Hebb, publicada en 1949, sostiene que la capacidad de aprender se debe en gran medida a cambios en las sinapsis <span class="cite">Zeise §4.3.2</span>. Su lógica se resume en una imagen: donde las personas caminan, surgen los caminos. Las conexiones que resultan útiles se refuerzan y sobreviven, mientras las poco usadas se encogen o se eliminan. Esa regla convierte la experiencia en arquitectura.</p>
+<p>La plasticidad neuronal es la habilidad del sistema para reorganizarse en función de su historial. El aprendizaje designa la adquisición de una habilidad o la optimización de una existente y se refiere al rendimiento del sistema en su totalidad; la memoria es la capacidad de almacenar y recuperar información y constituye una condición necesaria del aprendizaje <span class="cite">Zeise §4.3.2</span>. No todo cambio nervioso es aprendizaje: olvidar también es un cambio plástico, y el aprendizaje solo se comprueba cuando aparece el comportamiento.</p>
+<p>La eficacia sináptica es la relación entre la entrada presináptica y la respuesta postsináptica <span class="cite">Zeise §4.3.2</span>. Cuando aumenta hay potenciación, cuando disminuye hay depresión, y si el cambio persiste en el tiempo recibe el nombre de LTP o LTD. La plasticidad sináptica está ampliamente estudiada y se relaciona con el aprendizaje en casi todos los casos; la plasticidad celular, que depende de canales y bombas, influye en la excitabilidad pero su papel en el aprendizaje sigue siendo limitado. La mayor parte de lo que se sabe proviene de sinapsis glutamatérgicas, el tipo más común en el cerebro y el asociado a la comunicación entre áreas distantes.</p>
+<p>El receptor NMDA fue la primera puerta AND descrita en neurociencia, en la década de los ochenta, y su modelo clásico es la sinapsis de las colaterales de Schaffer sobre la región CA1 del hipocampo, con origen en CA3 <span class="cite">Zeise §4.3.2.1</span>. La puerta exige dos condiciones simultáneas: presencia del agonista, glutamato, y despolarización de la parte postsináptica. En reposo, el magnesio divalente es arrastrado hacia el interior y bloquea el canal; a medida que la membrana se hace más positiva, aumenta la probabilidad de que el ion se aleje de la entrada y permita el flujo catiónico <span class="cite">Zeise §4.3.2.1</span>. El receptor es permeable a sodio y potasio y, a diferencia de otros ionotrópicos de glutamato, en gran medida al calcio, porque su poro tiene mayor diámetro.</p>
+<p>La cascada que sigue es la que convierte una coincidencia en memoria. El calcio que entra no solo genera señales eléctricas: es mensajero intracelular y su aumento en el sitio postsináptico desencadena eventos con segundos mensajeros conocidos <span class="cite">Zeise §4.3.2.1</span>. Uno de ellos es la calcio-calmodulina-cinasa II, enzima que agrega fosfato a otras moléculas. El resultado es la fosforilación de los receptores AMPA, que los vuelve más efectivos, y la incorporación de receptores AMPA que no eran funcionales <span class="cite">Zeise §4.3.2.1</span>. Todo ello aumenta la eficacia sináptica. Cuando los receptores NMDA se obstruyen, el rendimiento en diversas pruebas de aprendizaje se socava de manera severa <span class="cite">Zeise §4.3.2.1</span>.</p>
+<p>Una depresión de la eficacia que persiste en el tiempo constituye una LTD, y su existencia muestra que la sinapsis no solo se refuerza: también se debilita de forma duradera <span class="cite">Zeise §4.3.2</span>. Es el fenómeno inverso de la LTP: la eficacia baja en lugar de subir. El material define el fenómeno por su efecto y no desarrolla su cascada molecular.</p>
+<p>La inhibición GABAérgica condiciona la inducción de LTP. Los receptores GABA_B presinápticos reducen la liberación de GABA cuando el transmisor abunda, lo que genera una inhibición frecuencia-dependiente: al estimular por sobre 0,5 Hz, los IPSP se reducen a medida que sube la frecuencia <span class="cite">Zeise §4.3.5.2</span>. Ese alivio de la inhibición permite alcanzar la despolarización suficiente para activar los receptores NMDA. La noradrenalina añade otra vía, porque puede inducir LTP sin estimulación sináptica y actúa como señal metaplástica que hace a las neuronas reaccionar más a los factores plásticos <span class="cite">Zeise §4.3.6.1</span>. Las monoaminas y la acetilcolina tendrían, en conjunto, una función preparativa: modulan grupos neuronales para dejarlos listos para el cambio plástico <span class="cite">Zeise §4.3.6</span>.</p>
+<p>El receptor NMDA también es una puerta de entrada a la enfermedad. La fenciclidina, la ketamina y el MK801 se unen a un sitio del poro distinto del sitio del magnesio y lo inhiben, lo que produce alucinaciones y síntomas esquizofreniformes <span class="cite">Kandel cap. 13</span>. El bloqueo farmacológico del NMDA reproduce síntomas de esquizofrenia, ciertos antipsicóticos aumentan la corriente NMDA y la encefalitis anti-NMDA cursa con psicosis y crisis. En dosis bajas, la ketamina ejerce una acción antidepresiva rápida y potente. El β-amiloide, por su parte, podría actuar sobre las señales metabotrópicas del receptor, independientes del flujo iónico <span class="cite">Kandel cap. 13</span>.</p>
+
+</section><section id="sec-05-excitotoxicidad-y-recaptacion" class="card">
+<div class="section-kicker"><span class="n">05</span> Tema</div>
+<h2>Excitotoxicidad y recaptación</h2>
+<p>El glutamato es indispensable para la transmisión excitatoria y, en condiciones de falla energética, se convierte en el principal ejecutor de la muerte neuronal <span class="cite">Zeise §4.3.3</span>. Cuando se interrumpe el suministro de oxígeno o de energía, como en un infarto, las bombas iónicas empiezan a fallar y se acumulan sodio y calcio en el interior mientras se pierde potasio. Las neuronas quedan más cerca de su umbral y liberan más glutamato de lo normal, lo que instala un círculo vicioso. El receptor NMDA es un eslabón crucial: la despolarización y el glutamato abren el canal, entra calcio y la célula muere (Choi, 1987) <span class="cite">Zeise §4.3.3</span>. El proceso se potencia a sí mismo y la recaptación, que depende del gradiente de sodio, también se ve en riesgo.</p>
+<p>Agonistas como el kainato o el ácido iboténico dañan el tejido nervioso y se usan para provocar lesiones controladas <span class="cite">Zeise §4.3.3</span>. Su ventaja frente a los métodos mecánicos o por calor es que las fibras nerviosas que atraviesan el área permanecen intactas, porque los axones casi no poseen receptores de glutamato. En ratas, un bloqueador de receptores NMDA reduce el daño cerebral después de una lesión (Yi et al., 2019). El fenómeno también cumple un papel en enfermedades neurodegenerativas como el Alzheimer, la más frecuente, y en el envejecimiento cerebral <span class="cite">Zeise §4.3.3</span>.</p>
+<p>La recaptación es la otra cara de la potencia glutamatérgica. Aplicar glutamato con una micropipeta produce un efecto estimulante débil comparado con los agonistas, pese a que su afinidad por los receptores es más alta <span class="cite">Zeise §4.3.4</span>. La razón es un sistema de recaptación altamente eficiente, específico para el glutamato y que no transporta agonistas como el kainato o el ibotenato. La recaptación rescinde la señal sináptica, recaptura y recicla el transmisor, y ocurre principalmente en células gliales, que convierten el glutamato en glutamina, una molécula que los receptores de glutamato no reconocen <span class="cite">Zeise §4.3.4</span>. Las células gliales liberan la glutamina, la neurona la toma y la reconvierte en glutamato, de modo que la concentración extracelular se mantiene suficientemente baja para evitar efectos excitotóxicos.</p>
+<p>La geometría del tejido favorece ese control. Las partes presináptica y postsináptica están completamente rodeadas de astrocitos, lo que produce un término bastante abrupto de los efectos del glutamato, de casi 1 milisegundo <span class="cite">Zeise §4.3.4</span>. Si se bloquea el transporte, la señal postsináptica se prolonga notablemente. El transporte depende del gradiente de sodio y difiere del transporte neuronal; un quinto transportador fue descubierto en la retina (Pow y Barnet, 2000) <span class="cite">Zeise §4.3.4</span>. Se ha implicado al transporte de glutamato como causa de muerte neuronal en enfermedades neurodegenerativas, y se propuso que un transporte hiperactivo podría ser factor causal de esquizofrenia (Bayer et al., 2005).</p>
+<p>La perspectiva clínica confirma la secuencia. La excitotoxicidad por glutamato implica una sobrecarga de calcio postsináptico por receptores NMDA, que activa proteasas y fosfolipasas dependientes de calcio y genera radicales libres tóxicos; en cultivo, una exposición breve a glutamato alto mata muchas neuronas <span class="cite">Kandel cap. 13</span>. Los bloqueadores selectivos del NMDA, como el APV, protegen en pruebas clínicas, pero las alucinaciones que acompañan al bloqueo han limitado su utilidad, y niveles fisiológicos de activación NMDA pueden proteger de la muerte celular. La toxicidad del glutamato contribuye al daño posterior a un ictus, al estado epiléptico y a la enfermedad de Huntington <span class="cite">Kandel cap. 13</span>.</p>
+
+</section><section id="sec-06-gaba-y-glicina-el-freno" class="card">
+<div class="section-kicker"><span class="n">06</span> Tema</div>
+<h2>GABA y glicina: el freno</h2>
+<p>El GABA, ácido gamma-aminobutírico, y la glicina son los transmisores inhibitorios del sistema nervioso <span class="cite">Zeise §4.3.5</span>. La glicina reemplaza al GABA en algunas partes del tronco encefálico y de la médula espinal. La disposición anatómica es característica: las sinapsis inhibitorias terminan en dendritas proximales, espinas y soma, mientras las excitatorias se ubican en la periferia <span class="cite">Zeise §4.3.5</span>.</p>
+<p>El GABA tiene dos tipos de receptores, uno ionotrópico y uno metabotrópico. El GABA_A es el blanco de ansiolíticos y antiepilépticos, y en general de los fármacos que buscan bajar la tensión y la agitación <span class="cite">Zeise §4.3.5.1</span>. Son cinco subunidades dispuestas en círculo con un poro central; como existen varios tipos de subunidades, los receptores no son idénticos ni en propiedades electrofisiológicas ni farmacológicas, y el más frecuente en la neocorteza de mamíferos contiene alfa, beta y gamma. La conductancia es aniónica y pasa sobre todo cloruro, aunque también bicarbonato <span class="cite">Zeise §4.3.5.1</span>. Por eso el potencial de inversión del IPSP no coincide exactamente con el del cloruro (Kaila et al., 1993).</p>
+<p>Los sitios de unión explican su farmacología. El receptor tiene dos sitios para el ligando natural y varios sitios alostéricos que son blancos de ligandos exógenos. Las benzodiacepinas son el sitio alostérico más conocido: no abren el canal por sí mismas, sino que incrementan la eficacia del GABA al aumentar la probabilidad de apertura y la afinidad del ligando <span class="cite">Zeise §4.3.5.1</span>. Como el GABA es el principal transmisor inhibitorio, actúan en casi todas las partes y producen efectos ansiolíticos, anticonvulsivos y relajantes. Los barbitúricos ocupan otro sitio alostérico y fueron reemplazados por su ventana terapéutica estrecha, su potencial letal y su capacidad adictiva. La suspensión brusca de sustancias que aumentan la inhibición GABAérgica puede provocar ansiedad, inquietud o convulsiones <span class="cite">Zeise §4.3.5.1</span>.</p>
+<p>El GABA_B es metabotrópico y existe en un solo tipo <span class="cite">Zeise §4.3.5.2</span>. Actúa por una proteína G acoplada a la enzima que forma AMP cíclico, y su activación reduce la actividad de esa enzima. La caída del cAMP abre canales de potasio y cierra canales de calcio, y ambas acciones hiperpolarizan la neurona, alejando su voltaje del umbral. El cierre de canales de calcio añade un efecto protector contra el influjo excesivo, el mismo que en la vía glutamatérgica conduce a la excitotoxicidad <span class="cite">Zeise §4.3.5.2</span>.</p>
+<p>La respuesta al GABA es bifásica. El componente rápido corresponde a GABA_A y tiene un voltaje de inversión cercano a -70 mV; el tardío corresponde a GABA_B e hiperpolariza más allá de -80 mV <span class="cite">Zeise §4.3.5.2</span>. El componente tardío desaparece en la configuración whole-cell porque la perfusión interfiere con los segundos mensajeros. En tejido epiléptico humano, obtenido de una resección por esclerosis del Cuerno de Ammón, el componente dependiente de GABA_B es casi inexistente (Teichgräber et al., 2009). Eso sugiere que estos receptores son esenciales para evitar que la corteza entre en estados de actividad elevada <span class="cite">Zeise §4.3.5.2</span>.</p>
+<p>Los GABA_B presinápticos son autorreceptores que reducen la liberación cuando el transmisor abunda <span class="cite">Zeise §4.3.5.2</span>. De ahí surge la inhibición frecuencia-dependiente descrita por Deisz y Prince en 1989, que reduce los IPSP por sobre 0,5 Hz y resulta importante para la inducción de LTP. La maduración de los receptores GABA explicaría el período crítico del desarrollo, el lapso en que son posibles cambios plásticos como la fijación de campos receptivos (Hensch, 2005) <span class="cite">Zeise §4.3.5.2</span>.</p>
+<p>La glicina es el aminoácido más pequeño y actúa como inhibidor solo en el tronco encefálico y la médula espinal <span class="cite">Zeise §4.3.5.3</span>. Su mecanismo ionotrópico se parece al de GABA_A: abre canales aniónicos. La estricnina, alcaloide de ciertas semillas de Asia y África, bloquea competitivamente estos receptores y produce una muerte dolorosa con convulsiones. No existe una sustancia terapéutica que interactúe específicamente con ellos, aunque la inhibición glicinérgica del dolor crónico en la médula podría ser un lugar de interferencia farmacológica (Cioffi, 2018) <span class="cite">Zeise §4.3.5.3</span>. Los receptores metabotrópicos de glicina se documentaron en la retina en 2008 (Hou et al., 2008).</p>
+<div class="table-wrap" role="region" aria-label="Tabla: GABA y glicina: el freno" tabindex="0"><table>
+<thead>
+<tr>
+<th>Receptor</th>
+<th>Tipo</th>
+<th>Mecanismo y efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GABA_A</td>
+<td>Ionotrópico</td>
+<td>Canal de cloruro con paso de bicarbonato; cinco subunidades; blanco de benzodiacepinas y barbitúricos</td>
+</tr>
+<tr>
+<td>GABA_B</td>
+<td>Metabotrópico</td>
+<td>Proteína G, baja el cAMP, abre potasio y cierra calcio; hiperpolariza</td>
+</tr>
+<tr>
+<td>Glicina ionotrópico</td>
+<td>Ionotrópico</td>
+<td>Canal aniónico en tronco encefálico y médula; la estricnina lo bloquea</td>
+</tr>
+</tbody>
+</table></div>
+<p>Las mutaciones confirman el papel de estos receptores en la estabilidad del circuito. Mutaciones sin sentido que truncan las subunidades alfa y gamma del GABA_A alteran la transmisión inhibitoria y causan epilepsia congénita. En la hiperekplexia familiar, mutaciones missense en la subunidad alfa del receptor de glicina reducen su apertura y producen hipertonía con respuestas exageradas al ruido. La intoxicación por estricnina bloquea el mismo receptor y desencadena convulsiones. El GABA también puede excitar: cuando el cloruro intracelular aumenta, y tras estimulación intensa puede duplicarse, el potencial de equilibrio del cloruro se vuelve más positivo que el reposo y la apertura del canal produce eflujo y despolarización, un fenómeno que ocurre en neuronas de animales recién nacidos y en dendritas distales maduras <span class="cite">Kandel cap. 13</span>.</p>
+
+</section><section id="sec-07-monoaminas-y-acetilcolina" class="card">
+<div class="section-kicker"><span class="n">07</span> Tema</div>
+<h2>Monoaminas y acetilcolina</h2>
+<p>La síntesis de las monoaminas ocurre en el sitio presináptico e incluye una descarboxilación, la eliminación del grupo carboxilo <span class="cite">Zeise §4.3.6</span>. La tirosina da origen a la adrenalina, la noradrenalina y la dopamina; el triptófano a la serotonina; la histidina a la histamina. La histamina se produce con una sola descarboxilación, mientras las demás necesitan además una hidroxilación.</p>
+<p>Las neuronas monoaminérgicas son pocas, pero su proyección es extraordinaria. Aunque las neuronas que trabajan con aminoácidos las superan con creces en número, las monoaminérgicas proyectan a casi todo el sistema nervioso central, al menos la noradrenalina y la serotonina, y por eso se llaman transmisores de proyección extendida, junto con la acetilcolina y la orexina (Nestler et al., 2015) <span class="cite">Zeise §4.3.6</span>. Casi ninguna neurona central carece de receptores de monoaminas.</p>
+<p>La noradrenalina y la adrenalina comparten receptores. La adrenalina es una hormona de las glándulas suprarrenales; la noradrenalina es el transmisor del segmento simpático del sistema nervioso autónomo <span class="cite">Zeise §4.3.6.1</span>. Nor significa menos, un grupo metilo menos, y no algo agregado. Cualquiera de las dos puede actuar como transmisor, hormona o mensajero paracrino, y como comparten receptores se habla de adrenorreceptores, con tres subtipos: alfa 1, alfa 2 y beta. Alfa 2 y beta tienen efectos opuestos sobre la adenilil ciclasa, mientras alfa 1 usa IP3 y DAG <span class="cite">Zeise §4.3.6.1</span>.</p>
+<p>El locus coeruleus concentra casi toda la noradrenalina central. Unas 20.000 neuronas de este núcleo del mesencéfalo proporcionan noradrenalina a todas las partes importantes del cuerpo, y lo logran porque poseen gran cantidad de varicosidades, engrosamientos del axón donde el transmisor se libera sin una parte postsináptica típica, en modo paracrino <span class="cite">Zeise §4.3.6.1</span>. Esas varicosidades también liberan glutamato. La noradrenalina puede inducir LTP sin estimulación sináptica (Stanton y Sarvey, 1987) y es metaplástica, porque hace que las neuronas reaccionen más a los factores plásticos (Hansen y Manahan-Vaughan, 2015) <span class="cite">Zeise §4.3.6.1</span>. Una fracción importante de los antidepresivos reduce su recaptación, y la atomoxetina hace lo mismo.</p>
+<p>La dopamina se reconoció como transmisor propio recién en los años sesenta <span class="cite">Zeise §4.3.6.2</span>. Se sintetiza desde tirosina a DOPA y luego a dopamina, y también puede partir de la fenilalanina. A diferencia de la noradrenalina, la histamina y la serotonina, no se proyecta a toda la neocorteza, sino principalmente al lóbulo frontal. El caso de Phineas Gage ilustra la importancia de esa región para el control del comportamiento (Damasio et al., 1994). Los psicoestimulantes que aumentan la dopamina frontal pueden mejorar la atención y disminuir la impulsividad <span class="cite">Zeise §4.3.6.2</span>.</p>
+<p>El área tegmental ventral es un núcleo del mesencéfalo y la proyección dopaminérgica más prominente hacia el lóbulo frontal; se la considera centro del sistema de búsqueda (Panksepp, 2011) <span class="cite">Zeise §4.3.6.2</span>. El núcleo accumbens se asocia a motivación, impulsos y adicciones, y la vía nigrostriatal falla por pérdida de neuronas en la sustancia negra y produce Parkinson. Los antipsicóticos bloquean receptores dopaminérgicos postsinápticos de la neocorteza frontal y prefrontal, y todos inhiben receptores de dopamina, en particular D2 <span class="cite">Zeise §4.3.6.2</span>.</p>
+<p>La serotonina nació como molécula periférica. Cuando se corta un vaso, activa la coagulación y la contracción vascular, y en las células cromafines del intestino activa el músculo liso; la diarrea es producida con frecuencia por plantas o microbios que contienen o secretan serotonina, como Entamoeba histolytica <span class="cite">Zeise §4.3.6.3</span>. Deriva del triptófano, contiene un anillo de indol y su nombre químico es 5-hidroxitriptamina, de ahí la sigla 5-HT. En el sistema nervioso central se origina en los núcleos del rafe y se esparce a casi todos los rincones, incluida la médula espinal.</p>
+<p>La serotonina participa en la migraña y en el estado de ánimo. La migraña se relaciona con una dilatación anormal de las arterias cerebrales, en especial las de la neocorteza posterior, y los triptanes son agonistas de sus receptores <span class="cite">Zeise §4.3.6.3</span>. Los niveles se estiman con el ácido 5-hidroxindolacético, y son más bajos en personas que concretaron suicidio, aún menores en quienes lo hicieron de un modo más violento. Los antidepresivos, los antipsicóticos atípicos, el MDMA, la buspirona y los alucinógenos LSD, mescalina y psilocibina actúan sobre el sistema serotoninérgico, estos últimos como agonistas parciales de 5-HT2 <span class="cite">Zeise §4.3.6.3</span>.</p>
+<p>La histamina deriva de la histidina por una descarboxilación en un solo paso, y la mayor parte está fuera del sistema nervioso central <span class="cite">Zeise §4.3.6.4</span>. El intestino contiene grandes cantidades y los mastocitos también la almacenan. Sus neuronas se concentran en el núcleo tuberomamilar y liberan gran parte de su transmisor desde varicosidades. Mantiene despierto al cerebro: durante el sueño las neuronas histaminérgicas están casi en silencio. Sus antagonistas reducen la ansiedad, son menos efectivos que las benzodiacepinas pero no generan dependencia, y son más conocidos por aliviar las alergias <span class="cite">Zeise §4.3.6.4</span>.</p>
+<p>La acetilcolina es especial en más de un sentido. No se asemeja a ningún otro transmisor principal: posee una parte apolar llamada colina, presente en las membranas como fosfatidilcolina, pero el nitrógeno cargado positivamente y el acetato la vuelven soluble en agua <span class="cite">Zeise §4.3.7</span>. Su terminación exige descomponerla en colina y acetato por las acetilcolinesterasas, unas de las enzimas más efectivas que se conocen, capaces de hidrolizar casi 1000 moléculas por segundo. La colina se capta por transporte de alta afinidad y el acetato se reutiliza.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Monoaminas y acetilcolina" tabindex="0"><table>
+<thead>
+<tr>
+<th>Monoamina</th>
+<th>Precursor</th>
+<th>Núcleo principal</th>
+<th>Proyección</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Noradrenalina</td>
+<td>Tirosina</td>
+<td>Locus coeruleus</td>
+<td>Casi todo el sistema nervioso central, por varicosidades</td>
+</tr>
+<tr>
+<td>Dopamina</td>
+<td>Tirosina</td>
+<td>Área tegmental ventral y sustancia negra</td>
+<td>Lóbulo frontal y vía nigrostriatal</td>
+</tr>
+<tr>
+<td>Serotonina</td>
+<td>Triptófano</td>
+<td>Núcleos del rafe</td>
+<td>Casi todo el sistema nervioso central, incluida la médula</td>
+</tr>
+<tr>
+<td>Histamina</td>
+<td>Histidina</td>
+<td>Núcleo tuberomamilar</td>
+<td>Casi todas las áreas cerebrales</td>
+</tr>
+</tbody>
+</table></div>
+
+</section><section id="sec-08-el-tronco-dendritico-no-es-un-cable" class="card">
+<div class="section-kicker"><span class="n">08</span> Tema</div>
+<h2>El tronco dendrítico no es un cable</h2>
+<p>Durante casi 150 años la neurociencia enseñó que las dendritas son cables tubulares optimizados para llevar el voltaje de las espinas hasta el soma, con igualación de impedancias en cada bifurcación según la regla 3/2 de Rall <span class="cite">Kelly §3</span>. Ramón y Cajal había descrito el cuello de la espina como un compartimento nanométrico, fácil de ver porque una cabeza bulbosa lo delata <span class="cite">Kelly §1</span>. El tronco, en cambio, se concibió como una superficie lisa, y las irregularidades finas del calibre se atribuyeron a ruido de fijación, tinción o reconstrucción. Kelly y colaboradores sostienen que esa imagen es una simplificación: con resolución suficiente aparecen cuellos repetidos de 100 a 500 nm en neuronas de ratón y de humano <span class="cite">Kelly §1</span>.</p>
+<p>Una constricción del tronco dendrítico, o DSC, es una reducción local y abrupta del diámetro a la mitad o menos del diámetro adyacente, que después recupera al menos el 75 % del original <span class="cite">Kelly §4</span>. La diferencia respecto de la mediana de la rama alcanza un z-score de -1,97 ± 0,1, de modo que no se explica por la variación normal. Cuatro técnicas independientes convergen: expansión, STED de dos fotones, microscopía de barrido y microscopía electrónica seriada <span class="cite">Kelly §5</span>. Aparecen en tejido fijo y vivo, en tres preparaciones de microscopía electrónica distintas, y son estables en reimágenes repetidas, lo que descarta el fotodaño.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: El tronco dendrítico no es un cable" tabindex="0"><table>
+<thead>
+<tr>
+<th>Técnica</th>
+<th>Resolución</th>
+<th>Diámetro</th>
+<th>Largo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ExM</td>
+<td>~60 nm</td>
+<td>0,33 ± 0,03 µm</td>
+<td>1,4 ± 0,2 µm</td>
+</tr>
+<tr>
+<td>STED</td>
+<td>~40 nm</td>
+<td>0,36 ± 0,01 µm</td>
+<td>2,8 ± 0,3 µm</td>
+</tr>
+<tr>
+<td>ISM</td>
+<td>~100 nm</td>
+<td>491 ± 20 nm</td>
+<td>2,43 ± 0,18 µm</td>
+</tr>
+<tr>
+<td>EM seriada</td>
+<td>~10 nm</td>
+<td>0,26 ± 0,06 µm</td>
+<td>1,6 ± 0,7 µm</td>
+</tr>
+</tbody>
+</table></div>
+<p>Todas las dendritas de células granulares analizadas de soma a punta tenían varias, en promedio cinco y con un rango de 2 a 10 <span class="cite">Kelly §6</span>. La primera se ubicaba a 207 ± 18 µm del soma, y el segmento entre dos constricciones mide 17 ± 1,5 µm. En piramidales de capa 2/3 de la corteza visual de ratón se encontraron entre 11 y 16 por célula, con cerca del 85 % en apicales y preferencia por el tuft distal. En humano se repite el patrón, con diámetros que van de 146 nm en microscopía electrónica a 406 nm en tejido de cirugía de epilepsia y 570 nm en cultivo organotípico <span class="cite">Kelly §6</span>.</p>
+<p>La resistencia axial es proporcional a la resistividad y al largo, e inversamente proporcional al área, de modo que va con el inverso del cuadrado del radio <span class="cite">Kelly §7</span>. En células granulares, la resistencia por micrómetro pasa de 5,5 ± 1,9 a 34,8 ± 6,0 MΩ cuando hay una constricción, y el total añadido por dendrita es de 260 ± 114 MΩ, comparable a la resistencia de entrada de toda la célula. Una constricción de un micrón de largo puede pesar más que decenas de micrómetros de tronco normal.</p>
+<p>La impedancia de entrada, que mide el cambio de voltaje donde se inyecta corriente, aumenta entre 10 y 49 % con una a siete constricciones <span class="cite">Kelly §7</span>. La impedancia de transferencia, que mide el cambio somático ante corriente distal, disminuye. La señal local se agranda y la que llega al soma se achica, que es compartimentalización aplicada al tronco <span class="cite">Kelly §7</span>.</p>
+<p>El modelo y el experimento coinciden. La despolarización distal crece entre 10 y 49 %, el EPSP somático se atenúa entre 1,4 y 14 % y las entradas proximales casi no se afectan <span class="cite">Kelly §8</span>. La sumación distal se vuelve sublineal: la razón entre EPSP medido y esperado cae de 1,01 sin constricción a 0,77 con siete. La constricción sube la impedancia local y amplifica el EPSP justo en la sinapsis, pero al crecer el voltaje local se acerca al potencial de reversión y cae la fuerza electromotriz <span class="cite">Kelly §8</span>. El uncaging de glutamato confirmó la predicción, con ganancia de 1,14 ± 0,10 en proximal y 0,82 ± 0,05 en distal.</p>
+<p>El calcio cierra el argumento. El umbral para un transitorio fue menor en distal que en proximal, medido en milivoltios y en número de espinas, y los transitorios saturaron con menos entradas <span class="cite">Kelly §9</span>. El bloqueo de NMDA con D-APV aumentó el umbral y desplazó la relación entre entrada y calcio. Una constricción convierte una entrada distal en un detector de coincidencia local, capaz de disparar cascadas de plasticidad con pocas espinas activas <span class="cite">Kelly §9</span>.</p>
+<p>Los autores reconocen el límite principal: no hay vínculo causal demostrado, porque no existen herramientas para manipular selectivamente la estructura o su distribución <span class="cite">Kelly §12</span>. La base molecular es desconocida, se estudiaron dos especies y solo neuronas excitatorias, y se ignora si las constricciones dependen del desarrollo, de la actividad o de la enfermedad. La pregunta abierta es si causan la sublinealidad distal o solo acompañan a una dendrita ya compartimentalizada por otras razones <span class="cite">Kelly §12</span>.</p>
+
+<figure class="fig" id="fig-1">
+  <a class="fig-open" href="assets/fig/05-dsc-figura1.jpg" data-caption="Figura 1. Constricciones nanométricas del tronco dendrítico en células granulares del giro dentado. Las tres técnicas independientes (microscopía de expansión, STED y microscopía electrónica) muestran el mismo rasgo: el diámetro cae a 0,26 a 0,46 µm y luego se recupera, con largos de 1,4 a 2,8 µm. Los paneles D a G sitúan las constricciones en la porción distal del árbol dendrítico." data-alt="Figura 1. Constricciones nanométricas del tronco dendrítico en células granulares del giro dentado. Las tres técnicas independientes (microscopía de expansión, STED y microscopía electrónica) muestran el mismo rasgo: el diámetro cae a 0,26 a 0,46 µm y luego se recupera, con largos de 1,4 a 2,8 µm. Los paneles D a G sitúan las constricciones en la porción distal del árbol dendrítico.">
+    <img src="assets/fig/05-dsc-figura1.jpg" width="2180" height="1545" loading="lazy" decoding="async" alt="Figura 1. Constricciones nanométricas del tronco dendrítico en células granulares del giro dentado. Las tres técnicas independientes (microscopía de expansión, STED y microscopía electrónica) muestran el mismo rasgo: el diámetro cae a 0,26 a 0,46 µm y luego se recupera, con largos de 1,4 a 2,8 µm. Los paneles D a G sitúan las constricciones en la porción distal del árbol dendrítico.">
+  </a>
+  <figcaption>
+    <strong>Figura 1.</strong> Constricciones nanométricas del tronco dendrítico en células granulares del giro dentado. Las tres técnicas independientes (microscopía de expansión, STED y microscopía electrónica) muestran el mismo rasgo: el diámetro cae a 0,26 a 0,46 µm y luego se recupera, con largos de 1,4 a 2,8 µm. Los paneles D a G sitúan las constricciones en la porción distal del árbol dendrítico.
+    <span class="fig-source">Kelly et al., <em>Sci. Adv.</em> 12, eaec4911 (2026), figura 1. <a href="creditos.html#fig-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
+</section><section id="sec-09-dha-la-membrana-que-facilita-el-cambio" class="card">
+<div class="section-kicker"><span class="n">09</span> Tema</div>
+<h2>DHA: la membrana que facilita el cambio</h2>
+<p>El ácido docosahexaenoico, DHA, es un ácido graso poliinsaturado de cadena larga 22:6 n-3 <span class="cite">apuntes, bloque III</span>. Se esterifica en la posición sn-2 de los glicerofosfolípidos, con afinidad por la fosfatidiletanolamina y la fosfatidilserina, y se ubica en la valva interna de la bicapa. Su efecto biofísico depende de la geometría. Los seis dobles enlaces cis generan plegamientos que impiden el empaquetamiento denso de las cadenas y aumentan drásticamente la fluidez, la flexibilidad, la compresibilidad y la permeabilidad de la membrana. Además, tiene baja afinidad por el colesterol, lo que segrega y excluye el colesterol y altera las balsas lipídicas, cambiando la localización de proteínas ancladas y las cascadas de señalización <span class="cite">apuntes, bloque III</span>.</p>
+<p>En el sistema nervioso central, esa fluidez tiene una consecuencia directa sobre la sinapsis: permite la fusión rápida de las vesículas sinápticas y, con ello, la exocitosis <span class="cite">apuntes, bloque III</span>. En la retina, el entorno lipídico flexible permite el cambio conformacional de la rodopsina de cis a trans después de absorber un fotón, y así optimiza la fototransducción. La fluidez de la membrana condiciona, así, la velocidad de la transmisión sináptica y de la fototransducción.</p>
+<p>En el hipocampo, el DHA optimiza el desplazamiento lateral y la estabilización de los receptores ionotrópicos de glutamato, NMDA y AMPA, en la densidad postsináptica <span class="cite">apuntes, bloque III</span>. Eso permite una transducción más rápida ante estimulación de alta frecuencia y favorece los engramas de memoria. También promueve cascadas que aumentan el BDNF y permite la remodelación del citoesqueleto necesaria para formar nuevas espinas dendríticas, es decir, sinaptogénesis <span class="cite">apuntes, bloque III</span>. La composición de la membrana se vuelve, así, parte del mecanismo de plasticidad.</p>
+
+</section><section id="sec-10-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">10</span> Tema</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Sinapsis química: vesículas, hendidura y receptores; sinapsis eléctrica: unión gap con continuidad de citoplasmas e intercambio de iones y segundos mensajeros <span class="cite">Zeise §4.1.1</span>.</li>
+<li>Criterio estricto de neurotransmisor: posibilita la transmisión química y se almacena en vesículas; sin vesícula no se acepta <span class="cite">Zeise §4.1</span>.</li>
+<li>Principio de Dale: una neurona, un transmisor principal, con excepciones como glutamato y dopamina juntos <span class="cite">Zeise §4.2</span>.</li>
+<li>Tres aminoácidos, cinco monoaminas y una acetilcolina; cerca de 80 millones de neuronas glutamatérgicas y GABAérgicas frente a 165.000 serotoninérgicas y 20.000 noradrenérgicas <span class="cite">Zeise §4.2</span>.</li>
+<li>NMDA: primera puerta AND, CA1 y colaterales de Schaffer; exige glutamato y despolarización, y su calcio activa CaMKII y fosforila AMPA <span class="cite">Zeise §4.3.2.1</span>.</li>
+<li>LTD: depresión persistente de la eficacia sináptica, sin cascada molecular detallada en el material <span class="cite">Zeise §4.3.2</span>.</li>
+<li>Excitotoxicidad: falla de bombas, acumulación de sodio y calcio, más glutamato, entrada de calcio por NMDA y retroalimentación positiva <span class="cite">Zeise §4.3.3</span>.</li>
+<li>Recaptación glial: glutamato a glutamina en astrocitos, retorno a la neurona y reconversión; término de casi 1 milisegundo <span class="cite">Zeise §4.3.4</span>.</li>
+<li>GABA_A: cinco subunidades, cloruro y bicarbonato, benzodiacepinas que aumentan la apertura sin abrir solas; GABA_B: cAMP, potasio y calcio, respuesta tardía <span class="cite">Zeise §4.3.5</span>.</li>
+<li>Glicina: aminoácido más pequeño, tronco encefálico y médula, canal aniónico, bloqueo competitivo por estricnina <span class="cite">Zeise §4.3.5.3</span>.</li>
+<li>Monoaminas: tirosina para adrenalina, noradrenalina y dopamina; triptófano para serotonina; histidina para histamina <span class="cite">Zeise §4.3.6</span>.</li>
+<li>Acetilcolina: colina y acetato, acetilcolinesterasa con casi 1000 moléculas por segundo, recaptación de colina de alta afinidad <span class="cite">Zeise §4.3.7</span>.</li>
+<li>DSC: caída a la mitad o menos con recuperación del 75 %, primera a 207 ± 18 µm, subcompartimento de 17 ± 1,5 µm, resistencia axial de 5,5 a 34,8 MΩ/µm <span class="cite">Kelly §4</span>.</li>
+<li>DHA: 22:6 n-3, posición sn-2, seis dobles enlaces cis, fluidez y balsas lipídicas; estabiliza NMDA y AMPA en la densidad postsináptica <span class="cite">apuntes, bloque III</span>.</li>
+</ul>
+
+</section><section id="sec-11-limites-del-material" class="card">
+<div class="section-kicker"><span class="n">11</span> Tema</div>
+<h2>Límites del material</h2>
+<div class="warnbox"><span class="box-title">Límites del material</span><ul>
+<li>El capítulo de Zeise cubre las páginas 99 a 126 y se corta a mitad de la sección de acetilcolina, de modo que no hay tratamiento desarrollado de neuropéptidos, mensajeros retrógrados, co-transmisores ni recaptación general.</li>
+<li>Varias páginas del escaneo de Zeise salieron con las columnas entrelazadas, y la tabla de neurotransmisores aparece desordenada en el escaneo; sus detalles son los menos firmes del capítulo.</li>
+<li>El artículo de Kelly remite a las figuras suplementarias S1 a S13, que no están en el archivo; los controles detallados de fotodaño, canales de potasio y morfologías realistas no se pueden confirmar con el material disponible.</li>
+<li>El apartado de DHA proviene de los apuntes de clase y no del libro; su extensión sobre el trastorno por déficit de atención está marcada en el original como complemento y no forma parte del alcance.</li>
+<li>La extracción de Kandel reúne las patologías de los capítulos 11 y 13, no el texto completo de esos capítulos; la fisiología de la integración sináptica se apoya sobre todo en Zeise y Kelly.</li>
+</ul></div>
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras de la guía</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-1" aria-label="Figura 1"><img src="assets/fig/05-dsc-figura1.jpg" loading="lazy" decoding="async" alt="Figura 1"><span>Figura 1</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Neurociencias Aplicadas a la Medicina · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Purves, <em>Neurociencia</em>; Zeise, <em>Neurociencia para la psicología y otras áreas</em>; los apuntes de clase y los artículos del curso. No se distribuyen los PDF originales.</p>
+  <p><a href="creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

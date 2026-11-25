@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nace: neurodesarrollo temprano · Neurociencias UBB</title>
+<meta name="description" content="Nace: neurodesarrollo temprano. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3f63'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' fill='%23dbeafe' text-anchor='middle'%3ENe%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Nace: neurodesarrollo temprano · Neurociencias UBB">
+<meta property="og:description" content="Nace: neurodesarrollo temprano. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#0f2437 0%,#1a3d5c 55%,#2f6b9a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#b9d3e8;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#b9d3e8;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(1.9rem,4.2vw,3.2rem);
+    line-height:1.08;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:26ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d9e8f4;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1120px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a9cbe4;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#10324c;border-color:#fff}
+  .btn.primary:hover{background:#eaf4fb}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0 .45rem;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#1d3f63;background:#e3eef7;border:1px solid #a9cbe4;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Neurociencias: azul profundo y ámbar sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f3f6fa;
+  --surface:#fffefb;
+  --surface-2:#e9eff6;
+  --surface-3:#dae4ef;
+  --ink:#14202b;
+  --muted:#54677a;
+  --line:#cbd8e6;
+  --brand:#1d3f63;
+  --brand-2:#2f6b9a;
+  --brand-3:#e3eef7;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(16,36,56,.09);
+}
+[data-theme="dark"]{
+  --bg:#0e141a;
+  --surface:#151e26;
+  --surface-2:#1c2833;
+  --surface-3:#26333f;
+  --ink:#e9f1f7;
+  --muted:#a4b6c6;
+  --line:#2b3a47;
+  --brand:#7dd3fc;
+  --brand-2:#38bdf8;
+  --brand-3:#0d2a3c;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.42);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(10,18,26,.84)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Neurociencias Aplicadas a la Medicina</p>
+    <h1>02. Nace: neurodesarrollo temprano</h1>
+    <p class="lede">Guía 02 de 08. 4.744 palabras. 89 citas y 28 filas de tabla. 2 figuras seleccionadas.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>02 de 08</strong></div><div><span>Fuentes</span><strong>Purves cap. 22 · apuntes, bloque I</strong></div><div><span>Citas</span><strong>89</strong></div><div><span>Figuras</span><strong>2</strong></div><div><span>Tablas</span><strong>28</strong></div><div><span>Palabras</span><strong>4.744</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-la-celula-madre-neural-y-sus-marcadores">La célula madre neural y sus marcadores</a></li>
+        <li><a href="#sec-02-reprogramar-el-destino-yamanaka-ips-y-organoides">Reprogramar el destino: Yamanaka, iPS y organoides</a></li>
+        <li><a href="#sec-03-gastrulacion-notocorda-y-cierre-del-tubo">Gastrulación, notocorda y cierre del tubo</a></li>
+        <li><a href="#sec-04-cresta-neural-y-placodas">Cresta neural y placodas</a></li>
+        <li><a href="#sec-05-flexuras-rombomeros-y-el-codigo-de-posicion">Flexuras, rombómeros y el código de posición</a></li>
+        <li><a href="#sec-06-cuando-el-desarrollo-temprano-falla">Cuando el desarrollo temprano falla</a></li>
+        <li><a href="#sec-07-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#sec-08-limites-del-material">Límites del material</a></li>
+        <li><a href="#atlas">Figuras de la guía</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice del certamen">Índice</a>
+        <a href="01_Neurona_y_Glia.html" title="La neurona y la glía">01</a>
+        <a href="03_Se_Construye_Corteza.html" title="Se construye: proliferación, migración y corteza">03</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>El origen del sistema nervioso: células madre neurales, reprogramación a pluripotencia, organoides, gastrulación, neurulación, cresta neural, placodas y flexuras. Cierra con los defectos del tubo neural y la fortificación con folato en Chile.</div><p class="small">Las citas remiten a la fuente y a su página o sección, por ejemplo <em>Zeise p. 108</em>, <em>Purves p. 78</em> o <em>apuntes, bloque III</em>.</p><p class="small"><strong>Fuera de alcance:</strong> la proliferación y la migración, que se desarrollan en la guía 03.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul>
+<li>El neuroectodermo, inducido por la notocorda, genera la placa neural y todo el sistema nervioso.</li>
+<li>La placa neural se pliega entre los días 18 y 22; el neuroporo posterior cierra entre los días 26 y 28.</li>
+<li>Sox2 y Nestina marcan células madre neurales; NRSE/REST silencia genes neuronales y GFAP y O4 marcan glía.</li>
+<li>Yamanaka reprogramó fibroblastos a pluripotencia con Sox2, Oct4, Klf4 y c-Myc.</li>
+<li>Las células iPS forman organoides de retina y cerebro anterior con varias clases celulares.</li>
+<li>La cresta neural aporta ganglios sensitivos, melanocitos, células de Schwann y esqueleto craneofacial.</li>
+<li>Las placodas craneales generan epitelio olfatorio, oído interno, cristalino y neuronas mecanosensoriales.</li>
+<li>La fortificación de la harina con folato en Chile redujo los defectos del tubo neural entre 40 % y 50 %.</li>
+</ul></div></section><section id="sec-01-la-celula-madre-neural-y-sus-marcadores" class="card">
+<div class="section-kicker"><span class="n">01</span> Tema</div>
+<h2>La célula madre neural y sus marcadores</h2>
+<p>Una célula madre se define por dos propiedades simultáneas: se autorrenueva y, al diferenciarse terminalmente, puede originar todas las clases celulares del tejido. La progenitora no se autorrenueva de manera continua y suele producir una sola clase de descendencia, como la progenitora oligodendroglial que genera oligodendrocitos hasta agotar su capacidad mitótica. La célula madre neural cumple ambas condiciones y da otra célula madre neural o cualquiera de las neuronas, astrocitos y oligodendrocitos de los sistemas nerviosos central y periférico <span class="cite">Purves p. 519</span>. Deriva del ectodermo, donde queda comprometida al linaje neural, y de una sola pueden surgir un progenitor glial y uno neuronal por expresión génica diferencial <span class="cite">apuntes, bloque I</span>. Las células madre neurales pueden aislarse del embrión o generarse in vitro a partir de células ES, y en ambos casos se identifican por su capacidad de dar las tres clases principales de células neurales <span class="cite">Purves p. 522</span>.</p>
+<p>La distinción entre célula madre embrionaria y célula madre somática ordena el resto del problema. La ES proviene de la masa celular interna del blastocisto, tiene autorrenovación infinita in vitro y puede dar los tres linajes más la línea germinal; la somática es específica de tejido y solo genera las clases celulares diploides de ese tejido. La neural pertenece a la segunda categoría, aunque comparte con la ES la capacidad de autorrenovarse, y la pluripotencia no es su propiedad <span class="cite">Purves p. 519</span>.</p>
+<p>Su identidad se reconoce por un subconjunto de genes marcadores. Sox2, factor de transcripción bHLH, es uno de los marcadores fundamentales y coincide con uno de los cuatro factores de reprogramación. Nestina aparece más tarde, en progenitoras neurales posteriores, de modo que la secuencia Nanog, Nestina y βIII-tubulina describe el paso de la pluripotencia a la neurona. NRSE/REST es un represor que se une corriente arriba de múltiples genes neuronales e impide su transcripción, y se expresa más donde hay células madre para tejidos no neuronales y menos donde hay neuronas. En la célula diferenciada, GFAP identifica al astrocito y O4 al oligodendrocito <span class="cite">Purves p. 522</span>. La diferenciación de las células madre neurales en neuronas y glía está regulada por subconjuntos de señales secretadas y por dominios de señalización de proteínas de superficie en las células vecinas, de modo que el destino depende también del entorno inmediato <span class="cite">Purves p. 522</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: La célula madre neural y sus marcadores" tabindex="0"><table>
+<thead>
+<tr>
+<th>Marcador</th>
+<th>Célula o estado</th>
+<th>Lectura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sox2</td>
+<td>Célula madre neural</td>
+<td>Factor de transcripción bHLH y factor de reprogramación</td>
+</tr>
+<tr>
+<td>Nestina</td>
+<td>Progenitora neural posterior</td>
+<td>Aparece después de Sox2 en la ruta</td>
+</tr>
+<tr>
+<td>NRSE/REST</td>
+<td>Célula no neuronal</td>
+<td>Represor de genes neuronales</td>
+</tr>
+<tr>
+<td>βIII-tubulina</td>
+<td>Neurona</td>
+<td>Marca la identidad neuronal</td>
+</tr>
+<tr>
+<td>GFAP</td>
+<td>Astrocito</td>
+<td>Proteína glial fibrilar</td>
+</tr>
+<tr>
+<td>O4</td>
+<td>Oligodendrocito</td>
+<td>Marcador de superficie</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Purves p. 522</span>.</p>
+<p>Reconocer una neurona en cultivo exige morfología, electrofisiología y un medio adecuado. La morfología aporta soma, axón y dendritas; la electrofisiología confirma que la célula responde a la estimulación con un potencial de acción incipiente en el axón, las dendritas o el soma; y el cultivo necesita factores de crecimiento, pH, oxígeno y nutrición controlados. La sinapsis que se forma in vitro no alcanza la misma fuerza que in vivo, por lo que la morfología típica no basta para equiparar el cultivo con el tejido intacto <span class="cite">apuntes, bloque I</span>.</p>
+<p>La especificación no depende de una sola molécula, sino de combinaciones y concentraciones de factores de crecimiento en ventanas temporales precisas. La diferenciación ocurre por sincronía temporal de los genes que se activan en cada ventana, y una misma célula madre puede generar un progenitor glial y uno neuronal según la expresión diferencial que recibe <span class="cite">apuntes, bloque I</span>. La promesa terapéutica existe, pero no hay un uso clínicamente validado de células madre en el sistema nervioso humano; los dos peligros son garantizar la división controlada en tejido maduro e identificar las instrucciones que producen la clase celular deseada <span class="cite">Purves p. 519</span>. En animales, células ES con PDGF generaron oligodendrocitos mielinizantes y células ES con ácido retinoico maduraron en neuronas motoras <span class="cite">Purves p. 520</span>.</p>
+
+</section><section id="sec-02-reprogramar-el-destino-yamanaka-ips-y-organoides" class="card">
+<div class="section-kicker"><span class="n">02</span> Tema</div>
+<h2>Reprogramar el destino: Yamanaka, iPS y organoides</h2>
+<p>El primer experimento que mostró que el núcleo somático conserva el genoma completo se hizo en la rana. Se extrajo el núcleo de una célula del epitelio intestinal y se inyectó en un ovocito irradiado con UV; de 750 intentos, cerca de 10 produjeron una rana adulta sana. El resultado probó que la diferenciación no borra las instrucciones genéticas y que el citoplasma del ovocito puede reprogramar un núcleo diploide, trabajo que recibió el Nobel de Fisiología o Medicina en 2012 <span class="cite">Purves pp. 518-520</span>. Martin Evans aisló después células de la masa celular interna del blastocisto de ratón y las propagó in vitro; con las instrucciones adecuadas se diferencian en todos los tipos somáticos y contribuyen a la línea germinal <span class="cite">Purves p. 520</span>. Otros grupos aislaron células ES humanas a partir de blastocistos descartados de procedimientos de fecundación in vitro, con gran controversia. Esa fuente explica por qué la reprogramación de células somáticas cambió el panorama: permite obtener células pluripotentes de un individuo adulto, incluidas las que portan mutaciones de una enfermedad congénita <span class="cite">Purves p. 522</span>.</p>
+<p>Shinya Yamanaka buscó la combinación mínima capaz de revertir el camino. Partió de la pregunta de si un astrocito podía volver a su estado inicial y llegó a cuatro factores, Sox2, Oct4, Klf4 y c-Myc, que introducidos con retrovirus en fibroblastos producen células madre pluripotentes inducidas, o iPS. Estas se comportan como las ES: inyectadas en un blastocisto contribuyen a todos los tejidos del organismo quimérico, incluida la línea germinal. El mecanismo es una reprogramación del DNA, que cambia qué genes están activos y la conformación general del DNA <span class="cite">Purves p. 521</span>. Yamanaka no inventó un proceso: emuló algo que ocurre en los primeros estadios del desarrollo, porque la pluripotencia es un estado natural recuperable de forma artificial <span class="cite">apuntes, bloque I</span>.</p>
+<p>Cuando las condiciones in vitro favorecen la agregación, las células iPS o ES forman organoides, entidades multicelulares con varias clases celulares del tejido de interés. El protocolo de organoide cerebral pasa por células madre pluripotentes humanas, cuerpos embrioides, neuroectodermo, neuroepitelio expandido y tejido cerebral, con hitos en los días 0, 6, 11 y 15; en el día 15 se añade ácido retinoico en un biorreactor giratorio. Según las condiciones, el organoide se parece a retina, con fotorreceptores, células bipolares y ganglionares, o a cerebro anterior, con progenitoras y neuronas corticales <span class="cite">Purves pp. 521-522</span>.</p>
+<p>Los organoides permiten obtener neuronas humanas a escala para experimentos imposibles con tejido de autopsia y modelar enfermedades genéticas a partir de células de la piel del paciente. Su utilidad es experimental, y la terapia celular sigue sin validación clínica en el sistema nervioso humano, con los peligros de división descontrolada y diferenciación incompleta todavía abiertos <span class="cite">Purves pp. 519-522</span>.</p>
+
+</section><section id="sec-03-gastrulacion-notocorda-y-cierre-del-tubo" class="card">
+<div class="section-kicker"><span class="n">03</span> Tema</div>
+<h2>Gastrulación, notocorda y cierre del tubo</h2>
+<p>La gastrulación convierte una lámina de células en un cuerpo con ejes. Comienza como la invaginación local de un subconjunto de células y, al completarse, deja tres capas germinales: ectodermo externo, mesodermo medio y endodermo interno. La invaginación mesodérmica inicia el proceso, y la posición del mesodermo y el endodermo define la línea media y los ejes anterior-posterior, dorsal-ventral y medial-lateral, de los que depende la posición de todos los órganos, incluidas las estructuras faciales y los apéndices <span class="cite">Purves p. 523</span>. El embrión humano añade a esos tres ejes un eje rostral-caudal distintivo, porque la curvatura del sistema nervioso central hace que el extremo anterior se pliegue sobre sí mismo; esa geometría explica por qué las flexuras se describen como pliegues y no como simples divisiones lineales <span class="cite">Purves p. 523</span>. Las tres capas no son equivalentes: el ectodermo da cerebro y piel, el mesodermo da músculo, sangre, hueso y cartílago, y el endodermo da pulmón, intestino e hígado <span class="cite">Purves p. 518</span>.</p>
+<p>La notocorda es el organizador mecánico de la línea media. Es un cilindro de células mesodérmicas que se condensa desde la cara medio-anterior hasta la posterior, se genera en el nodo primitivo o fosita y se alarga para formar el surco primitivo. Su posición define el eje de simetría y determina dónde se sitúa el sistema nervioso. Es transitoria, porque desaparece al completarse el desarrollo temprano, pero antes envía señales inductoras al ectodermo suprayacente junto con las células de la fosita <span class="cite">Purves p. 523</span>.</p>
+<p>El ectodermo inmediatamente sobre la notocorda es el neuroectodermo, y de él deriva todo el sistema nervioso. La neurulación comienza cuando ese ectodermo se engrosa en un epitelio columnar, la placa neural. Los márgenes laterales, o placa alar, se pliegan hacia adentro; la porción medial, o placa basal, forma la región ventral del tubo. En la línea media ventral aparece la placa del suelo, sobre la notocorda, y en la dorsal la placa del techo. La placa del suelo especifica la posición y el destino de los precursores de la médula y del cerebro posterior, y la placa del techo facilita la diferenciación de los grupos dorsales <span class="cite">Purves pp. 523-524</span>.</p>
+<p>El cierre sigue cuatro hitos. Hacia el día 18 se distinguen ectodermo, neuroectodermo, mesodermo, endodermo, notocorda y línea primitiva; hacia el día 20 aparece el surco neural, la placa se pliega y surgen la cresta neural y el mesodermo presomítico; hacia el día 22 el tubo está cerrado, con placa del techo dorsal y placa del suelo ventral, y aparecen las somitas; hacia el día 24 el tubo da la médula rudimentaria y el rombencéfalo, y la cresta origina los ganglios sensitivos <span class="cite">Purves p. 524</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Gastrulación, notocorda y cierre del tubo" tabindex="0"><table>
+<thead>
+<tr>
+<th>Día</th>
+<th>Estructura que aparece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18</td>
+<td>Ectodermo, neuroectodermo, mesodermo, endodermo, notocorda y línea primitiva</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Surco neural, cresta neural y mesodermo presomítico</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Tubo neural cerrado, placa del techo, placa del suelo y somitas</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Médula espinal rudimentaria, rombencéfalo y ganglios sensitivos</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Purves p. 524</span>.</p>
+<p>El cierre no es un instante único. El neuroporo posterior se cierra entre los días 26 y 28, y su falla se asocia a espina bífida <span class="cite">apuntes, bloque I</span>. La placa del suelo, la placa del techo y la notocorda son transitorias y desaparecen casi por completo al completarse el desarrollo inicial, lo que explica por qué una lesión en esa ventana deja un defecto permanente aunque la estructura ya no exista en el adulto <span class="cite">Purves p. 524</span>. Shh de la placa del suelo cierra la línea media anterior, y Nogina de la placa del techo antagoniza las BMP que empujan al ectodermo hacia epidermis; juntas establecen la identidad ventral y dorsal de la médula <span class="cite">Purves pp. 534-535</span>.</p>
+
+</section><section id="sec-04-cresta-neural-y-placodas" class="card">
+<div class="section-kicker"><span class="n">04</span> Tema</div>
+<h2>Cresta neural y placodas</h2>
+<p>La cresta neural nace en los bordes laterales de la placa neural, donde esos bordes se unen para cerrar el tubo. Sus células abandonan el epitelio mediante una transición epitelio-mesenquimatosa, se vuelven migratorias y avanzan por una matriz de células mesenquimatosas poco compactas entre el tubo, la epidermis y las somitas. La transición depende de la posición, de las señales del tubo dorsal y de factores de transcripción que activan genes de movilidad <span class="cite">Purves pp. 524-525</span>. El borde se distingue por Pax3, nMyc, Msx, Snail 1/2 y Sox 9/10, con NCAM, N-cadherina, ephrinas y RhoB en la adhesión y el citoesqueleto <span class="cite">Purves p. 525</span>.</p>
+<p>A lo largo del eje anterior-posterior se distinguen cuatro poblaciones. La craneal es la más anterior; la vagal se origina en la unión de la médula con el tronco encefálico; la del tronco surge de la mayor parte de la médula; la sacra ocupa la región más posterior, cerca de los esbozos de las extremidades posteriores <span class="cite">Purves pp. 525-526</span>. Las rutas de migración no son las mismas en todo el eje. En la cabeza, la cresta craneal migra inmediatamente por debajo de la epidermis; en el resto del cuerpo avanza por debajo de la epidermis y entre el tubo neural y las somitas, y las células que siguen la vía ventral y las que siguen la dorsolateral quedan expuestas a señales distintas. Esa diferencia de vecindad ayuda a explicar por qué una misma población origina derivados tan diversos <span class="cite">Purves p. 525</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Cresta neural y placodas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Población</th>
+<th>Origen</th>
+<th>Derivados principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Craneal</td>
+<td>Extremo anterior</td>
+<td>Ganglios sensoriales craneales, esqueleto craneofacial, tiroides, odontoblastos</td>
+</tr>
+<tr>
+<td>Vagal</td>
+<td>Unión de médula y tronco</td>
+<td>Sistema nervioso entérico, ganglios parasimpáticos, músculo liso de aorta y grandes vasos</td>
+</tr>
+<tr>
+<td>Tronco</td>
+<td>Mayor parte de la médula</td>
+<td>Ganglios de la raíz dorsal, ganglios simpáticos, células cromafines suprarrenales</td>
+</tr>
+<tr>
+<td>Sacra</td>
+<td>Región posterior</td>
+<td>Neuronas entéricas, ganglios posteriores de la cadena simpática</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Purves pp. 525-526</span>.</p>
+<p>Las cuatro comparten dos derivados que no siempre se recuerdan: todas originan células de Schwann, que mielinizan los axones periféricos, y melanocitos, las células productoras de pigmento de la epidermis. Esa mezcla de destinos neurales y no neurales explica por qué la cresta no es una estructura exclusivamente nerviosa <span class="cite">Purves p. 526</span>. Las neurocristopatías son su correlato clínico: surgen del emparejamiento defectuoso de la especificación, la migración o la diferenciación, y producen malformaciones craneofaciales y orofaríngeas, pérdidas sensoriales, malformaciones cardíacas, deficiencias de pigmento, complicaciones digestivas por pérdida del sistema nervioso entérico y tumores como el neuroblastoma. Definen la patología de los síndromes de DiGeorge o velocardiofacial, Down, Hirschsprung y Waardenburg <span class="cite">Purves p. 526</span>.</p>
+<p>Las placodas craneales completan el sistema nervioso periférico de la cabeza. Son parches de ectodermo de las regiones craneales y faríngeas que permanecen como ectodermo neurogénico, a diferencia del vecino que se convierte en epidermis, y generan neuronas sensoriales periféricas y especializaciones para la transducción sensorial en la nariz, el oído y el ojo <span class="cite">Purves p. 526</span>. Aparecen como engrosamientos ectodérmicos durante el desarrollo temprano de la cabeza, y la cresta neural adyacente permanece como mesénquima laxo, sin organizarse en una capa epitelial <span class="cite">Purves p. 527</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Cresta neural y placodas" tabindex="0"><table>
+<thead>
+<tr>
+<th>Placoda</th>
+<th>Derivado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Olfatoria</td>
+<td>Epitelio olfatorio completo</td>
+</tr>
+<tr>
+<td>Ótica</td>
+<td>Vesícula ótica y órgano de Corti</td>
+</tr>
+<tr>
+<td>Del cristalino</td>
+<td>Cristalino y córnea, no la retina neural</td>
+</tr>
+<tr>
+<td>Trigeminal y epibranquial</td>
+<td>Neuronas mecanosensoriales de ganglios craneales</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Purves pp. 526-527</span>.</p>
+<p>La relación entre placoda y cresta es inductiva y, en los ganglios craneales, mosaica. La placoda olfatoria es la excepción pura, porque el epitelio olfatorio deriva completamente de ella; en el cristalino, la ótica y la mayoría de las estructuras sensoriales craneales, la cresta aporta el mesénquima que sostiene la morfogénesis, y las neuronas definitivas mezclan progenitores de ambas fuentes. Esa mezcla explica por qué una misma estructura puede fallar por un defecto de cresta, de placoda o de la interacción entre ambas <span class="cite">Purves p. 527</span>.</p>
+
+<figure class="fig" id="fig-1">
+  <a class="fig-open" href="assets/fig/02-linaje-neural.jpg" data-caption="Figura 1. Linaje de las células del sistema nervioso: lo derivado del tubo neural (neuronas del sistema nervioso central, ependimarias, oligodendrocitos y astrocitos) y lo derivado de la cresta neural (neuronas sensitivas y autonómicas, células cromafines, melanocitos, células de Schwann y satélite, piamadre, aracnoides y microglía)." data-alt="Figura 1. Linaje de las células del sistema nervioso: lo derivado del tubo neural (neuronas del sistema nervioso central, ependimarias, oligodendrocitos y astrocitos) y lo derivado de la cresta neural (neuronas sensitivas y autonómicas, células cromafines, melanocitos, células de Schwann y satélite, piamadre, aracnoides y microglía).">
+    <img src="assets/fig/02-linaje-neural.jpg" width="582" height="750" loading="lazy" decoding="async" alt="Figura 1. Linaje de las células del sistema nervioso: lo derivado del tubo neural (neuronas del sistema nervioso central, ependimarias, oligodendrocitos y astrocitos) y lo derivado de la cresta neural (neuronas sensitivas y autonómicas, células cromafines, melanocitos, células de Schwann y satélite, piamadre, aracnoides y microglía).">
+  </a>
+  <figcaption>
+    <strong>Figura 1.</strong> Linaje de las células del sistema nervioso: lo derivado del tubo neural (neuronas del sistema nervioso central, ependimarias, oligodendrocitos y astrocitos) y lo derivado de la cresta neural (neuronas sensitivas y autonómicas, células cromafines, melanocitos, células de Schwann y satélite, piamadre, aracnoides y microglía).
+    <span class="fig-source">Apuntes de clase, figura 3. <a href="creditos.html#fig-1">Ver créditos</a></span>
+  </figcaption>
+</figure>
+<figure class="fig" id="fig-2">
+  <a class="fig-open" href="assets/fig/02-migracion-cresta.jpg" data-caption="Figura 2. Migración de células de la cresta neural en el embrión de pollo: inyección en estadio HH11, cultivo hasta HH18, reconstrucción tridimensional y registro en tiempo real a las 4, 7 y 10 horas." data-alt="Figura 2. Migración de células de la cresta neural en el embrión de pollo: inyección en estadio HH11, cultivo hasta HH18, reconstrucción tridimensional y registro en tiempo real a las 4, 7 y 10 horas.">
+    <img src="assets/fig/02-migracion-cresta.jpg" width="800" height="303" loading="lazy" decoding="async" alt="Figura 2. Migración de células de la cresta neural en el embrión de pollo: inyección en estadio HH11, cultivo hasta HH18, reconstrucción tridimensional y registro en tiempo real a las 4, 7 y 10 horas.">
+  </a>
+  <figcaption>
+    <strong>Figura 2.</strong> Migración de células de la cresta neural en el embrión de pollo: inyección en estadio HH11, cultivo hasta HH18, reconstrucción tridimensional y registro en tiempo real a las 4, 7 y 10 horas.
+    <span class="fig-source">Apuntes de clase, figura 1. <a href="creditos.html#fig-2">Ver créditos</a></span>
+  </figcaption>
+</figure>
+</section><section id="sec-05-flexuras-rombomeros-y-el-codigo-de-posicion" class="card">
+<div class="section-kicker"><span class="n">05</span> Tema</div>
+<h2>Flexuras, rombómeros y el código de posición</h2>
+<p>Cerrado el tubo, el extremo anterior se dobla, se pliega y se estrecha. La primera forma es un asa de bastón, con dos flexuras iniciales. La cefálica queda cerca de la curva más pronunciada y su extremo se expande para formar el prosencéfalo; el mesencéfalo aparece como una protuberancia por encima de esa flexura; el rombencéfalo ocupa el tramo recto entre la cefálica y la cervical; y caudal a la cervical el tubo forma el precursor de la médula. Más tarde se añade la flexura pontina <span class="cite">Purves pp. 527-528</span>.</p>
+<p>El prosencéfalo se divide en telencéfalo, que da corteza cerebral, hipocampo, ganglios basales y bulbo olfatorio, y diencéfalo, que da tálamo, hipotálamo y vesículas ópticas, de las que deriva la porción neural de la retina. El mesencéfalo da colículos superiores e inferiores y tegmento. El rombencéfalo se divide en metencéfalo, que da cerebelo y protuberancia, y mielencéfalo, que da bulbo raquídeo. La luz encerrada se convierte en los ventrículos laterales, el tercero, el acueducto cerebral y el cuarto <span class="cite">Purves p. 528</span>.</p>
+<p>La especificación regional comienza con unidades repetitivas llamadas neurómeros. En el rombencéfalo se distinguen ocho rombómeros, r1 a r8, y cada uno o su combinación con el adyacente origina las neuronas motoras de un nervio craneal y la cresta de un ganglio sensorial. Los genes Hox se organizan en cuatro conjuntos, HoxA en el cromosoma 7, HoxB en el 17, HoxC en el 12 y HoxD en el 2, y su expresión sigue el orden anterior a posterior que refleja su posición 3' a 5' en el cromosoma, la colinealidad. El rombómero 4 se identifica por HoxB-1 y se relaciona con el ganglio trigémino, el ganglio facial y la vesícula ótica <span class="cite">Purves p. 531</span>. Los Hox no se extienden al mesencéfalo ni al prosencéfalo, donde operan DLX y PAX <span class="cite">Purves pp. 529-531</span>. La hipótesis de segmentación nació en Drosophila, donde los genes homeóticos bicoid, Krüppel, hairy y wingless se expresan en secuencia y dividen el embrión en segmentos; en vertebrados, los Hox conservan esa lógica, pero duplicada en cuatro conjuntos. Por eso el rombencéfalo es el mejor modelo para leer el código: sus ocho rombómeros tienen límites morfológicos visibles y una combinación propia de Hox, y esa combinación se mantiene en las células madre que generan cada núcleo motor craneal <span class="cite">Purves pp. 529-531</span>.</p>
+<p>El organizador es la pequeña población de células madre embrionarias epiteliales equivalente a la fosita primitiva o al labio dorsal del blastoporo. Trasplantarlo a otra ubicación genera una notocorda secundaria y un segundo sistema nervioso en el ectodermo del huésped, con un renacuajo bicéfalo como resultado visible. Trasplantar una notocorda a una ubicación ectópica forma una placa del suelo ectópica y especifica neuronas motoras en lugar de sensoriales. La identidad neural depende, por tanto, de señales inductivas del entorno y no del destino intrínseco de la célula <span class="cite">Purves p. 532</span>.</p>
+<p>Esas señales se organizan en cinco vías. El ácido retinoico, derivado de la vitamina A, activa receptores de retinoides y modula la transcripción según coactivadores y correpresores; impulsa proliferación y diferenciación y regula genes de otras señales, incluido Shh. FGF reúne 22 ligandos que activan receptores tirosina-cinasa y la cascada MAP cinasa-ras; FGF8 es clave para el cerebro anterior, el medio y las neuronas sensoriales craneales, y los FGF del mesodermo presomítico regulan la neurogénesis medular. BMP, con seis ligandos de la familia TGF-β, activa SMAD 1, 5 y 8 y empuja al ectodermo hacia epidermis y al mesodermo hacia hueso. Wnt, con 19 ligandos, tiene una vía canónica dependiente de β-catenina y TCF/LEF y una no canónica de polaridad celular; la primera regula Snail y la migración inicial de la cresta, la segunda alarga la placa y el tubo. Shh, a través de Patched y Smoothened, libera Gli1 hacia el núcleo y desplaza la acción represora de Gli3, y cumple tres funciones: cierre del tubo, identidad ventral de las neuronas motoras y modulación de la diferenciación posmitótica <span class="cite">Purves pp. 533-535</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Flexuras, rombómeros y el código de posición" tabindex="0"><table>
+<thead>
+<tr>
+<th>Vía</th>
+<th>Ligandos y receptor</th>
+<th>Papel principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ácido retinoico</td>
+<td>Retinol, retinal y ácido retinoico; receptores de retinoides</td>
+<td>Proliferación, diferenciación y regulación de Shh</td>
+</tr>
+<tr>
+<td>FGF</td>
+<td>22 ligandos; receptor tirosina-cinasa y MAP cinasa-ras</td>
+<td>FGF8 en cerebro anterior y medio; neurogénesis medular</td>
+</tr>
+<tr>
+<td>BMP</td>
+<td>6 ligandos; serina-cinasa, SMAD 1, 5 y 8</td>
+<td>Epidermis y hueso; especificación dorsal</td>
+</tr>
+<tr>
+<td>Wnt</td>
+<td>19 ligandos; Frizzled, LRP5/6 y β-catenina</td>
+<td>Cresta neural, proliferación y alargamiento del tubo</td>
+</tr>
+<tr>
+<td>Shh</td>
+<td>Shh; Patched, Smoothened y Gli</td>
+<td>Cierre del tubo, neuronas motoras ventrales y diferenciación posmitótica</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">Purves pp. 533-535</span>.</p>
+<p>Para que el ectodermo se vuelva neural, las BMP deben ser antagonizadas. Nogina y Cordina se unen directamente a las BMP e impiden su unión a los receptores, y esa regulación negativa es el fundamento de la neuralización. La actividad combinada de ácido retinoico, FGF, BMP antagonizadas, Shh y Wnt especifica una expresión en mosaico de factores de transcripción a lo largo del neuroectodermo, la placa y el tubo <span class="cite">Purves pp. 533-535</span>. El resultado es un código de transcripción, la combinación de factores que establece la identidad de una clase neuronal. En la médula, Shh de la placa del suelo y Nogina de la placa del techo establecen la identidad ventral frente a la dorsal, que se traduce en neuronas motoras ventrales, interneuronas intermedias y neuronas sensoriales de relevo dorsales <span class="cite">Purves pp. 535-536</span>.</p>
+
+</section><section id="sec-06-cuando-el-desarrollo-temprano-falla" class="card">
+<div class="section-kicker"><span class="n">06</span> Tema</div>
+<h2>Cuando el desarrollo temprano falla</h2>
+<p>Las malformaciones congénitas del sistema nervioso suelen resultar de interferir con estos mecanismos antes de que se formen las sinapsis <span class="cite">Purves p. 536</span>. La causa puede ser una mutación, una enfermedad materna, un fármaco o un químico ambiental, y el efecto depende del momento y del tejido que recibe la señal alterada <span class="cite">Purves p. 536</span>. El ácido retinoico ilustra la doble cara de una misma molécula: en la década de 1930 se observó que tanto la deficiencia como el exceso de vitamina A producían malformaciones, y en la de 1980 la isotretinoína se asoció a más abortos y a niños malformados <span class="cite">Purves p. 537</span>. El mecanismo se aclaró al descubrirse los receptores de retinoide, porque el ácido retinoico es un factor de transcripción que activa genes específicos y regula genes de otras señales, incluido Shh <span class="cite">Purves p. 537</span>. La insuficiencia dietética materna de ácido fólico compromete la replicación del DNA, la división y la movilidad celular, y por esa vía interrumpe la formación del tubo neural <span class="cite">Purves p. 537</span>. El exceso de vitamina A, el alcohol, la talidomida y la alteración del metabolismo del colesterol, que compromete la señalización de Shh, completan la lista de teratógenos del desarrollo neural temprano <span class="cite">Purves p. 537</span>.</p>
+<p>La holoprosencefalia es la malformación más común del cerebro anterior de los mamíferos y el ejemplo de un fallo de la separación hemisférica, no de cierre: la separación de los hemisferios falla de forma total o parcial, y el colapso de la línea media puede interrumpir las estructuras faciales, con falta de división del primordio ocular y ciclopía en las formas graves <span class="cite">Purves p. 538</span>. La incidencia es de 1/10.000 a 1/16.000 nacidos vivos, pero de 1/30 a 1/400 en el total de concepciones, porque muchas terminan en aborto o muerte fetal <span class="cite">Purves p. 538</span>. Se asocia a deleciones o mutaciones de SHH en el cromosoma 7, a PTC y a SMO, y la mayoría de las mutaciones de SHH son esporádicas <span class="cite">Purves p. 538</span>.</p>
+<p>El meduloblastoma y el carcinoma de células basales muestran que la misma vía falla en tejidos distintos: el meduloblastoma es el tumor cerebral más común de la infancia, con 1/50.000 a 1/100.000 nacimientos y 60 % de supervivencia, y subvierte la neurogénesis cerebelosa, porque las células de Purkinje producen Shh como mitógeno para los precursores granulares y en el tumor hay señalización SHH alterada con Gli1 elevado <span class="cite">Purves pp. 538-539</span>. Cerca del 9 % de los casos tiene mutaciones de pérdida de función en PTC y otro 9 % en SUFU <span class="cite">Purves p. 539</span>. El carcinoma basocelular se asocia a PTC muy frecuente, SMO raro y SHH raro, y el síndrome de Gorlin, autosómico dominante por pérdida de función de PTC, combina carcinoma basocelular y meduloblastoma <span class="cite">Purves p. 539</span>.</p>
+<p>La microcefalia por desnutrición no depende de un gen ni de un cierre fallido, sino del momento del crecimiento: Chile fue pionero en América Latina en erradicar la desnutrición infantil avanzada, el marasmo y el kwashiorkor, en la segunda mitad del siglo XX, y con ello cayeron las anomalías del neurodesarrollo por déficit nutricional <span class="cite">apuntes, bloque I</span>. A diferencia de las genéticas, en las que el recién nacido ya tiene la cabeza pequeña, la microcefalia adquirida aparece en lactantes que nacen con perímetro normal o levemente reducido y desarrollan el déficit durante los primeros dos años <span class="cite">apuntes, bloque I</span>. El mecanismo es la carencia proteico-calórica durante el brote de crecimiento cerebral, que abarca el último trimestre y los primeros dos años, y produce menos arborización dendrítica, menos glía, falla de mielinización y menos sinapsis <span class="cite">apuntes, bloque I</span>.</p>
+<p>La espina bífida, en su forma de mielomeningocele, es la expresión más severa y frecuente de disrafismo espinal abierto <span class="cite">apuntes, bloque I</span>. El espectro de defectos del tubo neural no es único: el fallo del cierre anterior se asocia a anencefalia, y el del cierre posterior a espina bífida <span class="cite">Purves p. 537</span>. La holoprosencefalia, en cambio, es un fallo de la separación hemisférica y no de cierre, y por eso no se incluye entre los defectos del tubo neural <span class="cite">Purves p. 538</span>. Hay falta de fusión de los arcos vertebrales y protruye un saco quístico que, a diferencia del meningocele simple, contiene LCR, meninges y tejido nervioso displásico <span class="cite">apuntes, bloque I</span>. Su origen es una alteración de la neurulación primaria en la cuarta semana, por falla del cierre del neuroporo posterior entre los días 26 y 28 <span class="cite">apuntes, bloque I</span>.</p>
+<p>La teoría del doble impacto explica por qué el daño progresa después del defecto inicial: el primer impacto es el cierre incompleto y el segundo es la exposición de la placoda al líquido amniótico, que destruye tejido por toxicidad química y microtrauma <span class="cite">apuntes, bloque I</span>. El déficit de ácido fólico es el factor de riesgo modificable más crítico, y a él se suman el ácido valproico y la carbamazepina, la diabetes pregestacional, la hipertermia materna y los polimorfismos de MTHFR <span class="cite">apuntes, bloque I</span>. La clínica depende del nivel: paraplejia o paraparesia flácida distal, con lumbosacro como nivel más habitual, vejiga neurogénica, incontinencia anal o constipación, pie equinovaro, luxación de caderas, escoliosis, Chiari tipo II entre el 80 % y el 90 % de los casos e hidrocefalia que con frecuencia requiere válvula de derivación ventriculoperitoneal <span class="cite">apuntes, bloque I</span>.</p>
+<p>El folato actúa en la ventana que antecede al diagnóstico habitual del embarazo <span class="cite">apuntes, bloque I</span>. El cierre primario ocurre entre los días 21 y 28, de modo que la suplementación debe ser preconcepcional <span class="cite">apuntes, bloque I</span>. En Chile, la fortificación obligatoria de la harina de trigo con ácido fólico a 2,2 mg/kg se implementó en el año 2000 por el MINSAL y se asoció a una reducción de 40 % a 50 % de la incidencia de defectos del tubo neural, tanto anencefalia como espina bífida <span class="cite">apuntes, bloque I</span>.</p>
+
+</section><section id="sec-07-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">07</span> Tema</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>Gurdon: 10 de 750 intentos; núcleo somático en ovocito irradiado con UV; rana adulta; Nobel 2012 <span class="cite">Purves pp. 518-520</span>.</li>
+<li>Yamanaka: Sox2, Oct4, Klf4 y c-Myc; fibroblastos reprogramados a iPS con retrovirus <span class="cite">Purves p. 521</span>.</li>
+<li>Organoide cerebral: días 0, 6, 11 y 15; ácido retinoico en biorreactor al día 15 <span class="cite">Purves p. 521</span>.</li>
+<li>Marcadores: Sox2, Nestina, NRSE/REST, βIII-tubulina, GFAP y O4 <span class="cite">Purves p. 522</span>.</li>
+<li>Gastrulación: ectodermo, mesodermo y endodermo; la notocorda se genera en el nodo primitivo y es transitoria <span class="cite">Purves p. 523</span>.</li>
+<li>Neurulación: días 18, 20, 22 y 24, desde la línea primitiva hasta los ganglios sensitivos <span class="cite">Purves p. 524</span>.</li>
+<li>Neuroporo posterior: cierre entre los días 26 y 28; su falla produce espina bífida <span class="cite">apuntes, bloque I</span>.</li>
+<li>Cresta neural: craneal, vagal, tronco y sacra; las cuatro dan células de Schwann y melanocitos <span class="cite">Purves pp. 525-526</span>.</li>
+<li>Placodas: olfatoria, ótica, del cristalino, trigeminal y epibranquial <span class="cite">Purves pp. 526-527</span>.</li>
+<li>Flexuras: cefálica, cervical y pontina <span class="cite">Purves pp. 527-528</span>.</li>
+<li>Hox: cuatro conjuntos en los cromosomas 7, 17, 12 y 2; ocho rombómeros; HoxB-1 en r4 <span class="cite">Purves pp. 529-531</span>.</li>
+<li>Shh: cierre del tubo, neuronas motoras ventrales y diferenciación posmitótica; su mutación causa holoprosencefalia <span class="cite">Purves pp. 534-538</span>.</li>
+<li>Folato en Chile: 2,2 mg/kg desde 2000; reducción de 40 % a 50 % de los defectos del tubo neural <span class="cite">apuntes, bloque I</span>.</li>
+<li>Microcefalia por desnutrición: déficit postnatal en los primeros dos años; brote de crecimiento del último trimestre a los dos años <span class="cite">apuntes, bloque I</span>.</li>
+</ul>
+
+</section><section id="sec-08-limites-del-material" class="card">
+<div class="section-kicker"><span class="n">08</span> Tema</div>
+<h2>Límites del material</h2>
+<div class="warnbox"><span class="box-title">Límites del material</span><ul>
+<li>El texto escaneado de las páginas 537 a 539 está parcialmente corrupto; las cifras citadas se leen, pero algunas frases completas no son reconstruibles.</li>
+<li>El bloque I registra una vía como WIT y una ventana de 14 a 15 días posfecundación; la sigla no se lee y no se puede afirmar que corresponda a Wnt.</li>
+<li>El bloque I no trae paginación, de modo que sus datos se citan por bloque y no por página.</li>
+<li>La proliferación y la migración neuronales quedan fuera de esta guía y corresponden a la guía 03.</li>
+<li>El material no detalla la cascada molecular del folato ni la cobertura actual del programa chileno; solo la reducción de 40 % a 50 %.</li>
+</ul></div>
+</section><section id="atlas" class="card">
+<div class="section-kicker"><span class="n">★</span> Atlas</div>
+<h2>Figuras de la guía</h2>
+<p class="small">Toca una miniatura para volver a la figura en su sección.</p>
+<div class="fig-grid"><a class="fig-thumb" href="#fig-1" aria-label="Figura 1"><img src="assets/fig/02-linaje-neural.jpg" loading="lazy" decoding="async" alt="Figura 1"><span>Figura 1</span></a><a class="fig-thumb" href="#fig-2" aria-label="Figura 2"><img src="assets/fig/02-migracion-cresta.jpg" loading="lazy" decoding="async" alt="Figura 2"><span>Figura 2</span></a></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Neurociencias Aplicadas a la Medicina · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Purves, <em>Neurociencia</em>; Zeise, <em>Neurociencia para la psicología y otras áreas</em>; los apuntes de clase y los artículos del curso. No se distribuyen los PDF originales.</p>
+  <p><a href="creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>

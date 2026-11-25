@@ -1,0 +1,201 @@
+{
+  "eyebrow": "Certamen 1 · Neurociencias Aplicadas a la Medicina",
+  "title": "Neurociencias<br>Certamen 1",
+  "lede": "Ocho guías temáticas y un manual integrado: desde la neurona y el desarrollo hasta la falla neurodegenerativa, con la fuente citada en cada afirmación.",
+  "repo": "https://github.com/kraksiplus/neuro-2026-2",
+  "url": "https://kraksiplus.github.io/neuro-2026-2/",
+  "pages": [
+    {
+      "id": "c1-01",
+      "num": 1,
+      "of": 8,
+      "kind": "chapter",
+      "title": "La neurona y la glía",
+      "file": "01_Neurona_y_Glia.html",
+      "source": "../Certamenes/C1/CAPITULOS/01_Neurona_y_Glia.md",
+      "fuentes": "Zeise · Purves · apuntes, bloque I",
+      "alcance": "La neurona como unidad estructural y funcional: soma, dendritas, axón y clasificación; después, las células gliales que la sostienen, la mielinizan o la defienden, y el efecto de perder esa mielina. Es la base anatómica de las guías siguientes.",
+      "excluye": "la organización en lóbulos, las áreas de Brodmann y los sistemas de proyección, que no están desarrollados en el material de este certamen.",
+      "topics": [
+        "soma, dendritas y axón",
+        "clasificación neuronal",
+        "astrocitos, oligodendrocitos y microglía",
+        "mielina y conducción",
+        "esclerosis múltiple y Guillain-Barré"
+      ],
+      "target": 3000
+    },
+    {
+      "id": "c1-02",
+      "num": 2,
+      "of": 8,
+      "kind": "chapter",
+      "title": "Nace: neurodesarrollo temprano",
+      "file": "02_Nace_Neurodesarrollo.html",
+      "source": "../Certamenes/C1/CAPITULOS/02_Nace_Neurodesarrollo.md",
+      "fuentes": "Purves cap. 22 · apuntes, bloque I",
+      "alcance": "El origen del sistema nervioso: células madre neurales, reprogramación a pluripotencia, organoides, gastrulación, neurulación, cresta neural, placodas y flexuras. Cierra con los defectos del tubo neural y la fortificación con folato en Chile.",
+      "excluye": "la proliferación y la migración, que se desarrollan en la guía 03.",
+      "topics": [
+        "células madre neurales",
+        "Yamanaka e iPS",
+        "organoides",
+        "neurulación",
+        "cresta neural y placodas",
+        "defectos del tubo neural"
+      ],
+      "target": 5000
+    },
+    {
+      "id": "c1-03",
+      "num": 3,
+      "of": 8,
+      "kind": "chapter",
+      "title": "Se construye: proliferación, migración y corteza",
+      "file": "03_Se_Construye_Corteza.html",
+      "source": "../Certamenes/C1/CAPITULOS/03_Se_Construye_Corteza.md",
+      "fuentes": "Purves 22-23 · apuntes, bloque I · Kandel 45-46",
+      "alcance": "Cómo el tubo neural se convierte en cerebro: especificación regional por Hox y morfógenos, proliferación en la zona ventricular, decisión Delta-Notch, migración radial y tangencial, polaridad, formación de la corteza y surcos, y las malformaciones corticales del desarrollo.",
+      "excluye": "la guía axónica y el establecimiento de mapas topográficos, de los que el material solo adelanta el inicio del capítulo 23.",
+      "topics": [
+        "Hox, neurómeros y rombómeros",
+        "Shh y organizador",
+        "ciclo nuclear y fecha de nacimiento",
+        "Delta-Notch",
+        "migración radial y tangencial",
+        "malformaciones corticales"
+      ],
+      "target": 5000
+    },
+    {
+      "id": "c1-04",
+      "num": 4,
+      "of": 8,
+      "kind": "chapter",
+      "title": "Emite señal: membrana y potencial de acción",
+      "file": "04_Emite_Senal_Membrana.html",
+      "source": "../Certamenes/C1/CAPITULOS/04_Emite_Senal_Membrana.md",
+      "fuentes": "Zeise cap. 2 · Purves · apuntes III · Kandel 9-10",
+      "alcance": "La física de la señal nerviosa: difusión, gradiente electroquímico, ecuación de Nernst, ecuación de Goldman, canales iónicos, potencial de acción, período refractario, propagación saltatoria, costo energético y efecto de la temperatura. Cierra con las canalopatías y la desmielinización.",
+      "excluye": "la sinapsis y la integración postsináptica, que abren la guía 05.",
+      "topics": [
+        "difusión y gradiente electroquímico",
+        "Nernst y Goldman",
+        "canales iónicos",
+        "potencial de acción",
+        "propagación saltatoria",
+        "energía e hipotermia",
+        "canalopatías"
+      ],
+      "target": 6000
+    },
+    {
+      "id": "c1-05",
+      "num": 5,
+      "of": 8,
+      "kind": "chapter",
+      "title": "Se comunica y aprende: sinapsis y neurotransmisores",
+      "file": "05_Se_Comunica_Sinapsis.html",
+      "source": "../Certamenes/C1/CAPITULOS/05_Se_Comunica_Sinapsis.md",
+      "fuentes": "Zeise cap. 4 · Kelly · apuntes III",
+      "alcance": "La transmisión sináptica: sinapsis química y eléctrica, qué convierte una molécula en neurotransmisor, la clasificación clásica y el glutamato como eje (AMPA, NMDA, LTP-LTD, excitotoxicidad), seguido de GABA, glicina, monoaminas y acetilcolina. Cierra con las constricciones del tronco dendrítico y el DHA de membrana.",
+      "excluye": "la plasticidad en humanos y la neurogénesis, que son materia de la guía 06.",
+      "topics": [
+        "sinapsis química y eléctrica",
+        "criterios de neurotransmisor",
+        "glutamato y NMDA",
+        "LTP y LTD",
+        "excitotoxicidad",
+        "GABA, monoaminas y acetilcolina",
+        "constricciones dendríticas"
+      ],
+      "target": 6000
+    },
+    {
+      "id": "c1-06",
+      "num": 6,
+      "of": 8,
+      "kind": "chapter",
+      "title": "Madura y se renueva: plasticidad y neurogénesis adulta",
+      "file": "06_Madura_Se_Renueva.html",
+      "source": "../Certamenes/C1/CAPITULOS/06_Madura_Se_Renueva.md",
+      "fuentes": "Zeise cap. 7 · Gross · apuntes II y VII",
+      "alcance": "Qué cambia con la edad y qué se puede recuperar: ventanas críticas, adolescencia, envejecimiento cerebral, plasticidad dependiente de la práctica, mapas corticales y estimulación no invasiva. Después, la disputa por la neurogénesis adulta, sus técnicas y su regulación por ejercicio, estrés, antidepresivos y microbiota.",
+      "excluye": "la neurogénesis del desarrollo, ya cubierta en las guías 02 y 03, y el detalle histológico de Cajal, que tiene guía propia.",
+      "topics": [
+        "ventanas críticas",
+        "adolescencia",
+        "envejecimiento e hidrocéfalo ex vacuo",
+        "mapas corticales",
+        "tDCS y TMS",
+        "dogma y vindicación de Altman",
+        "regulación de la neurogénesis"
+      ],
+      "target": 6000
+    },
+    {
+      "id": "c1-07",
+      "num": 7,
+      "of": 8,
+      "kind": "chapter",
+      "title": "Falla: demencias, neurodegeneración y priones",
+      "file": "07_Falla_Demencias_Priones.html",
+      "source": "../Certamenes/C1/CAPITULOS/07_Falla_Demencias_Priones.md",
+      "fuentes": "apuntes IV-VI · Kandel",
+      "alcance": "Cuando la homeostasis se pierde: Alzheimer, demencia por cuerpos de Lewy y Huntington, con sus proteínas y su curso; el concepto prion-like; y las enfermedades priónicas, con PrP, E200K, codón 129, formas de ECJ, clínica, RT-QuIC, resonancia y bioseguridad.",
+      "excluye": "el tratamiento detallado de cada demencia, que el material solo menciona de pasada.",
+      "topics": [
+        "Alzheimer",
+        "cuerpos de Lewy",
+        "Huntington y CAG",
+        "prion-like",
+        "PrP y E200K",
+        "codón 129",
+        "RT-QuIC y resonancia"
+      ],
+      "target": 5500
+    },
+    {
+      "id": "c1-08",
+      "num": 8,
+      "of": 8,
+      "kind": "chapter",
+      "title": "Cajal y la doctrina neuronal",
+      "file": "08_Cajal.html",
+      "source": "../Certamenes/C1/CAPITULOS/08_Cajal.md",
+      "fuentes": "apuntes, bloque VIII · Gross",
+      "alcance": "La revolución técnica y conceptual de Cajal: microscopía, tinción argéntica y método ontogénico; la doctrina neuronal frente a la teoría reticular de Golgi; la contigüidad, la polarización dinámica y el cono de crecimiento; y el contexto histórico que hizo de todo esto una disputa.",
+      "excluye": "la biografía personal y la producción artística, que no están en el material; el detalle de la disputa sobre neurogénesis adulta, que se cuenta en la guía 06.",
+      "topics": [
+        "técnica y método",
+        "Golgi frente a Cajal",
+        "doctrina neuronal",
+        "contigüidad",
+        "polarización dinámica",
+        "cono de crecimiento",
+        "contexto histórico"
+      ],
+      "target": 2500
+    },
+    {
+      "id": "c1-manual",
+      "num": 0,
+      "of": 8,
+      "kind": "manual",
+      "title": "Manual del Certamen 1",
+      "file": "manual.html",
+      "source": "../Certamenes/C1/CAPITULOS/Manual_C1.md",
+      "fuentes": "las ocho guías del certamen",
+      "lede": "El mapa del certamen en una página: las cifras que se preguntan, los pares que se confunden y el recorrido completo.",
+      "alcance": "Manual integrado del Certamen 1. Reúne las cifras de mayor rendimiento, los pares que se confunden, las secuencias que se piden y el mapa de las ocho guías, con la fuente de cada dato.",
+      "excluye": "el desarrollo completo de cada tema, que vive en su guía.",
+      "topics": [
+        "cifras",
+        "pares que se confunden",
+        "secuencias",
+        "mapa de las guías"
+      ],
+      "target": 4000
+    }
+  ]
+}

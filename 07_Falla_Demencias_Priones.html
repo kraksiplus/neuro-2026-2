@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="es-CL" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Falla: demencias, neurodegeneración y priones · Neurociencias UBB</title>
+<meta name="description" content="Falla: demencias, neurodegeneración y priones. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3f63'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' fill='%23dbeafe' text-anchor='middle'%3ENe%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Falla: demencias, neurodegeneración y priones · Neurociencias UBB">
+<meta property="og:description" content="Falla: demencias, neurodegeneración y priones. Guía de estudio del Certamen 1 de Neurociencias, con citas por fuente.">
+<meta property="og:type" content="website">
+<style>  :root{
+    --bg:#f6f4ee;
+    --surface:#fffdf8;
+    --surface-2:#efeae0;
+    --surface-3:#e6dfd1;
+    --ink:#1d2a2e;
+    --muted:#5d6b70;
+    --line:#d8d1c3;
+    --brand:#7f1d1d;
+    --brand-2:#a33a3a;
+    --brand-3:#f7e4e4;
+    --accent:#b45309;
+    --accent-2:#fef3c7;
+    --rose:#9f1239;
+    --rose-2:#ffe4e6;
+    --blue:#1e3a8a;
+    --blue-2:#dbeafe;
+    --shadow:0 10px 30px rgba(20,40,40,.08);
+    --radius:16px;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#0f1617;
+    --surface:#162022;
+    --surface-2:#1d2a2c;
+    --surface-3:#263638;
+    --ink:#e8eeec;
+    --muted:#a7b6b2;
+    --line:#2c3c3d;
+    --brand:#5eead4;
+    --brand-2:#2dd4bf;
+    --brand-3:#123330;
+    --accent:#fbbf24;
+    --accent-2:#3a2a0a;
+    --rose:#fb7185;
+    --rose-2:#3b1119;
+    --blue:#93c5fd;
+    --blue-2:#12233f;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    line-height:1.65;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--brand-2);text-decoration-thickness:1px;text-underline-offset:2px}
+  a:hover{color:var(--brand)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--surface);color:var(--ink);
+    padding:.7rem 1rem;z-index:100;border:1px solid var(--line);border-radius:0 0 10px 0
+  }
+  .skip-link:focus{left:0}
+
+  /* HERO */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.16),transparent 60%),
+      linear-gradient(135deg,#0f2437 0%,#1a3d5c 55%,#2f6b9a 100%);
+    color:#f7fbfa;
+    padding:clamp(2rem,5vw,4.2rem) clamp(1.2rem,4vw,3rem) clamp(2.4rem,5vw,3.6rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;
+    border:1px solid rgba(255,255,255,.18);border-radius:50%;
+    box-shadow:0 0 0 40px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#b9d3e8;font-weight:700;margin:0 0 1rem
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:#b9d3e8;display:inline-block}
+  .hero h1{
+    font-family:var(--serif);
+    font-size:clamp(1.9rem,4.2vw,3.2rem);
+    line-height:1.08;
+    margin:0 0 .7rem;
+    letter-spacing:-.02em;
+    max-width:26ch;
+    text-wrap:balance;
+  }
+  .hero .lede{
+    font-size:clamp(1.02rem,2vw,1.28rem);
+    max-width:70ch;color:#d9e8f4;margin:.4rem 0 1.6rem
+  }
+  .hero .lede em{color:#fff}
+  .meta-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:.75rem;margin:1.6rem 0 1.2rem;max-width:1120px
+  }
+  .meta-grid div{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:12px;padding:.7rem .85rem;backdrop-filter:blur(3px)
+  }
+  .meta-grid span{
+    display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+    color:#a9cbe4;font-weight:700;margin-bottom:.2rem
+  }
+  .meta-grid strong{font-size:.92rem;font-weight:600;color:#f7fbfa;line-height:1.35}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .btn{
+    appearance:none;border:1px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.10);color:#fff;
+    padding:.62rem .95rem;border-radius:10px;font:inherit;font-size:.9rem;font-weight:650;
+    cursor:pointer;transition:background .15s ease,transform .15s ease
+  }
+  .btn:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+  .btn.primary{background:#fff;color:#10324c;border-color:#fff}
+  .btn.primary:hover{background:#eaf4fb}
+
+  /* LAYOUT */
+  .shell{
+    max-width:1420px;margin:0 auto;
+    display:grid;grid-template-columns:290px minmax(0,1fr);
+    gap:clamp(1rem,3vw,2.4rem);
+    padding:2rem clamp(1rem,3vw,2rem) 4rem;
+    align-items:start;
+  }
+  .sidebar{
+    position:sticky;top:1rem;align-self:start;
+    max-height:calc(100vh - 2rem);overflow:auto;
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1rem;
+    box-shadow:var(--shadow);
+    scrollbar-width:thin;
+  }
+  .sidebar h2{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin:.2rem 0 .7rem
+  }
+  .toc{list-style:none;margin:0;padding:0;font-size:.9rem}
+  .toc li{margin:.12rem 0}
+  .toc a{
+    display:block;padding:.42rem .55rem;border-radius:8px;color:var(--ink);
+    text-decoration:none;border-left:3px solid transparent;line-height:1.3
+  }
+  .toc a:hover{background:var(--surface-2)}
+  .toc a.active{background:var(--brand-3);border-left-color:var(--brand-2);font-weight:700;color:var(--brand)}
+  .toc .figs{
+    margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;font-size:.82rem;color:var(--muted)
+  }
+  .toc .figs a{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.7rem;height:1.7rem;border:1px solid var(--line);border-radius:7px;
+    padding:0 .45rem;background:var(--surface-2);font-weight:700;color:var(--brand)
+  }
+  main{min-width:0}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(1.1rem,2.6vw,2rem);box-shadow:var(--shadow);margin:1.35rem 0;
+    scroll-margin-top:1rem;
+  }
+  .card > :first-child{margin-top:0}
+  .card > :last-child{margin-bottom:0}
+  .section-kicker{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--brand-2);font-weight:800;margin-bottom:.45rem
+  }
+  .section-kicker .n{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:1.55rem;height:1.55rem;padding:0 .35rem;border-radius:6px;
+    background:var(--brand);color:#fff;font-size:.75rem;letter-spacing:0
+  }
+  h2{
+    font-family:var(--serif);font-size:clamp(1.55rem,3.2vw,2.2rem);
+    line-height:1.15;margin:.1rem 0 .8rem;letter-spacing:-.015em;text-wrap:balance
+  }
+  h3{font-family:var(--serif);font-size:clamp(1.18rem,2.2vw,1.45rem);line-height:1.25;margin:1.6rem 0 .55rem}
+  h4{font-size:1rem;margin:1.2rem 0 .4rem;letter-spacing:.01em}
+  p{margin:.65rem 0}
+  ul,ol{margin:.55rem 0 .8rem;padding-left:1.35rem}
+  li{margin:.28rem 0}
+  li::marker{color:var(--brand-2)}
+  strong{font-weight:750}
+  em{font-style:italic}
+  .cite{
+    display:inline-block;font-size:.74rem;font-weight:700;line-height:1.2;
+    color:var(--brand);background:var(--brand-3);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent);
+    padding:.08rem .38rem;border-radius:5px;white-space:nowrap;vertical-align:.08em
+  }
+  .small{font-size:.88rem;color:var(--muted)}
+  .th-abbr{display:none}
+  .muted{color:var(--muted)}
+
+  /* CALLOUTS */
+  .keybox,.databox,.warnbox,.quotebox{
+    border-radius:12px;padding:1rem 1.05rem;margin:1rem 0;border:1px solid var(--line)
+  }
+  .keybox{background:var(--brand-3);border-left:5px solid var(--brand-2)}
+  .databox{background:var(--accent-2);border-left:5px solid var(--accent)}
+  .warnbox{background:var(--rose-2);border-left:5px solid var(--rose)}
+  .quotebox{background:var(--surface-2);border-left:5px solid var(--blue);font-family:var(--serif);font-size:1.05rem}
+  .box-title{
+    display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.11em;
+    text-transform:uppercase;font-weight:800;margin-bottom:.35rem
+  }
+  .keybox .box-title{color:var(--brand)}
+  .databox .box-title{color:var(--accent)}
+  .warnbox .box-title{color:var(--rose)}
+  .quotebox .box-title{color:var(--blue)}
+
+  /* GRIDS */
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.85rem;margin:1rem 0}
+  .stat{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem 1rem
+  }
+  .stat b{display:block;font-family:var(--serif);font-size:1.65rem;line-height:1.1;color:var(--brand)}
+  .stat span{display:block;font-size:.82rem;color:var(--muted);margin-top:.25rem}
+  .mini-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem
+  }
+  .mini-card h4{margin:.05rem 0 .35rem;font-size:.98rem}
+  .mini-card p,.mini-card ul{font-size:.9rem;margin:.35rem 0}
+  .tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+    padding:.15rem .5rem;border-radius:999px;background:var(--brand-3);color:var(--brand);
+    border:1px solid color-mix(in srgb,var(--brand-2) 25%,transparent)
+  }
+  .tag.amber{background:var(--accent-2);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 25%,transparent)}
+  .tag.rose{background:var(--rose-2);color:var(--rose);border-color:color-mix(in srgb,var(--rose) 25%,transparent)}
+
+  /* TABLES */
+  .table-wrap{
+    overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:1rem 0;
+    background:var(--surface);-webkit-overflow-scrolling:touch
+  }
+  table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+  caption{
+    caption-side:top;text-align:left;padding:.8rem .9rem .2rem;
+    font-size:.82rem;color:var(--muted);font-weight:600
+  }
+  th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+  th{
+    background:var(--surface-2);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);font-weight:800;position:sticky;top:0;z-index:1
+  }
+  tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 45%,var(--surface))}
+  tbody tr:hover td{background:var(--brand-3)}
+  td.nw{white-space:nowrap}
+  .t1{min-width:1180px;font-size:.8rem}
+  .t1 th,.t1 td{padding:.5rem .55rem}
+  .t1 td:first-child{font-weight:650}
+
+  /* FIGURES */
+  figure.diagram{
+    margin:1.25rem 0;background:#fbfaf6;border:1px solid #d8d1c3;border-radius:14px;
+    padding:1rem;color:#1d2a2e;box-shadow:0 4px 16px rgba(20,40,40,.05)
+  }
+  figure.diagram svg{display:block;width:100%;height:auto}
+  figure.diagram figcaption{font-size:.86rem;color:#5d6b70;margin:.75rem .15rem 0;line-height:1.5}
+  figure.diagram figcaption b{color:#1d2a2e}
+  .fig-label{
+    display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    font-weight:800;color:#1d3f63;background:#e3eef7;border:1px solid #a9cbe4;
+    padding:.15rem .5rem;border-radius:999px;margin-bottom:.6rem
+  }
+
+  /* DETAILS Q&A */
+  details.qa{
+    border:1px solid var(--line);border-radius:12px;background:var(--surface-2);
+    padding:.2rem .9rem;margin:.55rem 0
+  }
+  details.qa summary{
+    cursor:pointer;font-weight:700;padding:.65rem 0;list-style:none;
+    display:flex;gap:.55rem;align-items:flex-start
+  }
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary::before{
+    content:"+";flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    width:1.35rem;height:1.35rem;border-radius:6px;background:var(--brand);color:#fff;
+    font-weight:800;font-size:.95rem;line-height:1;margin-top:.1rem
+  }
+  details.qa[open] summary::before{content:"−"}
+  details.qa .answer{padding:.1rem 0 .9rem 1.95rem;font-size:.94rem}
+  details.qa .answer p:first-child{margin-top:0}
+  .qa-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 1rem}
+  .qa-tools button{
+    font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
+    background:var(--surface);color:var(--ink);border:1px solid var(--line);
+    padding:.4rem .65rem;border-radius:8px
+  }
+  .qa-tools button:hover{background:var(--brand-3);border-color:var(--brand-2)}
+
+  /* CHECKLIST */
+  .checklist{list-style:none;padding-left:0}
+  .checklist li{padding-left:1.7rem;position:relative;margin:.45rem 0}
+  .checklist li::before{
+    content:"✓";position:absolute;left:0;top:.05rem;color:var(--brand-2);font-weight:900
+  }
+
+  /* FOOTER */
+  footer{
+    border-top:1px solid var(--line);background:var(--surface);
+    padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);font-size:.86rem
+  }
+  footer .foot-inner{max-width:1120px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+  footer strong{color:var(--ink)}
+
+  @media (max-width:980px){
+    .shell{grid-template-columns:1fr;padding-top:1.2rem}
+    .sidebar{position:static;max-height:none;order:-1}
+    .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem}
+  }
+  @media (max-width:560px){
+    .hero h1{max-width:none}
+    .meta-grid{grid-template-columns:1fr}
+    .card{padding:1rem}
+    table{font-size:.82rem}
+  }
+  @media print{
+    :root{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--surface-3:#eee;--ink:#111;--muted:#444;--line:#bbb;--shadow:none}
+    @page{margin:12mm}
+    body{background:#fff;font-size:10.5pt}
+    .table-wrap{overflow:visible!important;border:none!important}
+    table{min-width:0!important;width:100%!important;font-size:6.4pt!important;table-layout:fixed}
+    .t1{min-width:0!important;font-size:6.4pt!important}
+    .t1 th:nth-child(1){width:13%}
+    .t1 th:nth-child(2){width:6%}
+    .t1 th:nth-child(3){width:11%}
+    .t1 th:nth-child(4){width:11%}
+    .t1 th:nth-child(5){width:7%}
+    .t1 th:nth-child(6){width:6%}
+    .t1 th:nth-child(7){width:17%}
+    .t1 th:nth-child(8){width:18%}
+    .t1 th:nth-child(9){width:7%}
+    th,td{padding:.2rem .2rem!important;word-break:normal;overflow-wrap:anywhere;hyphens:auto}
+    th{position:static!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+    thead{display:table-header-group}
+    .hero{background:#fff;color:#111;padding:0 0 1rem;border-bottom:2px solid #111}
+    .hero .lede,.meta-grid span{color:#333}
+    .meta-grid div{background:#f4f4f4;border-color:#ccc}
+    .meta-grid strong{color:#111}
+    .hero-actions,.sidebar,.skip-link,.qa-tools{display:none!important}
+    .shell{display:block;max-width:none;padding:0}
+    .card{box-shadow:none;border:1px solid #ccc;break-inside:avoid;page-break-inside:avoid}
+    h2,h3{break-after:avoid}
+    figure.diagram,.table-wrap,details.qa{break-inside:avoid;page-break-inside:avoid}
+    .th-full{display:none}
+    .th-abbr{display:inline}
+    a{color:#111;text-decoration:none}
+  }
+  p,li,td,figcaption{text-wrap:pretty}
+  blockquote{
+    margin:1.1rem 0;padding:.9rem 1.1rem;background:var(--surface-2);
+    border-left:4px solid var(--brand-2);border-radius:0 12px 12px 0;color:var(--ink)
+  }
+  blockquote p{margin:.4rem 0}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1.2rem 0}
+  .guide-grid a{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease}
+  .guide-grid a:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+  .guide-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .guide-grid .gn{font-family:var(--serif);font-size:1.6rem;color:var(--brand-2);line-height:1}
+  .guide-grid h3{margin:.3rem 0 .4rem;font-size:1.05rem;font-family:var(--sans);font-weight:700;color:var(--ink)}
+  .guide-grid p{margin:0;font-size:.9rem;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .badges span{font-size:.72rem;font-weight:700;letter-spacing:.03em;background:var(--brand-3);
+    color:var(--brand);border-radius:999px;padding:.18rem .55rem}
+  caption{caption-side:top;text-align:left;font-size:.82rem;font-weight:700;color:var(--muted);padding:.2rem .2rem .5rem}
+
+/* ===== Neurociencias: azul profundo y ámbar sobre el sistema visual de Semio C3 ===== */
+:root{
+  --bg:#f3f6fa;
+  --surface:#fffefb;
+  --surface-2:#e9eff6;
+  --surface-3:#dae4ef;
+  --ink:#14202b;
+  --muted:#54677a;
+  --line:#cbd8e6;
+  --brand:#1d3f63;
+  --brand-2:#2f6b9a;
+  --brand-3:#e3eef7;
+  --accent:#b45309;
+  --accent-2:#fef3c7;
+  --rose:#9f1239;
+  --rose-2:#ffe4e6;
+  --blue:#1e3a8a;
+  --blue-2:#dbeafe;
+  --shadow:0 10px 30px rgba(16,36,56,.09);
+}
+[data-theme="dark"]{
+  --bg:#0e141a;
+  --surface:#151e26;
+  --surface-2:#1c2833;
+  --surface-3:#26333f;
+  --ink:#e9f1f7;
+  --muted:#a4b6c6;
+  --line:#2b3a47;
+  --brand:#7dd3fc;
+  --brand-2:#38bdf8;
+  --brand-3:#0d2a3c;
+  --accent:#fbbf24;
+  --accent-2:#3a2a0a;
+  --rose:#fb7185;
+  --rose-2:#3b1119;
+  --blue:#93c5fd;
+  --blue-2:#12233f;
+  --shadow:0 10px 30px rgba(0,0,0,.42);
+}
+.site-footer{
+  max-width:1280px;margin:0 auto;padding:2rem 1.2rem 3rem;
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+  border-top:1px solid var(--line);
+}
+.site-footer p{margin:.25rem 0}
+.table-source{margin-top:.4rem}
+.exam-list li{margin:.5rem 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;margin:1.4rem 0}
+.cert-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.cert-card:hover{transform:translateY(-2px);border-color:var(--brand-2)}
+.cert-card h3{margin:.2rem 0 .6rem;font-size:1.45rem}
+.cert-card p{color:var(--muted);margin:.4rem 0 1rem}
+.cert-card .big{font-family:var(--serif);font-size:2.6rem;color:var(--brand);line-height:1}
+
+/* ===== Figuras de Robbins ===== */
+.fig{
+  margin:1.8rem 0;padding:1rem;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.fig-open{
+  display:block;background:#fff;border-radius:calc(var(--radius) - 4px);
+  overflow:hidden;cursor:zoom-in;line-height:0;text-align:center;
+}
+.fig-open img{display:block;width:auto;max-width:100%;height:auto;margin:0 auto}
+.fig figcaption{margin-top:.85rem;font-size:.9rem;line-height:1.55;color:var(--ink)}
+.fig figcaption strong{color:var(--brand)}
+.fig-source{display:block;margin-top:.35rem;font-size:.78rem;color:var(--muted);line-height:1.45}
+.fig-source a{color:var(--brand);font-weight:600}
+.fig-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:.8rem;margin-top:1rem;
+}
+.fig-thumb{
+  display:flex;flex-direction:column;gap:.35rem;text-decoration:none;
+  color:var(--muted);font-size:.78rem;background:#fff;border:1px solid var(--line);
+  border-radius:calc(var(--radius) - 4px);padding:.4rem;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.fig-thumb:hover{border-color:var(--brand-2);transform:translateY(-1px)}
+.fig-thumb img{width:100%;height:120px;object-fit:contain;background:#fff}
+.fig-thumb span{text-align:center;font-weight:700;color:var(--brand)}
+.fig-dialog{
+  position:fixed;inset:0;margin:auto;width:fit-content;height:fit-content;
+  max-width:min(96vw,1500px);max-height:92dvh;overflow:auto;overscroll-behavior:contain;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+.fig-dialog::backdrop{background:rgba(10,18,26,.84)}
+.fig-dialog img{
+  display:block;max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;
+  margin:0 auto;background:#fff;
+}
+.fig-dialog p{margin:.8rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.fig-dialog-close{
+  position:absolute;top:.6rem;right:.6rem;z-index:2;
+  background:var(--brand);color:#fff;border:0;border-radius:999px;
+  padding:.3rem .8rem;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+@media(max-width:600px){
+  .fig{padding:.6rem;margin:1.2rem 0}
+  .fig-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-thumb img{height:90px}
+}
+@media print{
+  .fig{break-inside:avoid;box-shadow:none;border:1px solid #ccc;padding:.4rem}
+  .fig-open{cursor:default}
+  .fig-open img{max-height:9.5cm;width:auto;margin:0 auto}
+  .fig-grid,.fig-dialog{display:none!important}
+  .fig-source a{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Certamen 1 · Neurociencias Aplicadas a la Medicina</p>
+    <h1>07. Falla: demencias, neurodegeneración y priones</h1>
+    <p class="lede">Guía 07 de 08. 5.382 palabras. 96 citas y 42 filas de tabla.</p>
+    <div class="meta-grid"><div><span>Guía</span><strong>07 de 08</strong></div><div><span>Fuentes</span><strong>apuntes IV-VI · Kandel</strong></div><div><span>Citas</span><strong>96</strong></div><div><span>Tablas</span><strong>42</strong></div><div><span>Palabras</span><strong>5.382</strong></div></div>
+    <div class="hero-actions">
+      <button class="btn primary" id="printBtn" type="button">Imprimir / guardar PDF</button>
+      <button class="btn" id="themeBtn" type="button" aria-pressed="false">Modo oscuro</button>
+      <a class="btn" href="#alcance">Empezar por el alcance</a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <nav>
+      <ul class="toc">
+        <li><a href="#esencial">Lo esencial en 60 segundos</a></li>
+        <li><a href="#alcance">Alcance y método</a></li>
+        <li><a href="#sec-01-la-homeostasis-que-se-rompe">La homeostasis que se rompe</a></li>
+        <li><a href="#sec-02-alzheimer-amiloide-fuera-tau-dentro">Alzheimer: amiloide fuera, tau dentro</a></li>
+        <li><a href="#sec-03-cuerpos-de-lewy-el-perfil-invertido">Cuerpos de Lewy: el perfil invertido</a></li>
+        <li><a href="#sec-04-huntington-la-repeticion-que-se-hereda">Huntington: la repetición que se hereda</a></li>
+        <li><a href="#sec-05-prion-like-y-la-proteina-prionica">Prion-like y la proteína priónica</a></li>
+        <li><a href="#sec-06-e200k-codon-129-y-la-anomalia-chilena">E200K, codón 129 y la anomalía chilena</a></li>
+        <li><a href="#sec-07-formas-de-ecj-y-clinica">Formas de ECJ y clínica</a></li>
+        <li><a href="#sec-08-diagnostico-rt-quic-eeg-y-biomarcadores">Diagnóstico: RT-QuIC, EEG y biomarcadores</a></li>
+        <li><a href="#sec-09-resonancia-secuencias-dwi-frente-a-flair">Resonancia: secuencias, DWI frente a FLAIR</a></li>
+        <li><a href="#sec-10-bioseguridad-vigilancia-y-el-caso">Bioseguridad, vigilancia y el caso</a></li>
+        <li><a href="#sec-11-puntos-de-examen">Puntos de examen</a></li>
+        <li><a href="#sec-12-limites-del-material">Límites del material</a></li>
+      </ul>
+      <div class="figs">
+<a href="index.html" title="Índice del certamen">Índice</a>
+        <a href="06_Madura_Se_Renueva.html" title="Madura y se renueva: plasticidad y neurogénesis adulta">06</a>
+        <a href="08_Cajal.html" title="Cajal y la doctrina neuronal">08</a>
+        <a href="manual.html" title="Manual del Certamen 1">Manual</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="contenido">
+<section id="alcance" class="card"><div class="section-kicker"><span class="n">00</span> Alcance y método</div><h2>Qué cubre esta guía</h2><div class="keybox"><span class="box-title">Alcance</span>Cuando la homeostasis se pierde: Alzheimer, demencia por cuerpos de Lewy y Huntington, con sus proteínas y su curso; el concepto prion-like; y las enfermedades priónicas, con PrP, E200K, codón 129, formas de ECJ, clínica, RT-QuIC, resonancia y bioseguridad.</div><p class="small">Las citas remiten a la fuente y a su página o sección, por ejemplo <em>Zeise p. 108</em>, <em>Purves p. 78</em> o <em>apuntes, bloque III</em>.</p><p class="small"><strong>Fuera de alcance:</strong> el tratamiento detallado de cada demencia, que el material solo menciona de pasada.</p></section><section id="esencial" class="card"><div class="section-kicker"><span class="n">★</span> Repaso rápido</div><h2>Lo esencial en 60 segundos</h2><div class="keybox"><span class="box-title">Si solo te llevas estas ideas</span><ul>
+<li>La neurona vive cerca del umbral y sostenerlo cuesta energía, como muestran las canalopatías y el calcio <span class="cite">Kandel cap. 10</span>.</li>
+<li>Alzheimer suma placas de Aβ extracelulares, ovillos de tau intracelulares, atrofia e inflamación, con curso de años <span class="cite">apuntes, bloque V</span>.</li>
+<li>En la demencia por cuerpos de Lewy, la memoria pesa menos que en el Alzheimer y lo visuoespacial y ejecutivo, más <span class="cite">apuntes, bloque V</span>.</li>
+<li>Huntington es autosómica dominante por repeticiones CAG en la huntingtina, con corea y atrofia del caudado <span class="cite">apuntes, bloque V</span>.</li>
+<li>Prion-like nombra la propagación y el autotemplado celular, no un contagio de salud pública <span class="cite">apuntes, bloque V</span>.</li>
+<li>El prión es una proteína sin ácidos nucleicos que convierte la PrP^C en PrP^Sc resistente <span class="cite">apuntes, bloque VI</span>.</li>
+<li>E200K en PRNP explica la alta incidencia chilena de la enfermedad de Creutzfeldt-Jakob (ECJ) familiar, modulada por el codón 129 <span class="cite">apuntes, bloque VI</span>.</li>
+<li>RT-QuIC detecta la semilla priónica y la DWI supera al FLAIR en la fase precoz <span class="cite">apuntes, bloque VI</span>.</li>
+</ul></div></section><section id="sec-01-la-homeostasis-que-se-rompe" class="card">
+<div class="section-kicker"><span class="n">01</span> Tema</div>
+<h2>La homeostasis que se rompe</h2>
+<p>Las neuronas gastan energía para mantenerse lejos del umbral y cerca de un potencial de reposo estable, y buena parte de la patología neurológica puede leerse como el costo de ese equilibrio. La canalopatía es la forma más directa de la falla: mutaciones o mecanismos epigenéticos alteran la función de canales dependientes de voltaje y, como cada tipo se expresa de forma regionalmente diferenciada, el efecto puede ser muy selectivo, como en el síndrome de Dravet, donde la pérdida de Nav1.1 en interneuronas GABAérgicas produce epilepsia <span class="cite">Kandel cap. 10</span>. La interpretación propuesta es que las neuronas inhibitorias pierden excitabilidad más que las excitatorias, de modo que la excitación relativa del circuito aumenta.</p>
+<p>El parkinsonismo aporta el ejemplo opuesto: una falla lenta, sin mutación de canal, que se acumula durante décadas. En las neuronas dopaminérgicas de la sustancia nigra el marcapaso depende en parte de corrientes de calcio dependientes de voltaje, y la entrada continua de calcio a lo largo de la vida contribuye al estrés metabólico que acompaña la muerte de esas neuronas <span class="cite">Kandel cap. 10</span>. No hay una descarga que mate a la célula; hay millones de ciclos que dejan una deuda metabólica y vuelven vulnerable a una población específica.</p>
+<p>La desmielinización muestra una tercera forma de falla, esta vez del diseño pasivo del axón. Bajo la mielina normal hay canales de potasio dependientes de voltaje, cerca de los extremos de cada segmento internodal, que suprimen el potencial de acción; cuando la mielina se pierde, esos canales quedan expuestos y pueden inhibir la conducción del axón desnudo <span class="cite">Kandel cap. 10</span>. El axón sigue ahí, pero la conducción deja de estar asegurada.</p>
+<p>Las demencias agregan una cuarta falla, distinta de las anteriores: una proteína mal plegada que escapa a la degradación y se convierte en plantilla para las copias vecinas. Esa lógica común permite ordenar enfermedades que la clínica separa, porque cada una tiene una proteína dominante, un tipo de agregado y un territorio preferente <span class="cite">apuntes, bloque V</span>. Las cuatro fallas se distinguen por la escala de tiempo en que se instalan. La canalopatía se manifiesta cuando el canal cambia su función; la desmielinización deja un axón que conduce con menos seguridad; el calcio deja una deuda que se paga durante años <span class="cite">Kandel cap. 10</span>. La proteína mal plegada, una vez que encuentra una semilla estable, se convierte en un proceso que se alimenta de sí mismo <span class="cite">apuntes, bloque V</span>. Esa diferencia de escala explica por qué unas enfermedades se presentan como episodios y otras como décadas de deterioro.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: La homeostasis que se rompe" tabindex="0"><table>
+<thead>
+<tr>
+<th>Entidad</th>
+<th>Proteína implicada</th>
+<th>Agregado</th>
+<th>Territorio principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enfermedad de Alzheimer</td>
+<td>Aβ y tau</td>
+<td>Placa extracelular y ovillo intracelular</td>
+<td>Corteza, con atrofia marcada</td>
+</tr>
+<tr>
+<td>Demencia por cuerpos de Lewy</td>
+<td>α-sinucleína</td>
+<td>Cuerpos de Lewy</td>
+<td>Corteza y regiones subcorticales, de distribución difusa</td>
+</tr>
+<tr>
+<td>Enfermedad de Huntington</td>
+<td>Huntingtina</td>
+<td>Agregados proteicos</td>
+<td>Ganglios basales, en particular la cabeza del caudado</td>
+</tr>
+<tr>
+<td>Enfermedad de Creutzfeldt-Jakob</td>
+<td>PrP^Sc</td>
+<td>Fibras amiloides y microcavidades</td>
+<td>Corteza y ganglios basales</td>
+</tr>
+</tbody>
+</table></div>
+<p class="small table-source">Fuente: <span class="cite">apuntes, bloque V</span> y <span class="cite">apuntes, bloque VI</span>.</p>
+<p>La lectura topográfica no es un adorno: el territorio explica el síndrome. El Alzheimer deposita Aβ fuera de la neurona y tau dentro, y pierde corteza; la demencia por cuerpos de Lewy acumula α-sinucleína en cuerpos difusos por corteza y estructuras subcorticales; Huntington agrega huntingtina en los ganglios basales, sobre todo en la cabeza del caudado; y la ECJ llena la corteza y los ganglios basales de PrP^Sc, fibras amiloides y microcavidades <span class="cite">apuntes, bloque V</span>. La misma pregunta ordena las cuatro: qué proteína, en qué compartimento y en qué circuito.</p>
+
+</section><section id="sec-02-alzheimer-amiloide-fuera-tau-dentro" class="card">
+<div class="section-kicker"><span class="n">02</span> Tema</div>
+<h2>Alzheimer: amiloide fuera, tau dentro</h2>
+<p>La enfermedad de Alzheimer se reconoce por una tríada anatomopatológica que la figura del bloque V resume: atrofia cortical marcada, placas de amiloide fuera de la neurona y ovillos neurofibrilares dentro de ella, con inflamación añadida <span class="cite">apuntes, bloque V</span>. La comparación con un cerebro sano muestra que la atrofia es el rasgo macroscópico, y que la pérdida de volumen acompaña a la pérdida neuronal. La proteína tau, que en la neurona sana estabiliza el microtúbulo, se hiperfosforila, se desprende y se agrega en ovillos; el microtúbulo queda sin su estabilizador y el citoesqueleto se desorganiza. La vía amiloide explica el otro depósito: la proteína precursora amiloide, APP, se procesa por β-secretasa y γ-secretasa y rinde el péptido Aβ, que se agrega en placa, y las mutaciones de APP, PSEN1 y PSEN2 desvían ese procesamiento. La cascada sigue un orden, con la agregación de Aβ primero, la pérdida y degeneración neuronal después, y al final la microglía activada, los astrocitos reactivos, el daño de la barrera hematoencefálica y la neuroinflamación <span class="cite">apuntes, bloque V</span>. La consecuencia es que la placa no es el final del proceso, sino su primera etapa visible.</p>
+<p>La figura 20 del bloque añade dos matices al mecanismo. El primero es que la agregación tiene puntos calientes, sitios donde la proteína se nuclea con más facilidad, y que una secuencia diseñada, BRICHOS, puede bloquearlos; el segundo es que el Aβ interactúa con iones metálicos y esa interacción favorece la nucleación secundaria y la elongación de la fibrilla <span class="cite">apuntes, bloque V</span>. El detalle importa porque convierte el amiloide en un proceso con etapas separables, y no en un depósito inerte.</p>
+<p>La distinción entre los dos depósitos ordena el diagnóstico. La placa es extracelular y el ovillo intracelular, de modo que la enfermedad combina un problema del espacio que rodea a la neurona con un problema del citoesqueleto que la sostiene <span class="cite">apuntes, bloque V</span>. La atrofia cortical es la consecuencia visible de ambas pérdidas, y la inflamación es el tercer componente, no un fenómeno accesorio. Esa arquitectura explica por qué la enfermedad no se reduce a un solo depósito.</p>
+<p>La cascada tiene una dirección. El Aβ se agrega primero, la neurodegeneración viene después y la inflamación cierra la secuencia, de modo que la placa puede existir antes de que el paciente pierda neuronas <span class="cite">apuntes, bloque V</span>. La placa, entonces, es el testimonio de una etapa, no el resumen de toda la enfermedad.</p>
+<p>El curso es insidioso y lento, de años, y ese dato separa al Alzheimer de la enfermedad de Creutzfeldt-Jakob. La memoria es el dominio que define el contraste con la demencia por cuerpos de Lewy: allí está menos comprometida, mientras que lo visuoespacial, atencional y ejecutivo es más grave <span class="cite">apuntes, bloque V</span>. La diferencia de velocidad y de perfil es clínicamente decisiva, porque cambia el interrogatorio y la expectativa del paciente.</p>
+
+</section><section id="sec-03-cuerpos-de-lewy-el-perfil-invertido" class="card">
+<div class="section-kicker"><span class="n">03</span> Tema</div>
+<h2>Cuerpos de Lewy: el perfil invertido</h2>
+<p>La demencia por cuerpos de Lewy se distingue del Alzheimer por el perfil cognitivo y por la distribución de las lesiones. Los cuerpos se extienden de forma difusa por regiones corticales y subcorticales, y el deterioro de memoria es menos marcado, mientras que el visuoespacial, el atencional y el ejecutivo son más graves <span class="cite">apuntes, bloque V</span>. Esa inversión es el dato clínico que la vuelve reconocible, porque el orden de la falla es distinto. El perfil invertido tiene una consecuencia para el interrogatorio: la queja de memoria no es el eje, y la falla visuoespacial o ejecutiva puede pasar inadvertida si no se busca <span class="cite">apuntes, bloque V</span>. La distribución difusa de los cuerpos explica que el déficit no respete un dominio y que la demencia aparezca como un deterioro de varios frentes a la vez.</p>
+<p>La proteína es la α-sinucleína, y el material ofrece dos modelos de cómo se convierte en cuerpo de Lewy. El tradicional parte del monómero, que se agrega en estructuras ricas en lámina β y forma el cuerpo; el propuesto pone el origen en una vesícula lipídica de tráfico, a la que la α-sinucleína se une en la membrana, y en una interacción lipídica aberrante que termina en el mismo cuerpo <span class="cite">apuntes, bloque V</span>. La diferencia no es menor: en el primer modelo el problema empieza en la proteína, y en el segundo, en la membrana que la hospeda. El material presenta los dos modelos como alternativas: uno pone el acento en el monómero que se agrega y el otro en la membrana que concentra la proteína <span class="cite">apuntes, bloque V</span>. En ambos, el cuerpo de Lewy es el mismo producto final, y la diferencia está en el camino que lo produce.</p>
+<p>La α-sinucleína no es exclusiva de esta demencia. El bloque V la asigna también al Parkinson <span class="cite">apuntes, bloque V</span>. En la sustancia nigra, la población dopaminérgica depende de un marcapaso con corrientes de calcio que, sostenido durante toda la vida, deja estrés metabólico y muerte neuronal <span class="cite">Kandel cap. 10</span>. Esa cercanía explica por qué el parkinsonismo y la demencia por cuerpos de Lewy se piensan juntos, aunque el material los presente como entidades distintas.</p>
+<p>El cuerpo de Lewy es, entonces, la marca de una proteína que se agrega y se distribuye por territorios amplios. Esa distribución difusa explica que el cuadro no se limite a la memoria y que el deterioro visuoespacial y ejecutivo aparezca temprano. La demencia queda definida por lo que falta y por lo que sobra: menos amnesia, más desorientación espacial y más falla de planificación <span class="cite">apuntes, bloque V</span>.</p>
+
+</section><section id="sec-04-huntington-la-repeticion-que-se-hereda" class="card">
+<div class="section-kicker"><span class="n">04</span> Tema</div>
+<h2>Huntington: la repetición que se hereda</h2>
+<p>La enfermedad de Huntington es un trastorno neurodegenerativo progresivo, de herencia autosómica dominante y presentación en el adulto. La causa es una repetición CAG en el gen de la huntingtina, y el número de repeticiones se ordena en cuatro tramos. El intermedio es el que importa para la descendencia, porque puede crecer en la siguiente generación <span class="cite">apuntes, bloque V</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Huntington: la repetición que se hereda" tabindex="0"><table>
+<thead>
+<tr>
+<th>Repeticiones CAG</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menos de 27</td>
+<td>Normal, no desarrolla la enfermedad</td>
+</tr>
+<tr>
+<td>27 a 35</td>
+<td>Intermedio o premutación, con riesgo de aumentar en generaciones futuras</td>
+</tr>
+<tr>
+<td>36 a 39</td>
+<td>Anormal, con posible inicio muy tardío o sin manifestación</td>
+</tr>
+<tr>
+<td>Más de 40</td>
+<td>Gen anormal, enfermedad</td>
+</tr>
+</tbody>
+</table></div>
+<p>La frontera entre 39 y 40 separa la enfermedad manifiesta del estado anormal que puede no manifestarse. El tramo de 27 a 35 no produce la enfermedad, pero sí una inestabilidad que puede alargar la repetición en la siguiente generación, de modo que un padre sano puede tener un hijo afectado <span class="cite">apuntes, bloque V</span>. La zona de 36 a 39 es la más difícil de interpretar, porque el gen ya es anormal y el paciente puede no enfermar o hacerlo muy tarde. Esa gradación explica por qué el número de repeticiones se lee como un riesgo y no como una sentencia.</p>
+<p>La corea es el signo que da nombre a la enfermedad: movimientos bruscos e involuntarios de la cara, el tronco y las extremidades <span class="cite">apuntes, bloque V</span>. En las etapas finales se alargan y adoptan posturas dolorosas, de modo que el movimiento involuntario se transforma en una postura sostenida. A ello se suman alteraciones psiquiátricas y cognitivas, con un mayor riesgo de suicidio, dato que pesa en el seguimiento <span class="cite">apuntes, bloque V</span>. La enfermedad no es solo un trastorno del movimiento, aunque el movimiento sea lo más visible.</p>
+<p>La anatomía patológica muestra agregados proteicos, atrofia de los ganglios basales, en particular la cabeza del caudado, y crecimiento de los ventrículos <span class="cite">apuntes, bloque V</span>. El caudado es el punto donde la pérdida de volumen se hace evidente, y el ventrículo ocupa el espacio que deja la atrofia. La figura 25 del bloque muestra la lógica experimental de la terapia génica: la mutación produce proteínas tóxicas, se infunde un vector por catéter, las células tratadas se vuelven una fábrica de medicamentos y el bloqueo del ARN mensajero reduce las proteínas tóxicas <span class="cite">apuntes, bloque V</span>. El material lo presenta como estrategia y no desarrolla su aplicación clínica.</p>
+
+</section><section id="sec-05-prion-like-y-la-proteina-prionica" class="card">
+<div class="section-kicker"><span class="n">05</span> Tema</div>
+<h2>Prion-like y la proteína priónica</h2>
+<h3 id="la-propagación-que-no-es-contagio">La propagación que no es contagio</h3>
+<p>El concepto prion-like nombra una forma de propagación, no una nueva clase de infección. Las proteínas de estas demencias comparten el mecanismo, y la tabla las ordena por enfermedad <span class="cite">apuntes, bloque V</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Prion-like y la proteína priónica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Proteína</th>
+<th>Enfermedad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PrP</td>
+<td>Enfermedades priónicas, ECJ</td>
+</tr>
+<tr>
+<td>Tau y amiloide</td>
+<td>Alzheimer</td>
+</tr>
+<tr>
+<td>α-sinucleína</td>
+<td>Parkinson</td>
+</tr>
+<tr>
+<td>Huntingtina</td>
+<td>Huntington</td>
+</tr>
+</tbody>
+</table></div>
+<p>El mecanismo tiene dos pasos. El primero es la propagación proteica: una semilla nucleante induce un cambio conformacional en las proteínas vecinas, que adoptan la forma de la semilla; el segundo es la transmisión de célula a célula, con liberación al espacio extracelular y captación por neuronas vecinas <span class="cite">apuntes, bloque V</span>. La consecuencia es que la lesión puede avanzar sin que haya un agente externo que la empuje.</p>
+<p>Conviene distinguir el alcance del término. Prion-like se refiere estrictamente al mecanismo fisiopatológico celular de propagación y autotemplado dentro del cerebro del paciente, y no significa que el Alzheimer o el Parkinson sean enfermedades infecciosas o contagiosas de salud pública <span class="cite">apuntes, bloque V</span>. La diferencia separa una proteína que se propaga de una enfermedad que se transmite entre personas.</p>
+<h3 id="la-proteína-priónica">La proteína priónica</h3>
+<p>En las enfermedades priónicas el mecanismo deja de ser una analogía y se vuelve la enfermedad misma. La proteína priónica celular, PrP^C, es soluble, rica en α-hélice, sensible a las proteasas y sin tendencia a agregarse, y conserva una función fisiológica sin toxicidad; la forma patológica, PrP^Sc, es aberrante, rica en lámina β, resistente a proteasas, calor y desinfectantes, forma oligómeros y agregados insolubles y actúa como plantilla infecciosa <span class="cite">apuntes, bloque VI</span>. La diferencia es de forma y no de información: la misma cadena adopta dos plegamientos con propiedades opuestas.</p>
+<p>La PrP^C no es un residuo: participa en la neuroprotección y en la homeostasis del cobre, une cobre y zinc y protege del estrés oxidativo, sostiene la plasticidad sináptica que subyace a memoria y aprendizaje, y mantiene la mielina en el sistema nervioso periférico <span class="cite">apuntes, bloque VI</span>. La enfermedad no consiste en perder esa proteína, sino en convertirla. La conversión es estable porque la forma patológica resiste lo que degradaría a la normal. La PrP^Sc resiste proteasas, calor y desinfectantes, y esa resistencia explica tanto la enfermedad como las precauciones hospitalarias <span class="cite">apuntes, bloque VI</span>. La biología y la bioseguridad son dos caras del mismo dato.</p>
+<p>Un prión es una proteína infecciosa que carece de material genético, sin ADN ni ARN, y que se replica templando el plegamiento de la PrP^C normal hacia la forma patológica <span class="cite">apuntes, bloque VI</span>. Esa ausencia de genoma obliga a explicar la replicación por forma y no por información. La cadena es siempre la misma: una mutación o un cambio espontáneo convierte la PrP^C en PrP^Sc, la PrP^Sc actúa como molde dañino, y el efecto dominó produce fibras amiloides, muerte neuronal y microcavidades, hasta el aspecto espongiforme que da nombre a la encefalopatía <span class="cite">apuntes, bloque VI</span>.</p>
+<p>La consecuencia es que la enfermedad no necesita un microorganismo: basta una proteína con una conformación estable que obligue a las demás a copiarla. De ahí que el mismo esquema sirva para explicar la propagación de otras demencias, con la diferencia de que solo en las priónicas la proteína es transmisible entre individuos <span class="cite">apuntes, bloque VI</span>.</p>
+
+</section><section id="sec-06-e200k-codon-129-y-la-anomalia-chilena" class="card">
+<div class="section-kicker"><span class="n">06</span> Tema</div>
+<h2>E200K, codón 129 y la anomalía chilena</h2>
+<p>La mutación E200K es una alteración puntual del gen PRNP, que se encuentra en el brazo corto del cromosoma 20 y codifica la PrP humana; en el codón 200, el ácido glutámico, E, se sustituye por lisina, K, y el cambio desestabiliza la PrP^C y facilita la conversión espontánea a la isoforma patógena <span class="cite">apuntes, bloque VI</span>. La nomenclatura es literal: E es el aminoácido original y K el reemplazo. Es la mutación genética más común de la ECJ familiar, que se hereda de forma autosómica dominante y tiene penetrancia que aumenta con la edad. Chile tiene una de las incidencias más altas del mundo, por encima de 1 a 2 por millón, por un efecto fundador con grupos familiares portadores extensos <span class="cite">apuntes, bloque VI</span>.</p>
+<p>La clínica de E200K comienza en la quinta o sexta década con demencia rápidamente progresiva, mioclonías, ataxia cerebelosa y signos piramidales o extrapiramidales, y el curso es fatal en menos de un año, hacia el mutismo acinético <span class="cite">apuntes, bloque VI</span>. Es el mismo guion de la ECJ, con un inicio más temprano que el pico esporádico de 60 a 70 años. El polimorfismo del codón 129 modula la susceptibilidad y el fenotipo, y por eso se estudia junto con el 200 <span class="cite">apuntes, bloque VI</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: E200K, codón 129 y la anomalía chilena" tabindex="0"><table>
+<thead>
+<tr>
+<th>Genotipo</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M/M</td>
+<td>Mayor susceptibilidad al mal plegamiento y curso clásico</td>
+</tr>
+<tr>
+<td>M/V</td>
+<td>Efecto protector relativo y mayor heterogeneidad clínica</td>
+</tr>
+<tr>
+<td>V/V</td>
+<td>Mayor ataxia cerebelosa inicial y menor deterioro cognitivo cortical temprano</td>
+</tr>
+</tbody>
+</table></div>
+<p>El genotipo M/M se asocia al curso clásico, el M/V protege relativamente y el V/V desplaza la presentación hacia la ataxia cerebelosa <span class="cite">apuntes, bloque VI</span>. La combinación de ambos codones permite explicar por qué dos portadores de la misma mutación pueden enfermar de forma distinta. El efecto fundador significa que la mutación no aparece de novo en cada familia, sino que se hereda de un antepasado común y se concentra en un territorio. Esa es la diferencia entre una mutación rara y una incidencia regional alta <span class="cite">apuntes, bloque VI</span>. La concentración geográfica no es un azar, sino una historia familiar compartida.</p>
+<p>La serie del profesor Rodríguez, un flujograma de sospechas entre 2020 y 2026 con 47 casos, muestra el peso de esa combinación: 26 pacientes Glu200Lys heterocigotos tuvieron ECJ genética, 20 de ellos M/M y 6 M/V, mientras que 3 Glu200Glu correspondieron a ECJ esporádica <span class="cite">apuntes, bloque VI</span>. El foco regional es explícito: la investigación se concentra en la Región de Ñuble.</p>
+
+</section><section id="sec-07-formas-de-ecj-y-clinica" class="card">
+<div class="section-kicker"><span class="n">07</span> Tema</div>
+<h2>Formas de ECJ y clínica</h2>
+<p>La ECJ no es una sola enfermedad, y la frecuencia relativa de sus formas ordena la sospecha clínica <span class="cite">apuntes, bloque VI</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Formas de ECJ y clínica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Forma</th>
+<th>Frecuencia</th>
+<th>Característica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Esporádica</td>
+<td><strong>Alrededor del 85 %</strong></td>
+<td>Sin causa conocida ni mutación identificable; mal plegamiento espontáneo</td>
+</tr>
+<tr>
+<td>Genética o familiar</td>
+<td><strong>10 a 15 %</strong></td>
+<td>Mutaciones heredables de PRNP, como E200K; autosómica dominante</td>
+</tr>
+<tr>
+<td>Iatrogénica</td>
+<td><strong>Menos del 1 %</strong></td>
+<td>Cirugía, instrumental contaminado, injertos de duramadre o córnea, hormonas de cadáver</td>
+</tr>
+<tr>
+<td>Variante</td>
+<td>No consignada en el material</td>
+<td>Asociada a encefalopatía espongiforme bovina; afecta a pacientes más jóvenes</td>
+</tr>
+</tbody>
+</table></div>
+<p>La forma esporádica domina la casuística y carece de una mutación que la explique, de modo que el diagnóstico se sostiene en la clínica y los exámenes. La genética concentra la historia familiar y exige consejería; la iatrogénica es rara pero prevenible, y por eso la anamnesis quirúrgica y de trasplantes pesa tanto; la variante se vincula a la encefalopatía espongiforme bovina y a pacientes más jóvenes. Las manifestaciones cardinales son el deterioro cognitivo rápidamente progresivo, que en semanas o meses llega a demencia, la ataxia cerebelosa, las mioclonías típicamente desencadenadas por estímulos sonoros y los trastornos visuales y motores, como ceguera cortical, rigidez, extrapiramidalismo y espasticidad <span class="cite">apuntes, bloque VI</span>. La suma es característica: un paciente que en pocas semanas pierde la memoria, el equilibrio y el control del movimiento, y que se sobresalta con el ruido. La regla de sospecha pide deterioro cognitivo rápidamente progresivo más al menos dos de cuatro elementos: mioclonías, disfunción cerebelosa o síntomas visuales, disfunción piramidal o extrapiramidal, y mutismo acinético en fases avanzadas <span class="cite">apuntes, bloque VI</span>. La regla tiene valor operativo porque la ECJ se confunde con otras demencias rápidas, y el caso del bloque VI la usa para separarla del Alzheimer.</p>
+<p>La evolución de la forma esporádica se divide en tres fases que la figura 32 del bloque resume <span class="cite">apuntes, bloque VI</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Formas de ECJ y clínica" tabindex="0"><table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Hallazgos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inicial</td>
+<td>Cambios sutiles de conducta, fatiga, mareos y trastornos visuales vagos</td>
+</tr>
+<tr>
+<td>De estado</td>
+<td>Demencia rápidamente progresiva, ataxia severa y mioclonías de estímulo</td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td>Mutismo acinético, pérdida de autonomía, rigidez de descortización y desenlace fatal</td>
+</tr>
+</tbody>
+</table></div>
+<p>El pico de edad está entre los 60 y 70 años, y esa cifra, junto con la velocidad, es el primer filtro frente a una demencia degenerativa lenta <span class="cite">apuntes, bloque VI</span>. La variante de Heidenhain aparece en el caso como una pista. Los síntomas visuales rápidos, con ceguera cortical, son un modo de presentación que no encaja en el Alzheimer típico <span class="cite">apuntes, bloque VI</span>. El material no desarrolla sus criterios, pero la mención basta para justificar por qué la semiología visual orienta a ECJ.</p>
+
+</section><section id="sec-08-diagnostico-rt-quic-eeg-y-biomarcadores" class="card">
+<div class="section-kicker"><span class="n">08</span> Tema</div>
+<h2>Diagnóstico: RT-QuIC, EEG y biomarcadores</h2>
+<p>El RT-QuIC, Real-Time Quaking-Induced Conversion, detecta la semilla priónica activa en lugar de sus consecuencias. La prueba parte de LCR con las semillas PrP^Sc, agrega PrP normal recombinante y tioflavina T, agita con vibración mecánica vigorosa para inducir la conversión y mide la fluorescencia en tiempo real. Un positivo sella el diagnóstico clínico por su altísima sensibilidad y especificidad <span class="cite">apuntes, bloque VI</span>. El principio es una amplificación, no una medición de daño.</p>
+<p>La elección de las pruebas sigue la lógica de la enfermedad. Cada prueba responde una pregunta distinta: la clínica mide la rapidez del deterioro, la resonancia busca el signo topográfico, el EEG muestra el patrón eléctrico y el RT-QuIC aporta la evidencia directa de la semilla en el LCR <span class="cite">apuntes, bloque VI</span>. La variante puede escapar al EEG y a la imagen típica, y por eso la clínica sigue siendo el eje.</p>
+<p>El EEG aporta un patrón, no una certeza. Los complejos de ondas agudas periódicas, síncronas, bifásicas o trifásicas se repiten cada 0,5 a 2 segundos, aparecen en estadios intermedios o avanzados y pueden faltar en las fases iniciales o en la variante; por etapa, la temprana muestra lentificación difusa o FIRDA, la intermedia y tardía complejos periódicos estereotipados, y la preterminal un patrón de coma arreactivo <span class="cite">apuntes, bloque VI</span>. La utilidad depende del momento de la enfermedad, y un trazado normal al inicio no excluye el diagnóstico.</p>
+<p>Los biomarcadores de LCR completan el cuadro. La proteína 14-3-3 es una chaperona que se libera con la destrucción neuronal masiva, muy sensible pero inespecífica, y la tau total refleja daño axonal; ambas son marcadores subrogados y no detectan la proteína priónica directamente <span class="cite">apuntes, bloque VI</span>. Su valor es de apoyo y no sustituye la detección directa.</p>
+<p>La resonancia agrega un signo topográfico. En DWI y FLAIR se buscan el cortical ribboning, una señal brillante lineal en la corteza, y la hiperintensidad de los ganglios basales, en caudado y putamen; a ello se suma el signo del palo de hockey o pulvinar sign en el tálamo posterior, típico de la variante, y la restricción bilateral en caudado y putamen <span class="cite">apuntes, bloque VI</span>. La DWI es más sensible y precoz que el FLAIR, y la figura 37 muestra un FLAIR negativo con una DWI positiva. Esa diferencia de sensibilidad es la razón por la que la DWI se busca primero en la sospecha.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Diagnóstico: RT-QuIC, EEG y biomarcadores" tabindex="0"><table>
+<thead>
+<tr>
+<th>Prueba</th>
+<th>Qué detecta</th>
+<th>Fuerza</th>
+<th>Límite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RT-QuIC</td>
+<td>Semilla priónica activa</td>
+<td>Altísima sensibilidad y especificidad</td>
+<td>Requiere LCR y sustrato recombinante</td>
+</tr>
+<tr>
+<td>EEG</td>
+<td>Complejos periódicos</td>
+<td>Apoyo en fase intermedia o avanzada</td>
+<td>Puede faltar al inicio y en la variante</td>
+</tr>
+<tr>
+<td>14-3-3</td>
+<td>Destrucción neuronal masiva</td>
+<td>Muy sensible</td>
+<td>Inespecífica</td>
+</tr>
+<tr>
+<td>Tau total</td>
+<td>Daño axonal</td>
+<td>Marcador subrogado</td>
+<td>No detecta el prión</td>
+</tr>
+<tr>
+<td>RM en DWI y FLAIR</td>
+<td>Espongiosis, edema neuronal y priones</td>
+<td>La DWI es precoz</td>
+<td>El FLAIR puede ser negativo</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ninguna prueba aislada reemplaza la suma de clínica, tiempo y resultado. El diagnóstico de ECJ se construye con esa convergencia, y el RT-QuIC es el que aporta la evidencia más directa del mecanismo <span class="cite">apuntes, bloque VI</span>.</p>
+
+</section><section id="sec-09-resonancia-secuencias-dwi-frente-a-flair" class="card">
+<div class="section-kicker"><span class="n">09</span> Tema</div>
+<h2>Resonancia: secuencias, DWI frente a FLAIR</h2>
+<p>La lectura de la resonancia depende de qué se está mirando, y cada secuencia responde una pregunta distinta <span class="cite">apuntes p. 30</span>.</p>
+<div class="table-wrap" role="region" aria-label="Tabla: Resonancia: secuencias, DWI frente a FLAIR" tabindex="0"><table>
+<thead>
+<tr>
+<th>Secuencia</th>
+<th>Utilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1</td>
+<td>Anatomía normal; grasa hiperintensa y LCR oscuro</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>Agua y edema; inflamación, tumores e hidrocefalia</td>
+</tr>
+<tr>
+<td>FLAIR</td>
+<td>T2 con supresión del LCR; sustancia blanca, edema periventricular, esclerosis múltiple, meninges y lesiones corticales o subcorticales</td>
+</tr>
+<tr>
+<td>DWI</td>
+<td>Difusión; infarto cerebral agudo, abscesos y tumores hipercelulares</td>
+</tr>
+<tr>
+<td>ADC</td>
+<td>Complementa la DWI; infarto agudo con DWI alto y ADC bajo, y distingue edema citotóxico de vasogénico</td>
+</tr>
+<tr>
+<td>GRE o SWI</td>
+<td>Susceptibilidad; microhemorragias, hemosiderina y calcificaciones</td>
+</tr>
+<tr>
+<td>T1 con contraste</td>
+<td>Gadolinio; tumores, abscesos, metástasis e infecciones</td>
+</tr>
+</tbody>
+</table></div>
+<p>La T1 muestra anatomía normal, con grasa hiperintensa y LCR oscuro; la T2 es sensible al agua y al edema, y por eso sirve para inflamación, tumores e hidrocefalia <span class="cite">apuntes p. 30</span>. La FLAIR no es una T2 más, sino una T2 editada: suprime la señal del LCR, de modo que el líquido deja de brillar y quedan visibles la sustancia blanca, el edema periventricular, las meninges y las lesiones corticales o subcorticales, además de la esclerosis múltiple <span class="cite">apuntes p. 30</span>. Esa edición es la que permite ver lesiones que el brillo del líquido taparía.</p>
+<p>La lectura se ordena por la pregunta clínica: la sospecha de isquemia aguda pide DWI y ADC, el edema o la desmielinización piden FLAIR, la hemorragia pide GRE o SWI, y una lesión con efecto de masa pide contraste <span class="cite">apuntes p. 30</span>. La secuencia no es un menú: es una hipótesis puesta a prueba.</p>
+<p>La DWI mide el movimiento browniano del agua y detecta la restricción de la difusión; brilla en el infarto agudo, los abscesos, los tumores hipercelulares y las placas de Creutzfeldt-Jakob <span class="cite">apuntes p. 30</span>. No basta con ver brillo: hay que saber si el agua está atrapada o si solo hay más agua. El ADC complementa la DWI, y en el infarto agudo hay DWI alto con ADC bajo, combinación que distingue el edema citotóxico del vasogénico <span class="cite">apuntes p. 30</span>.</p>
+<p>La diferencia entre DWI y FLAIR es de mecanismo y de tiempo. La DWI se positiviza en minutos y es el estándar precoz del infarto; la FLAIR lo hace entre 6 y 12 horas después, y esa brecha es el mismatch DWI/FLAIR <span class="cite">apuntes p. 30</span>. La FLAIR detecta edema vasogénico, con agua extracelular, y la DWI detecta edema citotóxico, con agua atrapada. Por eso la primera brilla en placas desmielinizantes, gliosis, edema tumoral y hemorragia subaracnoidea, y la segunda en infarto agudo, abscesos, tumores hipercelulares y placas de ECJ <span class="cite">apuntes p. 30</span>. La secuencia elegida decide qué edema se ve y en qué momento se ve.</p>
+<p>En la ECJ, la DWI es la secuencia que primero cambia, y por eso se busca antes que la FLAIR; el cortical ribboning y la hiperintensidad de caudado y putamen reflejan espongiosis, edema neuronal y acumulación de priones <span class="cite">apuntes, bloque VI</span>. Un FLAIR normal no descarta la enfermedad si la DWI ya muestra restricción. La resonancia, entonces, no solo localiza: fecha el proceso.</p>
+
+</section><section id="sec-10-bioseguridad-vigilancia-y-el-caso" class="card">
+<div class="section-kicker"><span class="n">10</span> Tema</div>
+<h2>Bioseguridad, vigilancia y el caso</h2>
+<p>La ECJ es de notificación médica obligatoria inmediata, y la vigilancia epidemiológica es activa: la sola sospecha pone en marcha el registro <span class="cite">apuntes, bloque VI</span>. La notificación no espera la confirmación. En los casos con herencia por PRNP, la consejería genética familiar forma parte del abordaje ético, e incluye la identificación de portadores asintomáticos <span class="cite">apuntes, bloque VI</span>.</p>
+<p>La bioseguridad hospitalaria es estricta porque el prión resiste alcohol, radiación, formaldehído y autoclave convencional; la descontaminación requiere hidróxido de sodio o incineración, y el instrumental neuroquirúrgico en una sospecha exige tratamiento especial o desecho <span class="cite">apuntes, bloque VI</span>. Esa resistencia explica por qué las precauciones son distintas de las de una infección habitual. El control de la transmisión iatrogénica añade la revisión de donantes de tejidos, injertos de córnea o duramadre y antecedentes quirúrgicos en la anamnesis <span class="cite">apuntes, bloque VI</span>.</p>
+<p>La vigilancia y la bioseguridad comparten una misma lógica: la enfermedad es rara, pero el costo de un caso no detectado es alto. La notificación inmediata permite rastrear el instrumental y los tejidos, y la consejería genética permite identificar portadores antes de que enfermen <span class="cite">apuntes, bloque VI</span>. El circuito se cierra con la anamnesis, que es la vía para saber si un paciente estuvo expuesto.</p>
+<p>El caso integrador del bloque VI reúne el cuadro completo: un varón de 68 años, previamente sano, con 8 semanas de cambios de conducta, apatía, dificultades visuales vagas y ataxia, mioclonías provocadas por ruido, cortical ribboning e hiperintensidad de caudado en DWI, complejos periódicos en el EEG y RT-QuIC positivo <span class="cite">apuntes, bloque VI</span>. La pregunta central es por qué no es Alzheimer. La respuesta tiene dos componentes. El primero es el tiempo: semanas clasifican una demencia rápidamente progresiva, mientras que el Alzheimer tiene un inicio insidioso y lento de años; el segundo es la semiología, porque la ataxia grave temprana, las mioclonías de sobresalto y los síntomas visuales rápidos, sugerentes de la variante de Heidenhain, son ajenos al Alzheimer típico <span class="cite">apuntes, bloque VI</span>. Esa combinación es la que el caso usa para entrenar el razonamiento. El RT-QuIC positivo confirma que hay priones induciendo activamente el mal plegamiento, y el gen PRNP se secuencia en sangre cuando se sospecha heredabilidad, porque sus mutaciones causan ECJ familiar, insomnio familiar fatal y Gerstmann-Sträussler-Scheinker <span class="cite">apuntes, bloque VI</span>.</p>
+<p>El cierre del caso es una lección de método: la demencia rápida no se diagnostica por una prueba, sino por la convergencia de tiempo, semiología, imagen y biología. La bioseguridad y la vigilancia son parte del mismo razonamiento, porque un diagnóstico de ECJ compromete al paciente, a su familia y al instrumental del hospital <span class="cite">apuntes, bloque VI</span>.</p>
+
+</section><section id="sec-11-puntos-de-examen" class="card">
+<div class="section-kicker"><span class="n">11</span> Tema</div>
+<h2>Puntos de examen</h2>
+<ul class="exam-list">
+<li>La tríada del Alzheimer es placa de Aβ extracelular, ovillo de tau intracelular y atrofia cortical, con inflamación añadida <span class="cite">apuntes, bloque V</span>.</li>
+<li>APP se procesa por β-secretasa y γ-secretasa; las mutaciones de APP, PSEN1 y PSEN2 desvían la vía amiloide <span class="cite">apuntes, bloque V</span>.</li>
+<li>En la demencia por cuerpos de Lewy, la memoria está menos comprometida que en el Alzheimer, y lo visuoespacial, atencional y ejecutivo, más <span class="cite">apuntes, bloque V</span>.</li>
+<li>La α-sinucleína forma cuerpos de Lewy; el modelo propuesto suma la vesícula lipídica y la interacción de membrana aberrante <span class="cite">apuntes, bloque V</span>.</li>
+<li>Huntington es autosómica dominante; menos de <strong>27</strong> repeticiones CAG es normal y más de <strong>40</strong> es enfermedad <span class="cite">apuntes, bloque V</span>.</li>
+<li>La corea de Huntington consiste en movimientos bruscos de cara, tronco y extremidades, con posturas dolorosas al final <span class="cite">apuntes, bloque V</span>.</li>
+<li>Prion-like es propagación y autotemplado celular, no contagio; la tabla asocia PrP a ECJ, tau y amiloide a Alzheimer <span class="cite">apuntes, bloque V</span>.</li>
+<li>La PrP^C es soluble y rica en α-hélice; la PrP^Sc es rica en lámina β y resiste proteasas, calor y desinfectantes <span class="cite">apuntes, bloque VI</span>.</li>
+<li>E200K cambia glutámico por lisina en el codón 200 de PRNP, en el cromosoma 20, y es la mutación más común de la ECJ familiar <span class="cite">apuntes, bloque VI</span>.</li>
+<li>La ECJ esporádica ronda el <strong>85 %</strong>; la familiar, 10 a 15 %; la iatrogénica, menos del 1 % <span class="cite">apuntes, bloque VI</span>.</li>
+<li>El codón 129 M/M aumenta la susceptibilidad, M/V protege relativamente y V/V debuta con más ataxia <span class="cite">apuntes, bloque VI</span>.</li>
+<li>RT-QuIC amplifica la semilla priónica en LCR con PrP recombinante y tioflavina T; un positivo sella el diagnóstico <span class="cite">apuntes, bloque VI</span>.</li>
+<li>El EEG muestra complejos periódicos cada <strong>0,5 a 2 s</strong>; la DWI es más precoz que el FLAIR <span class="cite">apuntes, bloque VI</span>.</li>
+<li>La 14-3-3 es muy sensible pero inespecífica, y la tau total refleja daño axonal <span class="cite">apuntes, bloque VI</span>.</li>
+</ul>
+
+</section><section id="sec-12-limites-del-material" class="card">
+<div class="section-kicker"><span class="n">12</span> Tema</div>
+<h2>Límites del material</h2>
+<div class="warnbox"><span class="box-title">Límites del material</span><ul>
+<li>El bloque de demencias descansa en figuras descritas por visión, de modo que algunos detalles provienen de la imagen y no del texto escrito.</li>
+<li>El tratamiento solo aparece de pasada, en la figura de terapia génica de Huntington, y el material no desarrolla indicaciones ni resultados.</li>
+<li>No hay criterios formales para la demencia por cuerpos de Lewy ni para Huntington; el material las describe por su perfil y su patología, sin un algoritmo diagnóstico.</li>
+<li>La serie de 47 casos de la figura 50 es un manuscrito sometido y cubre la Región de Ñuble, así que sus proporciones no se generalizan al país.</li>
+<li>El bloque VI no trae paginación impresa en el archivo, por lo que las citas van por bloque y no por página.</li>
+</ul></div>
+</section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Neurociencias Aplicadas a la Medicina · Medicina UBB 2026-2.</strong> Material de estudio, no una recomendación clínica.</p>
+  <p>Basado en Purves, <em>Neurociencia</em>; Zeise, <em>Neurociencia para la psicología y otras áreas</em>; los apuntes de clase y los artículos del curso. No se distribuyen los PDF originales.</p>
+  <p><a href="creditos.html">Créditos y fuentes de las figuras</a></p>
+</footer>
+
+<dialog id="figDialog" class="fig-dialog" aria-label="Visor de figuras">
+  <button class="fig-dialog-close" type="button" aria-label="Cerrar">Cerrar</button>
+  <img id="figDialogImg" alt="">
+  <p id="figDialogCaption"></p>
+</dialog>
+
+<script>
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const printBtn = document.getElementById('printBtn');
+
+  function setTheme(theme){
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    themeBtn.textContent = dark ? 'Modo claro' : 'Modo oscuro';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    try { localStorage.setItem('guia-theme', theme); } catch(e) {}
+  }
+  try {
+    const saved = localStorage.getItem('guia-theme');
+    if (saved === 'dark' || saved === 'light') setTheme(saved);
+  } catch(e) {}
+  if (themeBtn) themeBtn.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  if (printBtn) printBtn.addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));
+
+  const links = [...document.querySelectorAll('.toc a[href^="#"]')];
+  const sections = [...document.querySelectorAll('main section[id]')];
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      });
+    }, {rootMargin: '-15% 0px -70% 0px', threshold: 0});
+    sections.forEach(s => obs.observe(s));
+  }
+
+  document.querySelectorAll('.openAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = true)));
+  document.querySelectorAll('.closeAll').forEach(b => b.addEventListener('click', () =>
+    b.closest('section').querySelectorAll('details.qa').forEach(d => d.open = false)));
+
+/* Visor de figuras */
+(function(){
+  const dialog = document.getElementById('figDialog');
+  if (!dialog) return;
+  const img = document.getElementById('figDialogImg');
+  const cap = document.getElementById('figDialogCaption');
+  const closeBtn = dialog.querySelector('.fig-dialog-close');
+  const links = Array.from(document.querySelectorAll('.fig-open'));
+  let current = 0;
+  let savedScroll = 0;
+
+  /* El diálogo modal puede arrastrar el scroll al abrirse. Guardar y
+     restaurar la posición sin que la animación suave del sitio la delate. */
+  function restoreScroll(y){
+    if (Math.abs(window.scrollY - y) < 2) return;
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function show(i){
+    if (i < 0 || i >= links.length) return;
+    current = i;
+    const a = links[i];
+    img.src = a.getAttribute('href');
+    img.alt = a.getAttribute('data-alt') || '';
+    cap.textContent = a.getAttribute('data-caption') || '';
+    if (!dialog.open) {
+      savedScroll = window.scrollY;
+      dialog.showModal();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
+      restoreScroll(savedScroll);
+      requestAnimationFrame(() => restoreScroll(savedScroll));
+    }
+  }
+
+  links.forEach((a, i) => {
+    a.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey) return;
+      event.preventDefault();
+      show(i);
+    });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => restoreScroll(savedScroll));
+  if (closeBtn) closeBtn.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (!dialog.open) return;
+    if (event.key === 'Escape') dialog.close();
+    if (event.key === 'ArrowRight') show(current + 1);
+    if (event.key === 'ArrowLeft') show(current - 1);
+  });
+})();
+</script>
+</body>
+</html>
